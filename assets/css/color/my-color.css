@@ -26,9 +26,7 @@
   background-color: #1ab394 !important;
 }
 
-.base-color {
-  color: #1ab394 !important;
-}
+
 
 .follow-label::before {
   background-color: #1ab394;
@@ -41,7 +39,7 @@
 .social-icon a:hover {
   color: #1ab394;
 }
-
+/*
 #pp-nav li:hover span {
   background-color: #1ab394 !important;
 }
@@ -49,7 +47,7 @@
 #pp-nav li .active span {
   background-color: #1ab394 !important;
 }
-
+*/
 .border-style {
   background-color: #1ab394;
 }
@@ -102,7 +100,7 @@
 .loader {
   border-top: 4px solid #1ab394 !important;
 }
-
+/*
 .flat-demo .button-border, .arshia-dark.flat-demo .button-border {
   background-color: #1ab394;
 }
@@ -110,7 +108,7 @@
 .flat-demo .pill-button:hover, .flat-demo .pill-button.active {
   background-color: #0c9b7e;
 }
-
+*/
 .arshia-dark .social-icon a:hover, .arshia-dark .social a:hover {
   color: #1ab394 !important;
 }

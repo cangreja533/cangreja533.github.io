@@ -14,7 +14,8 @@ var $root = $('html, body');
 $(document).ready(function () {
 
     "use strict";
-
+    typedJS();
+    
     clientCarousel();
     pagePilling();
     themeOption();
@@ -24,7 +25,6 @@ $(document).ready(function () {
     borderColor();
     menuToggler();
     sliderOwlCarousel();
-    typedJS();
     skills();
     countup();
     portfolioPopup();
@@ -53,6 +53,30 @@ $(".to-contact").on('click', function(){
 /*-----------------------------------------------------------------------------
                                    FUNCTIONS
 -----------------------------------------------------------------------------*/
+/*-------------------------
+Función que escribe a manera de maquin, letra por letra el texto enviado por data-elements
+-------------------------*/
+function typedJS() {
+
+    "use strict";
+
+    var $element = $(".element");
+    if ($element.length > 0) {
+        if($element.length){
+            var options = {
+                strings: $element.attr('data-elements').split(','),
+                typeSpeed: 100,
+                backDelay: 3000,
+                backSpeed: 50,
+                loop: true
+            };
+            var typed = new Typed(".element", options);
+        }
+    }
+}
+
+/*---------------*/
+
 
 /*-------------------------
   Testimonial CAROUSEL JS
@@ -321,27 +345,7 @@ function sliderOwlCarousel(){
         $('.owl-item.active .hero-slide').addClass("zoom");
     });
 }
-/*-------------------------
-        TYPED JS
--------------------------*/
-function typedJS() {
 
-    "use strict";
-
-    var $element = $(".element");
-    if ($element.length > 0) {
-        if($element.length){
-            var options = {
-                strings: $element.attr('data-elements').split(','),
-                typeSpeed: 100,
-                backDelay: 3000,
-                backSpeed: 50,
-                loop: true
-            };
-            var typed = new Typed(".element", options);
-        }
-    }
-}
 /*-------------------------
           Skills
 -------------------------*/
