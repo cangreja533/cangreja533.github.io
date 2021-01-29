@@ -28,13 +28,6 @@
 
 
 
-.follow-label::before {
-  background-color: #1ab394;
-}
-
-.social a:hover {
-  color: #1ab394 !important;
-}
 
 .social-icon a:hover {
   color: #1ab394;
