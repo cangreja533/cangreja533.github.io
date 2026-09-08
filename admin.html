@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Panel de contenido — Alejandra Zerdá</title>
+    <style>
+      :root {
+        --bg: #f4f5f7;
+        --panel: #ffffff;
+        --border: #e1e4e8;
+        --text: #1f2430;
+        --muted: #6b7280;
+        --accent: #630e53;
+        --accent-dark: #4a0c3d;
+        --ok: #1a7f37;
+        --warn: #b45309;
+        --err: #c0392b;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial,
+          sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+      header {
+        background: var(--accent);
+        color: #fff;
+        padding: 18px 24px;
+      }
+      header h1 {
+        margin: 0 0 4px;
+        font-size: 1.3rem;
+      }
+      header p {
+        margin: 0;
+        opacity: 0.85;
+        font-size: 0.85rem;
+      }
+      .wrap {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+        gap: 20px;
+      }
+      @media (max-width: 960px) {
+        .wrap {
+          grid-template-columns: 1fr;
+        }
+      }
+      .card {
+        background: var(--panel);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        padding: 18px 20px;
+        margin-bottom: 18px;
+      }
+      .card h2 {
+        font-size: 1rem;
+        margin: 0 0 14px;
+        color: var(--accent-dark);
+        border-bottom: 1px solid var(--border);
+        padding-bottom: 8px;
+      }
+      .field {
+        margin-bottom: 14px;
+      }
+      .field label {
+        display: block;
+        font-size: 0.8rem;
+        font-weight: 600;
+        margin-bottom: 4px;
+        color: var(--muted);
+      }
+      .field input,
+      .field textarea {
+        width: 100%;
+        padding: 8px 10px;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        font: inherit;
+        font-size: 0.9rem;
+        resize: vertical;
+      }
+      .field textarea {
+        min-height: 64px;
+      }
+      .toolbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-bottom: 16px;
+      }
+      button {
+        cursor: pointer;
+        border: none;
+        border-radius: 6px;
+        padding: 9px 16px;
+        font-size: 0.85rem;
+        font-weight: 600;
+      }
+      .btn-primary {
+        background: var(--accent);
+        color: #fff;
+      }
+      .btn-primary:hover {
+        background: var(--accent-dark);
+      }
+      .btn-secondary {
+        background: #eef0f3;
+        color: var(--text);
+      }
+      .btn-secondary:hover {
+        background: #e2e5ea;
+      }
+      #fileFallback {
+        display: none;
+      }
+      #status {
+        font-size: 0.85rem;
+        padding: 10px 12px;
+        border-radius: 6px;
+        margin-bottom: 16px;
+        display: none;
+      }
+      #status.show {
+        display: block;
+      }
+      #status.ok {
+        background: #e6f4ea;
+        color: var(--ok);
+      }
+      #status.warn {
+        background: #fef3e2;
+        color: var(--warn);
+      }
+      #status.err {
+        background: #fdecea;
+        color: var(--err);
+      }
+      .preview-frame-wrap {
+        position: sticky;
+        top: 20px;
+      }
+      iframe {
+        width: 100%;
+        height: 78vh;
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        background: #fff;
+      }
+      .hint {
+        font-size: 0.78rem;
+        color: var(--muted);
+        margin-top: -8px;
+        margin-bottom: 14px;
+      }
+      details summary {
+        cursor: pointer;
+        font-size: 0.85rem;
+        color: var(--accent-dark);
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Panel de contenido del sitio</h1>
+      <p>
+        Edita los textos principales de index.html sin tocar código. Los
+        cambios se aplican solo a la copia local hasta que descargues y
+        publiques el archivo.
+      </p>
+    </header>
+
+    <div class="wrap">
+      <div>
+        <div id="status"></div>
+
+        <div class="card">
+          <div class="toolbar">
+            <button class="btn-primary" id="btnLoad">
+              Cargar contenido actual (index.html)
+            </button>
+            <button class="btn-secondary" id="btnPickFile">
+              Cargar desde archivo…
+            </button>
+            <button class="btn-secondary" id="btnDraft">
+              Recuperar borrador guardado
+            </button>
+            <input
+              type="file"
+              id="fileFallback"
+              accept=".html,text/html"
+            />
+          </div>
+          <p class="hint">
+            Si abres este panel directamente desde tu computador
+            (file://) el navegador puede bloquear la carga automática; en
+            ese caso usa "Cargar desde archivo…" y selecciona tu
+            index.html. Si lo abres desde el sitio publicado, "Cargar
+            contenido actual" funciona directo.
+          </p>
+        </div>
+
+        <form id="editorForm"></form>
+
+        <div class="card">
+          <h2>3. Guardar cambios</h2>
+          <div class="toolbar">
+            <button class="btn-primary" id="btnApply">
+              Aplicar y previsualizar
+            </button>
+            <button class="btn-secondary" id="btnDownload">
+              Descargar index.html actualizado
+            </button>
+          </div>
+          <p class="hint">
+            Después de descargar, reemplaza el archivo
+            <code>index.html</code> en el repositorio y súbelo (commit +
+            push) para publicar los cambios en el sitio real. Este panel no
+            se conecta a GitHub: solo genera el archivo actualizado.
+          </p>
+        </div>
+      </div>
+
+      <div class="preview-frame-wrap">
+        <div class="card" style="margin-bottom: 10px">
+          <h2>Vista previa</h2>
+        </div>
+        <iframe id="preview" title="Vista previa del sitio"></iframe>
+      </div>
+    </div>
+
+    <script>
+      const DRAFT_KEY = "site-admin-draft-v1";
+
+      // Human-friendly grouping/labels for known fields. Any [data-edit]
+      // found in the loaded HTML that isn't listed here still gets a
+      // generic field, so the form never silently drops content.
+      const GROUPS = [
+        {
+          title: "1. Portada (Hero)",
+          fields: [
+            { key: "hero-name", label: "Nombre mostrado", type: "text" },
+            {
+              key: "hero-roles",
+              label: "Roles animados (separados por coma, cada uno termina en punto)",
+              type: "text",
+            },
+            {
+              key: "hero-tagline",
+              label: "Frase debajo del nombre (una línea por renglón)",
+              type: "textarea",
+            },
+          ],
+        },
+        {
+          title: "2. Sobre mí",
+          fields: [
+            { key: "about-role-bold", label: "Rol — primera palabra (resaltada)", type: "text" },
+            { key: "about-role-rest", label: "Rol — resto del texto", type: "text" },
+            { key: "about-website", label: "Sitio web (texto mostrado)", type: "text" },
+            { key: "about-email", label: "Correo (Sobre mí)", type: "text" },
+            { key: "about-city", label: "Ciudad", type: "text" },
+            { key: "about-degree", label: "Título académico", type: "text" },
+            { key: "about-specialization", label: "Especialización", type: "text" },
+            { key: "about-freelance", label: "Disponibilidad freelance", type: "text" },
+            { key: "about-linkedin-href", label: "Enlace de LinkedIn (botón CV)", type: "text" },
+            { key: "about-hire-email", label: "Correo del botón \"Hire Me\"", type: "text" },
+          ],
+        },
+        {
+          title: "3. Servicios",
+          fields: [
+            { key: "service1-title", label: "Servicio 1 — título", type: "text" },
+            { key: "service1-desc", label: "Servicio 1 — descripción", type: "textarea" },
+            { key: "service2-title", label: "Servicio 2 — título", type: "text" },
+            { key: "service2-desc", label: "Servicio 2 — descripción", type: "textarea" },
+            { key: "service3-title", label: "Servicio 3 — título", type: "text" },
+            { key: "service3-desc", label: "Servicio 3 — descripción", type: "textarea" },
+            {
+              key: "service3-tags",
+              label: "Servicio 3 — etiquetas (una por renglón)",
+              type: "textarea",
+            },
+          ],
+        },
+        {
+          title: "4. Contacto",
+          fields: [
+            { key: "contact-phone", label: "Teléfono", type: "text" },
+            { key: "contact-location", label: "Ubicación", type: "text" },
+            { key: "contact-email", label: "Correo de contacto", type: "text" },
+          ],
+        },
+        {
+          title: "5. Pie de página",
+          fields: [
+            { key: "footer-copyright", label: "Texto de copyright", type: "text" },
+          ],
+        },
+      ];
+
+      let parsedDoc = null; // live DOM we mutate and re-serialize
+      let autosaveTimer = null;
+
+      const statusEl = document.getElementById("status");
+      const form = document.getElementById("editorForm");
+      const preview = document.getElementById("preview");
+
+      function setStatus(msg, kind) {
+        statusEl.textContent = msg;
+        statusEl.className = "show " + (kind || "ok");
+      }
+
+      function escapeHtml(str) {
+        return str
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;");
+      }
+
+      function getFieldEl(key) {
+        return parsedDoc
+          ? parsedDoc.querySelector(`[data-edit="${CSS.escape(key)}"]`)
+          : null;
+      }
+
+      function readValue(el) {
+        const attr = el.getAttribute("data-edit-attr");
+        const prefix = el.getAttribute("data-edit-prefix") || "";
+        const join = el.getAttribute("data-edit-join");
+        if (attr) {
+          let v = el.getAttribute(attr) || "";
+          if (prefix && v.startsWith(prefix)) v = v.slice(prefix.length);
+          return v.trim();
+        }
+        if (join === "br") {
+          return el.innerHTML
+            .split(/<br\s*\/?>/i)
+            .map((s) => s.replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim())
+            .join("\n")
+            .trim();
+        }
+        return el.textContent.replace(/\s+/g, " ").trim();
+      }
+
+      function writeValue(el, value) {
+        const attr = el.getAttribute("data-edit-attr");
+        const prefix = el.getAttribute("data-edit-prefix") || "";
+        const join = el.getAttribute("data-edit-join");
+        if (attr) {
+          el.setAttribute(attr, prefix + value);
+          return;
+        }
+        if (join === "br") {
+          el.innerHTML = value
+            .split("\n")
+            .map((line) => escapeHtml(line.trim()))
+            .join("<br />");
+          return;
+        }
+        el.textContent = value;
+      }
+
+      function allKnownKeys() {
+        const keys = new Set();
+        GROUPS.forEach((g) => g.fields.forEach((f) => keys.add(f.key)));
+        return keys;
+      }
+
+      function buildForm() {
+        form.innerHTML = "";
+        if (!parsedDoc) return;
+
+        const known = allKnownKeys();
+
+        GROUPS.forEach((group) => {
+          const card = document.createElement("div");
+          card.className = "card";
+          const h2 = document.createElement("h2");
+          h2.textContent = group.title;
+          card.appendChild(h2);
+
+          group.fields.forEach((f) => {
+            const el = getFieldEl(f.key);
+            if (!el) return; // field not present in this HTML, skip silently
+            card.appendChild(renderField(f.key, f.label, f.type, readValue(el)));
+          });
+
+          if (card.children.length > 1) form.appendChild(card);
+        });
+
+        // Any [data-edit] present in the doc but not covered above still
+        // gets an editable field, generically labeled.
+        const extras = [...parsedDoc.querySelectorAll("[data-edit]")].filter(
+          (el) => !known.has(el.getAttribute("data-edit"))
+        );
+        if (extras.length) {
+          const card = document.createElement("div");
+          card.className = "card";
+          const h2 = document.createElement("h2");
+          h2.textContent = "Otros campos detectados";
+          card.appendChild(h2);
+          extras.forEach((el) => {
+            const key = el.getAttribute("data-edit");
+            card.appendChild(renderField(key, key, "textarea", readValue(el)));
+          });
+          form.appendChild(card);
+        }
+
+        scheduleAutosaveBindings();
+      }
+
+      function renderField(key, label, type, value) {
+        const wrap = document.createElement("div");
+        wrap.className = "field";
+        const labelEl = document.createElement("label");
+        labelEl.textContent = label;
+        labelEl.setAttribute("for", "f_" + key);
+        wrap.appendChild(labelEl);
+
+        const input =
+          type === "textarea"
+            ? document.createElement("textarea")
+            : document.createElement("input");
+        if (type !== "textarea") input.type = "text";
+        input.id = "f_" + key;
+        input.dataset.key = key;
+        input.value = value;
+        wrap.appendChild(input);
+        return wrap;
+      }
+
+      function scheduleAutosaveBindings() {
+        form.querySelectorAll("input, textarea").forEach((inp) => {
+          inp.addEventListener("input", () => {
+            clearTimeout(autosaveTimer);
+            autosaveTimer = setTimeout(saveDraft, 500);
+          });
+        });
+      }
+
+      function collectFormValues() {
+        const values = {};
+        form.querySelectorAll("input, textarea").forEach((inp) => {
+          values[inp.dataset.key] = inp.value;
+        });
+        return values;
+      }
+
+      function saveDraft() {
+        if (!parsedDoc) return;
+        const values = collectFormValues();
+        localStorage.setItem(
+          DRAFT_KEY,
+          JSON.stringify({ values, savedAt: Date.now() })
+        );
+        setStatus("Borrador guardado automáticamente en este navegador.", "ok");
+      }
+
+      function loadDraftIntoForm() {
+        const raw = localStorage.getItem(DRAFT_KEY);
+        if (!raw) {
+          setStatus("No hay ningún borrador guardado todavía.", "warn");
+          return;
+        }
+        if (!parsedDoc) {
+          setStatus(
+            "Primero carga el contenido actual, luego recupera el borrador.",
+            "warn"
+          );
+          return;
+        }
+        const { values, savedAt } = JSON.parse(raw);
+        Object.entries(values).forEach(([key, val]) => {
+          const inp = form.querySelector(`[data-key="${CSS.escape(key)}"]`);
+          if (inp) inp.value = val;
+        });
+        setStatus(
+          "Borrador cargado (guardado " +
+            new Date(savedAt).toLocaleString() +
+            ").",
+          "ok"
+        );
+      }
+
+      function parseHtml(htmlText) {
+        const doc = new DOMParser().parseFromString(htmlText, "text/html");
+        parsedDoc = doc;
+        buildForm();
+        updatePreview();
+      }
+
+      async function loadFromServer() {
+        setStatus("Cargando index.html…", "warn");
+        try {
+          const res = await fetch("index.html", { cache: "no-store" });
+          if (!res.ok) throw new Error("HTTP " + res.status);
+          const text = await res.text();
+          parseHtml(text);
+          setStatus("Contenido actual cargado correctamente.", "ok");
+        } catch (err) {
+          setStatus(
+            "No se pudo cargar index.html automáticamente (" +
+              err.message +
+              "). Usa \"Cargar desde archivo…\" en su lugar.",
+            "err"
+          );
+        }
+      }
+
+      function applyValuesToDoc() {
+        if (!parsedDoc) return false;
+        const values = collectFormValues();
+        Object.entries(values).forEach(([key, val]) => {
+          const el = getFieldEl(key);
+          if (el) writeValue(el, val);
+        });
+        return true;
+      }
+
+      function serializeDoc() {
+        return "<!DOCTYPE html>\n" + parsedDoc.documentElement.outerHTML;
+      }
+
+      function updatePreview() {
+        if (!parsedDoc) return;
+        preview.srcdoc = serializeDoc();
+      }
+
+      document.getElementById("btnLoad").addEventListener("click", loadFromServer);
+
+      document.getElementById("btnPickFile").addEventListener("click", () => {
+        document.getElementById("fileFallback").click();
+      });
+
+      document.getElementById("fileFallback").addEventListener("change", (e) => {
+        const file = e.target.files[0];
+        if (!file) return;
+        const reader = new FileReader();
+        reader.onload = () => {
+          parseHtml(reader.result);
+          setStatus("Contenido cargado desde el archivo " + file.name + ".", "ok");
+        };
+        reader.readAsText(file);
+      });
+
+      document.getElementById("btnDraft").addEventListener("click", loadDraftIntoForm);
+
+      document.getElementById("btnApply").addEventListener("click", () => {
+        if (!applyValuesToDoc()) {
+          setStatus("Primero carga el contenido actual.", "err");
+          return;
+        }
+        updatePreview();
+        saveDraft();
+        setStatus("Cambios aplicados a la vista previa.", "ok");
+      });
+
+      document.getElementById("btnDownload").addEventListener("click", () => {
+        if (!applyValuesToDoc()) {
+          setStatus("Primero carga el contenido actual.", "err");
+          return;
+        }
+        const html = serializeDoc();
+        const blob = new Blob([html], { type: "text/html" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "index.html";
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        URL.revokeObjectURL(url);
+        setStatus(
+          "index.html descargado. Reemplaza el archivo en el repositorio y publica los cambios.",
+          "ok"
+        );
+      });
+
+      // Try loading automatically on open (works when served over http/https).
+      loadFromServer();
+    </script>
+  </body>
+</html>
