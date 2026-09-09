@@ -69,6 +69,11 @@
         border-bottom: 1px solid var(--border);
         padding-bottom: 8px;
       }
+      .card h3 {
+        font-size: 0.92rem;
+        margin: 0 0 12px;
+        color: var(--accent-dark);
+      }
       .field {
         margin-bottom: 14px;
       }
@@ -219,6 +224,7 @@
       }
       .tabs {
         display: flex;
+        flex-wrap: wrap;
         gap: 6px;
         margin-bottom: 14px;
       }
@@ -226,7 +232,8 @@
         background: #eef0f3;
         color: var(--text);
         border-radius: 6px 6px 0 0;
-        padding: 9px 18px;
+        padding: 9px 16px;
+        font-size: 0.82rem;
       }
       .tab-btn.active {
         background: var(--accent);
@@ -235,16 +242,16 @@
       .tab-panel[hidden] {
         display: none;
       }
-      .edu-row {
+      .list-row {
         position: relative;
       }
-      .edu-row-header {
+      .list-row-header {
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 12px;
       }
-      .edu-row-header strong {
+      .list-row-header strong {
         font-size: 0.8rem;
         color: var(--muted);
         text-transform: uppercase;
@@ -256,9 +263,9 @@
     <header>
       <h1>Panel de contenido del sitio</h1>
       <p>
-        Edita los textos principales de index.html sin tocar código. Al
-        aplicar los cambios se crea automáticamente un Pull Request en el
-        repositorio para publicarlos.
+        Edita el contenido de index.html por secciones, igual que están
+        organizadas en el sitio. Al aplicar los cambios se crea
+        automáticamente un Pull Request en el repositorio para publicarlos.
       </p>
     </header>
 
@@ -315,62 +322,107 @@
             <button class="btn-secondary" id="btnDraft">
               Recuperar borrador guardado
             </button>
-            <input
-              type="file"
-              id="fileFallback"
-              accept=".html,text/html"
-            />
+            <input type="file" id="fileFallback" accept=".html,text/html" />
           </div>
           <p class="hint">
-            Si abres este panel directamente desde tu computador
-            (file://) el navegador puede bloquear la carga automática; en
-            ese caso usa "Cargar desde archivo…" y selecciona tu
-            index.html. Si lo abres desde el sitio publicado, "Cargar
-            contenido actual" funciona directo.
+            Si abres este panel directamente desde tu computador (file://) el
+            navegador puede bloquear la carga automática; en ese caso usa
+            "Cargar desde archivo…" y selecciona tu index.html. Si lo abres
+            desde el sitio publicado, "Cargar contenido actual" funciona
+            directo.
           </p>
         </div>
 
         <div class="tabs">
-          <button type="button" class="tab-btn active" data-tab="general">
-            Contenido general
-          </button>
-          <button type="button" class="tab-btn" data-tab="education">
-            Educación
-          </button>
+          <button type="button" class="tab-btn active" data-tab="hero">Hero</button>
+          <button type="button" class="tab-btn" data-tab="about">Sobre mí</button>
+          <button type="button" class="tab-btn" data-tab="resume">Resume</button>
+          <button type="button" class="tab-btn" data-tab="services">Servicios</button>
+          <button type="button" class="tab-btn" data-tab="portfolio">Portfolio</button>
+          <button type="button" class="tab-btn" data-tab="testimonial">Testimonios</button>
+          <button type="button" class="tab-btn" data-tab="blog">Blog</button>
+          <button type="button" class="tab-btn" data-tab="contact">Contacto</button>
         </div>
 
-        <div id="tab-general" class="tab-panel">
-          <form id="editorForm">
+        <form id="editorForm">
+          <div id="tab-hero" class="tab-panel">
             <div class="card" id="emptyState">
               <p class="hint" style="margin: 0">
                 Aún no se ha cargado ningún contenido. Usa "Cargar contenido
                 actual" o "Cargar desde archivo…" arriba antes de editar.
               </p>
             </div>
-          </form>
-        </div>
+          </div>
+          <div id="tab-about" class="tab-panel" hidden></div>
+          <div id="tab-services" class="tab-panel" hidden></div>
+          <div id="tab-contact" class="tab-panel" hidden></div>
+        </form>
 
-        <div id="tab-education" class="tab-panel" hidden>
+        <div id="tab-resume" class="tab-panel" hidden>
           <div class="card">
-            <h2>Educación</h2>
+            <h2>Resume — Experiencia</h2>
+            <p class="hint">
+              Agrega, edita o elimina puestos de trabajo. Corresponden a la
+              columna "Experience" del sitio.
+            </p>
+            <div id="experienceList"></div>
+            <button type="button" class="btn-secondary" id="btnAddExperience" disabled>
+              + Agregar experiencia
+            </button>
+          </div>
+          <div class="card">
+            <h2>Resume — Estudios</h2>
             <p class="hint">
               Agrega, edita o elimina cursos, títulos o certificaciones.
               Corresponden a la columna "Education" del sitio.
             </p>
             <div id="educationList"></div>
-            <button
-              type="button"
-              class="btn-secondary"
-              id="btnAddEducation"
-              disabled
-            >
+            <button type="button" class="btn-secondary" id="btnAddEducation" disabled>
               + Agregar curso
             </button>
           </div>
         </div>
 
+        <div id="tab-portfolio" class="tab-panel" hidden>
+          <div class="card">
+            <h2>Portfolio</h2>
+            <p class="hint">
+              Agrega, edita o elimina proyectos del portafolio. La categoría
+              controla los filtros del sitio: usa una o más de estas
+              palabras separadas por espacio — webdesign, mobiledesign, seo,
+              graphic.
+            </p>
+            <div id="portfolioList"></div>
+            <button type="button" class="btn-secondary" id="btnAddPortfolio" disabled>
+              + Agregar proyecto
+            </button>
+          </div>
+        </div>
+
+        <div id="tab-testimonial" class="tab-panel" hidden>
+          <div class="card">
+            <h2>Testimonios</h2>
+            <p class="hint">Agrega, edita o elimina testimonios de clientes.</p>
+            <div id="testimonialList"></div>
+            <button type="button" class="btn-secondary" id="btnAddTestimonial" disabled>
+              + Agregar testimonio
+            </button>
+          </div>
+        </div>
+
+        <div id="tab-blog" class="tab-panel" hidden>
+          <div class="card">
+            <h2>Blog</h2>
+            <p class="hint">Agrega, edita o elimina publicaciones del blog.</p>
+            <div id="blogList"></div>
+            <button type="button" class="btn-secondary" id="btnAddBlog" disabled>
+              + Agregar publicación
+            </button>
+          </div>
+        </div>
+
         <div class="card">
-          <h2>3. Guardar cambios</h2>
+          <h2>Guardar cambios</h2>
           <div class="toolbar">
             <button class="btn-primary" id="btnApply" disabled>
               Aplicar y crear Pull Request
@@ -381,10 +433,11 @@
           </div>
           <p class="hint">
             "Aplicar y crear Pull Request" actualiza la vista previa y, tras
-            confirmar, crea una rama nueva en GitHub con estos cambios y
-            abre un Pull Request contra la rama base para revisarlos antes
-            de publicarlos. "Descargar" sigue disponible como respaldo
-            manual si prefieres subir el archivo tú misma.
+            confirmar, crea una rama nueva en GitHub con estos cambios (de
+            todas las pestañas) y abre un Pull Request contra la rama base
+            para revisarlos antes de publicarlos. "Descargar" sigue
+            disponible como respaldo manual si prefieres subir el archivo tú
+            misma.
           </p>
         </div>
       </div>
@@ -415,15 +468,17 @@
     </div>
 
     <script>
-      const DRAFT_KEY = "site-admin-draft-v1";
+      const DRAFT_KEY = "site-admin-draft-v2";
       const GH_SETTINGS_KEY = "site-admin-gh-settings-v1";
 
-      // Human-friendly grouping/labels for known fields. Any [data-edit]
-      // found in the loaded HTML that isn't listed here still gets a
-      // generic field, so the form never silently drops content.
+      // Human-friendly grouping/labels for known fields, grouped by which
+      // tab they belong to. Any [data-edit] found in the loaded HTML that
+      // isn't listed here still gets a generic field (added to the
+      // "contact" tab), so the form never silently drops content.
       const GROUPS = [
         {
-          title: "1. Portada (Hero)",
+          tab: "hero",
+          title: "Portada (Hero)",
           fields: [
             { key: "hero-name", label: "Nombre mostrado", type: "text" },
             {
@@ -445,7 +500,8 @@
           ],
         },
         {
-          title: "2. Sobre mí",
+          tab: "about",
+          title: "Sobre mí",
           fields: [
             { key: "about-role-bold", label: "Rol — primera palabra (resaltada)", type: "text" },
             { key: "about-role-rest", label: "Rol — resto del texto", type: "text" },
@@ -470,7 +526,8 @@
           ],
         },
         {
-          title: "3. Servicios",
+          tab: "services",
+          title: "Servicios",
           fields: [
             { key: "service1-title", label: "Servicio 1 — título", type: "text" },
             { key: "service1-desc", label: "Servicio 1 — descripción", type: "textarea" },
@@ -486,7 +543,8 @@
           ],
         },
         {
-          title: "4. Contacto",
+          tab: "contact",
+          title: "Contacto",
           fields: [
             { key: "contact-phone", label: "Teléfono", type: "text" },
             { key: "contact-location", label: "Ubicación", type: "text" },
@@ -494,7 +552,8 @@
           ],
         },
         {
-          title: "5. Pie de página",
+          tab: "contact",
+          title: "Pie de página",
           fields: [
             { key: "footer-copyright", label: "Texto de copyright", type: "text" },
           ],
@@ -518,6 +577,11 @@
           .replace(/&/g, "&amp;")
           .replace(/</g, "&lt;")
           .replace(/>/g, "&gt;");
+      }
+
+      function scheduleAutosave() {
+        clearTimeout(autosaveTimer);
+        autosaveTimer = setTimeout(() => saveDraft(true), 500);
       }
 
       function getFieldEl(key) {
@@ -570,19 +634,38 @@
       }
 
       function setActionsEnabled(enabled) {
-        document.getElementById("btnApply").disabled = !enabled;
-        document.getElementById("btnDownload").disabled = !enabled;
-        document.getElementById("btnAddEducation").disabled = !enabled;
+        [
+          "btnApply",
+          "btnDownload",
+          "btnAddEducation",
+          "btnAddExperience",
+          "btnAddPortfolio",
+          "btnAddTestimonial",
+          "btnAddBlog",
+        ].forEach((id) => {
+          document.getElementById(id).disabled = !enabled;
+        });
       }
 
       function buildForm() {
-        form.innerHTML = "";
-        if (!parsedDoc) return;
+        const formTabs = ["hero", "about", "services", "contact"];
+        formTabs.forEach((tab) => {
+          document.getElementById("tab-" + tab).innerHTML = "";
+        });
+        if (!parsedDoc) {
+          const empty = document.createElement("div");
+          empty.className = "card";
+          empty.innerHTML =
+            '<p class="hint" style="margin:0">Aún no se ha cargado ningún contenido. Usa "Cargar contenido actual" o "Cargar desde archivo…" arriba antes de editar.</p>';
+          document.getElementById("tab-hero").appendChild(empty);
+          return;
+        }
         setActionsEnabled(true);
 
         const known = allKnownKeys();
 
         GROUPS.forEach((group) => {
+          const panel = document.getElementById("tab-" + group.tab);
           const card = document.createElement("div");
           card.className = "card";
           const h2 = document.createElement("h2");
@@ -595,15 +678,16 @@
             card.appendChild(renderField(f.key, f.label, f.type, readValue(el)));
           });
 
-          if (card.children.length > 1) form.appendChild(card);
+          if (card.children.length > 1) panel.appendChild(card);
         });
 
         // Any [data-edit] present in the doc but not covered above still
-        // gets an editable field, generically labeled.
+        // gets an editable field, generically labeled, in the Contact tab.
         const extras = [...parsedDoc.querySelectorAll("[data-edit]")].filter(
           (el) => !known.has(el.getAttribute("data-edit"))
         );
         if (extras.length) {
+          const panel = document.getElementById("tab-contact");
           const card = document.createElement("div");
           card.className = "card";
           const h2 = document.createElement("h2");
@@ -613,7 +697,7 @@
             const key = el.getAttribute("data-edit");
             card.appendChild(renderField(key, key, "textarea", readValue(el)));
           });
-          form.appendChild(card);
+          panel.appendChild(card);
         }
 
         scheduleAutosaveBindings();
@@ -668,10 +752,7 @@
 
       function scheduleAutosaveBindings() {
         form.querySelectorAll("input, textarea").forEach((inp) => {
-          inp.addEventListener("input", () => {
-            clearTimeout(autosaveTimer);
-            autosaveTimer = setTimeout(() => saveDraft(true), 500);
-          });
+          inp.addEventListener("input", scheduleAutosave);
         });
       }
 
@@ -683,56 +764,69 @@
         return values;
       }
 
-      function saveDraft(silent) {
-        if (!parsedDoc) return;
-        const values = collectFormValues();
-        const education = collectEducationRows();
-        localStorage.setItem(
-          DRAFT_KEY,
-          JSON.stringify({ values, education, savedAt: Date.now() })
-        );
-        if (!silent) {
-          setStatus("Borrador guardado automáticamente en este navegador.", "ok");
-        }
-      }
-
-      function loadDraftIntoForm() {
-        const raw = localStorage.getItem(DRAFT_KEY);
-        if (!raw) {
-          setStatus("No hay ningún borrador guardado todavía.", "warn");
-          return;
-        }
-        if (!parsedDoc) {
-          setStatus(
-            "Primero carga el contenido actual, luego recupera el borrador.",
-            "warn"
-          );
-          return;
-        }
-        const { values, education, savedAt } = JSON.parse(raw);
-        Object.entries(values).forEach(([key, val]) => {
-          const inp = form.querySelector(`[data-key="${CSS.escape(key)}"]`);
-          if (inp) inp.value = val;
+      // ------------------------------------------------------------------
+      // Generic repeatable-list UI: used by Resume (experience/education),
+      // Portfolio, Testimonial and Blog tabs. Each list has its own field
+      // spec (for rendering/collecting rows) and its own parse/write
+      // functions (since the underlying HTML shape differs per section).
+      // ------------------------------------------------------------------
+      function renderListRow(fields, data) {
+        data = data || {};
+        const row = document.createElement("div");
+        row.className = "list-row card";
+        const header = document.createElement("div");
+        header.className = "list-row-header";
+        header.innerHTML = "<strong>Elemento</strong>";
+        const removeBtn = document.createElement("button");
+        removeBtn.type = "button";
+        removeBtn.className = "btn-secondary";
+        removeBtn.textContent = "Eliminar";
+        removeBtn.addEventListener("click", () => {
+          row.remove();
+          scheduleAutosave();
         });
-        if (education) buildEducationForm(education);
-        setStatus(
-          "Borrador cargado (guardado " +
-            new Date(savedAt).toLocaleString() +
-            ").",
-          "ok"
-        );
+        header.appendChild(removeBtn);
+        row.appendChild(header);
+
+        fields.forEach((f) => {
+          const wrap = document.createElement("div");
+          wrap.className = "field";
+          const label = document.createElement("label");
+          label.textContent = f.label;
+          wrap.appendChild(label);
+          const input =
+            f.type === "textarea"
+              ? document.createElement("textarea")
+              : document.createElement("input");
+          if (f.type !== "textarea") input.type = "text";
+          input.className = "lrow-" + f.key;
+          input.value = data[f.key] || "";
+          input.addEventListener("input", scheduleAutosave);
+          wrap.appendChild(input);
+          row.appendChild(wrap);
+        });
+        return row;
       }
 
-      function parseHtml(htmlText) {
-        const doc = new DOMParser().parseFromString(htmlText, "text/html");
-        parsedDoc = doc;
-        buildForm();
-        buildEducationForm(parseEducationFromDoc());
-        updatePreview();
+      function buildListForm(listEl, fields, items) {
+        listEl.innerHTML = "";
+        items.forEach((item) => listEl.appendChild(renderListRow(fields, item)));
       }
 
-      // --- Education tab: repeatable list of courses/degrees ---
-      const EDU_COLORS = [
+      function collectListRows(listEl, fields) {
+        return [...listEl.querySelectorAll(":scope > .list-row")]
+          .map((row) => {
+            const obj = {};
+            fields.forEach((f) => {
+              obj[f.key] = row.querySelector(".lrow-" + f.key).value.trim();
+            });
+            return obj;
+          })
+          .filter((obj) => Object.values(obj).some((v) => v));
+      }
+
+      // --- Resume tab: Experiencia + Estudios (shared "timeline" shape) ---
+      const TIMELINE_COLORS = [
         "#bd1550",
         "#84ba40",
         "#630e53",
@@ -741,16 +835,27 @@
         "#fbdd62",
         "#3caac1ff",
       ];
+      const TIMELINE_FIELDS = [
+        { key: "title", label: "Título / cargo" },
+        { key: "institution", label: "Institución / empresa" },
+        { key: "year", label: "Año (ej. 2024 o 2021 - 2023)" },
+        {
+          key: "description",
+          label: "Descripción (opcional; una línea por viñeta si son varias)",
+          type: "textarea",
+        },
+      ];
       const educationListEl = document.getElementById("educationList");
+      const experienceListEl = document.getElementById("experienceList");
 
-      function getEducationContainer() {
+      function getTimelineContainer(listKey) {
         return parsedDoc
-          ? parsedDoc.querySelector('[data-edu-list="education"]')
+          ? parsedDoc.querySelector(`[data-edu-list="${listKey}"]`)
           : null;
       }
 
-      function parseEducationFromDoc() {
-        const container = getEducationContainer();
+      function parseTimelineFromDoc(listKey) {
+        const container = getTimelineContainer(listKey);
         if (!container) return [];
         return [...container.querySelectorAll(":scope > .timeline-item")].map(
           (item) => {
@@ -773,84 +878,50 @@
                 .querySelector(".timeline-year")
                 ?.textContent.replace(/\s+/g, " ").trim() || "";
             const descEl = item.querySelector(".timeline-content");
-            const description = descEl
-              ? descEl.textContent.replace(/\s+/g, " ").trim()
-              : "";
+            let description = "";
+            if (descEl) {
+              const ul = descEl.querySelector("ul");
+              if (ul) {
+                description = [...ul.querySelectorAll("li")]
+                  .map((li) => li.textContent.replace(/\s+/g, " ").trim())
+                  .join("\n");
+              } else {
+                description = descEl.textContent.replace(/\s+/g, " ").trim();
+              }
+            }
             return { title, institution, year, description };
           }
         );
       }
 
-      function scheduleEducationAutosave() {
-        clearTimeout(autosaveTimer);
-        autosaveTimer = setTimeout(() => saveDraft(true), 500);
-      }
-
-      function renderEducationRow(data) {
-        data = data || { title: "", institution: "", year: "", description: "" };
-        const row = document.createElement("div");
-        row.className = "edu-row card";
-        row.innerHTML =
-          '<div class="edu-row-header"><strong>Curso / título</strong>' +
-          '<button type="button" class="btn-secondary btn-remove-edu">Eliminar</button></div>' +
-          '<div class="field"><label>Nombre del curso o título</label>' +
-          '<input type="text" class="edu-title" /></div>' +
-          '<div class="field"><label>Institución</label>' +
-          '<input type="text" class="edu-institution" /></div>' +
-          '<div class="field"><label>Año (ej. 2024 o 2021 - 2023)</label>' +
-          '<input type="text" class="edu-year" /></div>' +
-          '<div class="field"><label>Descripción (opcional)</label>' +
-          '<textarea class="edu-description"></textarea></div>';
-        row.querySelector(".edu-title").value = data.title;
-        row.querySelector(".edu-institution").value = data.institution;
-        row.querySelector(".edu-year").value = data.year;
-        row.querySelector(".edu-description").value = data.description;
-        row.querySelector(".btn-remove-edu").addEventListener("click", () => {
-          row.remove();
-          scheduleEducationAutosave();
-        });
-        row
-          .querySelectorAll("input, textarea")
-          .forEach((inp) => inp.addEventListener("input", scheduleEducationAutosave));
-        return row;
-      }
-
-      function buildEducationForm(items) {
-        educationListEl.innerHTML = "";
-        items.forEach((item) =>
-          educationListEl.appendChild(renderEducationRow(item))
-        );
-      }
-
-      function collectEducationRows() {
-        return [...educationListEl.querySelectorAll(".edu-row")]
-          .map((row) => ({
-            title: row.querySelector(".edu-title").value.trim(),
-            institution: row.querySelector(".edu-institution").value.trim(),
-            year: row.querySelector(".edu-year").value.trim(),
-            description: row.querySelector(".edu-description").value.trim(),
-          }))
-          .filter((item) => item.title || item.institution || item.year || item.description);
-      }
-
-      function writeEducationToDoc() {
-        const container = getEducationContainer();
+      function writeTimelineToDoc(listKey, listEl) {
+        const container = getTimelineContainer(listKey);
         if (!container) return;
-        const rows = collectEducationRows();
+        const rows = collectListRows(listEl, TIMELINE_FIELDS);
         container.innerHTML = "";
         rows.forEach((item, idx) => {
-          const color = EDU_COLORS[idx % EDU_COLORS.length];
+          const color = TIMELINE_COLORS[idx % TIMELINE_COLORS.length];
           const div = parsedDoc.createElement("div");
           div.className = "timeline-item timeline-border";
           div.setAttribute("data-color", color);
           const institutionHtml = item.institution
             ? "<p>" + escapeHtml(item.institution) + "</p>"
             : "";
-          const descriptionHtml = item.description
-            ? '<div class="timeline-content"><p>' +
-              escapeHtml(item.description) +
-              "</p></div>"
-            : "";
+          let descriptionHtml = "";
+          if (item.description) {
+            const lines = item.description
+              .split("\n")
+              .map((s) => s.trim())
+              .filter(Boolean);
+            descriptionHtml =
+              lines.length > 1
+                ? '<div class="timeline-content"><ul>' +
+                  lines.map((l) => "<li>" + escapeHtml(l) + "</li>").join("") +
+                  "</ul></div>"
+                : '<div class="timeline-content"><p>' +
+                  escapeHtml(item.description) +
+                  "</p></div>";
+          }
           div.innerHTML =
             '<div class="timeline-icon data-background" data-color="' +
             color +
@@ -872,22 +943,320 @@
       }
 
       document.getElementById("btnAddEducation").addEventListener("click", () => {
-        educationListEl.appendChild(renderEducationRow());
-        scheduleEducationAutosave();
+        educationListEl.appendChild(renderListRow(TIMELINE_FIELDS));
+        scheduleAutosave();
+      });
+      document.getElementById("btnAddExperience").addEventListener("click", () => {
+        experienceListEl.appendChild(renderListRow(TIMELINE_FIELDS));
+        scheduleAutosave();
       });
 
+      // --- Portfolio tab ---
+      const PORTFOLIO_FIELDS = [
+        { key: "title", label: "Título" },
+        {
+          key: "category",
+          label: "Categoría (una o más, separadas por espacio: webdesign, mobiledesign, seo, graphic)",
+        },
+        { key: "image", label: "Imagen (URL)" },
+      ];
+      const portfolioListEl = document.getElementById("portfolioList");
+
+      function getPortfolioContainer() {
+        return parsedDoc
+          ? parsedDoc.querySelector('[data-portfolio-list="items"]')
+          : null;
+      }
+
+      function parsePortfolioFromDoc() {
+        const container = getPortfolioContainer();
+        if (!container) return [];
+        return [...container.querySelectorAll(":scope > .portfolio-item")].map(
+          (item) => {
+            const img = item.querySelector("img");
+            const image = img ? img.getAttribute("src") || "" : "";
+            const title =
+              item.querySelector("h5")?.textContent.replace(/\s+/g, " ").trim() ||
+              "";
+            const category = [...item.classList]
+              .filter((c) => c !== "col-lg-4" && c !== "portfolio-item")
+              .join(" ");
+            return { title, category, image };
+          }
+        );
+      }
+
+      function writePortfolioToDoc() {
+        const container = getPortfolioContainer();
+        if (!container) return;
+        const rows = collectListRows(portfolioListEl, PORTFOLIO_FIELDS);
+        container.innerHTML = "";
+        rows.forEach((item) => {
+          const div = parsedDoc.createElement("div");
+          div.className = ("col-lg-4 portfolio-item " + item.category).trim();
+          const img = escapeHtml(item.image);
+          div.innerHTML =
+            '<div class="image-border"><div class="portfolio-item-content">' +
+            '<img src="' +
+            img +
+            '" alt="/" class="img-fluid">' +
+            '<div class="img-overlay text-center"><div class="img-overlay-content">' +
+            '<div class="portfolio-icon">' +
+            '<a href="javascript:void();" type="button" data-toggle="modal" data-target="#portfolio-single"><i class="lni-link"></i></a>' +
+            '<a href="' +
+            img +
+            '" class="js-zoom-gallery"><i class="lni-search"></i></a>' +
+            "</div>" +
+            '<h5 class="mt-3 mb-0">' +
+            escapeHtml(item.title) +
+            "</h5>" +
+            "</div></div></div></div>";
+          container.appendChild(div);
+        });
+      }
+
+      document.getElementById("btnAddPortfolio").addEventListener("click", () => {
+        portfolioListEl.appendChild(renderListRow(PORTFOLIO_FIELDS));
+        scheduleAutosave();
+      });
+
+      // --- Testimonial tab ---
+      const TESTIMONIAL_FIELDS = [
+        { key: "image", label: "Foto (URL)" },
+        { key: "quote", label: "Testimonio", type: "textarea" },
+        { key: "name", label: "Nombre" },
+        { key: "role", label: "Cargo / empresa" },
+      ];
+      const testimonialListEl = document.getElementById("testimonialList");
+
+      function getTestimonialContainer() {
+        return parsedDoc
+          ? parsedDoc.querySelector('[data-testimonial-list="items"]')
+          : null;
+      }
+
+      function parseTestimonialFromDoc() {
+        const container = getTestimonialContainer();
+        if (!container) return [];
+        return [...container.querySelectorAll(":scope > .testimonial-item")].map(
+          (item) => {
+            const img = item.querySelector("img");
+            const image = img ? img.getAttribute("src") || "" : "";
+            const quoteP = item.querySelector("p");
+            const quote = quoteP
+              ? quoteP.textContent
+                  .replace(/\s+/g, " ")
+                  .trim()
+                  .replace(/^"\s*/, "")
+                  .replace(/\s*"$/, "")
+              : "";
+            const nameSpan = item.querySelector("span.d-block");
+            let name = "";
+            let role = "";
+            if (nameSpan) {
+              const small = nameSpan.querySelector("small");
+              role = small ? small.textContent.replace(/\s+/g, " ").trim() : "";
+              const clone = nameSpan.cloneNode(true);
+              const smallInClone = clone.querySelector("small");
+              if (smallInClone) smallInClone.remove();
+              name = clone.textContent.replace(/\s+/g, " ").trim().replace(/,$/, "");
+            }
+            return { image, quote, name, role };
+          }
+        );
+      }
+
+      function writeTestimonialToDoc() {
+        const container = getTestimonialContainer();
+        if (!container) return;
+        const rows = collectListRows(testimonialListEl, TESTIMONIAL_FIELDS);
+        container.innerHTML = "";
+        rows.forEach((item) => {
+          const div = parsedDoc.createElement("div");
+          div.className = "testimonial-item box-border";
+          div.innerHTML =
+            '<div class="testimonial-image"><div class="testimonial-image-border">' +
+            '<img src="' +
+            escapeHtml(item.image) +
+            '" alt="/"></div></div>' +
+            '<p class="mb-0 mt-3 text-muted">" ' +
+            escapeHtml(item.quote) +
+            ' "</p>' +
+            '<span class="d-block font-weight-bold text-dark mt-3">' +
+            escapeHtml(item.name) +
+            ",\n" +
+            '<small class="text-muted">' +
+            escapeHtml(item.role) +
+            "</small></span>";
+          container.appendChild(div);
+        });
+      }
+
+      document.getElementById("btnAddTestimonial").addEventListener("click", () => {
+        testimonialListEl.appendChild(renderListRow(TESTIMONIAL_FIELDS));
+        scheduleAutosave();
+      });
+
+      // --- Blog tab ---
+      const BLOG_FIELDS = [
+        { key: "image", label: "Imagen (URL)" },
+        { key: "date", label: "Fecha (ej. June 02, 2020)" },
+        { key: "meta", label: "Dato adicional (ej. número de comentarios)" },
+        { key: "title", label: "Título" },
+        { key: "excerpt", label: "Resumen", type: "textarea" },
+      ];
+      const blogListEl = document.getElementById("blogList");
+
+      function getBlogContainer() {
+        return parsedDoc
+          ? parsedDoc.querySelector('[data-blog-list="posts"]')
+          : null;
+      }
+
+      function parseBlogFromDoc() {
+        const container = getBlogContainer();
+        if (!container) return [];
+        return [...container.querySelectorAll(":scope > .col-lg-4")]
+          .map((wrap) => {
+            const item = wrap.querySelector(".blog-item");
+            if (!item) return null;
+            const img = item.querySelector("img");
+            const image = img ? img.getAttribute("src") || "" : "";
+            const spans = item.querySelectorAll(".list-inline-item span");
+            const date = spans[0]
+              ? spans[0].textContent.replace(/\s+/g, " ").trim()
+              : "";
+            const meta = spans[1]
+              ? spans[1].textContent.replace(/\s+/g, " ").trim()
+              : "";
+            const title =
+              item.querySelector("h6 a")?.textContent.replace(/\s+/g, " ").trim() ||
+              "";
+            const excerpt =
+              item
+                .querySelector(".blog-content > p")
+                ?.textContent.replace(/\s+/g, " ").trim() || "";
+            return { image, date, meta, title, excerpt };
+          })
+          .filter(Boolean);
+      }
+
+      function writeBlogToDoc() {
+        const container = getBlogContainer();
+        if (!container) return;
+        const rows = collectListRows(blogListEl, BLOG_FIELDS);
+        container.innerHTML = "";
+        rows.forEach((item) => {
+          const wrap = parsedDoc.createElement("div");
+          wrap.className = "col-lg-4";
+          wrap.innerHTML =
+            '<div class="blog-item box-border">' +
+            '<div class="blog-image"><div class="blog-intro"><img src="' +
+            escapeHtml(item.image) +
+            '" alt="/"></div></div>' +
+            '<div class="blog-content">' +
+            '<ul class="list-inline mt-4">' +
+            '<li class="list-inline-item"><i class="lni-calendar data-text-color" data-color="#ff4274"></i><span class="text-muted">' +
+            escapeHtml(item.date) +
+            " </span></li>" +
+            '<li class="list-inline-item"><i class="lni-calendar data-text-color" data-color="#fbdd62"></i><span class="text-muted">' +
+            escapeHtml(item.meta) +
+            "</span></li>" +
+            "</ul>" +
+            '<h6 class="mb-3"><a class="text-dark" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target="#blog-single">' +
+            escapeHtml(item.title) +
+            "</a></h6>" +
+            '<p class="text-dark">' +
+            escapeHtml(item.excerpt) +
+            "</p>" +
+            '<div class="blog-link"><a class="base-color" href="javascript:void(0)" target="_blank" data-toggle="modal" data-target="#blog-single">Read More...</a></div>' +
+            "</div></div>";
+          container.appendChild(wrap);
+        });
+      }
+
+      document.getElementById("btnAddBlog").addEventListener("click", () => {
+        blogListEl.appendChild(renderListRow(BLOG_FIELDS));
+        scheduleAutosave();
+      });
+
+      // --- Tabs ---
       document.querySelectorAll(".tab-btn").forEach((btn) => {
         btn.addEventListener("click", () => {
-          document
-            .querySelectorAll(".tab-btn")
-            .forEach((b) => b.classList.remove("active"));
+          document.querySelectorAll(".tab-btn").forEach((b) => b.classList.remove("active"));
           btn.classList.add("active");
-          document
-            .querySelectorAll(".tab-panel")
-            .forEach((p) => (p.hidden = true));
+          document.querySelectorAll(".tab-panel").forEach((p) => (p.hidden = true));
           document.getElementById("tab-" + btn.dataset.tab).hidden = false;
         });
       });
+
+      // --- Draft persistence ---
+      function saveDraft(silent) {
+        if (!parsedDoc) return;
+        const values = collectFormValues();
+        const education = collectListRows(educationListEl, TIMELINE_FIELDS);
+        const experience = collectListRows(experienceListEl, TIMELINE_FIELDS);
+        const portfolio = collectListRows(portfolioListEl, PORTFOLIO_FIELDS);
+        const testimonial = collectListRows(testimonialListEl, TESTIMONIAL_FIELDS);
+        const blog = collectListRows(blogListEl, BLOG_FIELDS);
+        localStorage.setItem(
+          DRAFT_KEY,
+          JSON.stringify({
+            values,
+            education,
+            experience,
+            portfolio,
+            testimonial,
+            blog,
+            savedAt: Date.now(),
+          })
+        );
+        if (!silent) {
+          setStatus("Borrador guardado automáticamente en este navegador.", "ok");
+        }
+      }
+
+      function loadDraftIntoForm() {
+        const raw = localStorage.getItem(DRAFT_KEY);
+        if (!raw) {
+          setStatus("No hay ningún borrador guardado todavía.", "warn");
+          return;
+        }
+        if (!parsedDoc) {
+          setStatus(
+            "Primero carga el contenido actual, luego recupera el borrador.",
+            "warn"
+          );
+          return;
+        }
+        const { values, education, experience, portfolio, testimonial, blog, savedAt } =
+          JSON.parse(raw);
+        Object.entries(values || {}).forEach(([key, val]) => {
+          const inp = form.querySelector(`[data-key="${CSS.escape(key)}"]`);
+          if (inp) inp.value = val;
+        });
+        if (education) buildListForm(educationListEl, TIMELINE_FIELDS, education);
+        if (experience) buildListForm(experienceListEl, TIMELINE_FIELDS, experience);
+        if (portfolio) buildListForm(portfolioListEl, PORTFOLIO_FIELDS, portfolio);
+        if (testimonial) buildListForm(testimonialListEl, TESTIMONIAL_FIELDS, testimonial);
+        if (blog) buildListForm(blogListEl, BLOG_FIELDS, blog);
+        setStatus(
+          "Borrador cargado (guardado " + new Date(savedAt).toLocaleString() + ").",
+          "ok"
+        );
+      }
+
+      function parseHtml(htmlText) {
+        const doc = new DOMParser().parseFromString(htmlText, "text/html");
+        parsedDoc = doc;
+        buildForm();
+        buildListForm(educationListEl, TIMELINE_FIELDS, parseTimelineFromDoc("education"));
+        buildListForm(experienceListEl, TIMELINE_FIELDS, parseTimelineFromDoc("experience"));
+        buildListForm(portfolioListEl, PORTFOLIO_FIELDS, parsePortfolioFromDoc());
+        buildListForm(testimonialListEl, TESTIMONIAL_FIELDS, parseTestimonialFromDoc());
+        buildListForm(blogListEl, BLOG_FIELDS, parseBlogFromDoc());
+        updatePreview();
+      }
 
       async function loadFromServer() {
         setStatus("Cargando index.html…", "warn");
@@ -901,7 +1270,7 @@
           setStatus(
             "No se pudo cargar index.html automáticamente (" +
               err.message +
-              "). Usa \"Cargar desde archivo…\" en su lugar.",
+              '). Usa "Cargar desde archivo…" en su lugar.',
             "err"
           );
         }
@@ -914,7 +1283,11 @@
           const el = getFieldEl(key);
           if (el) writeValue(el, val);
         });
-        writeEducationToDoc();
+        writeTimelineToDoc("education", educationListEl);
+        writeTimelineToDoc("experience", experienceListEl);
+        writePortfolioToDoc();
+        writeTestimonialToDoc();
+        writeBlogToDoc();
         return true;
       }
 
@@ -980,9 +1353,7 @@
         opts = opts || {};
         const token = ghTokenInput.value.trim();
         if (!token) {
-          throw new Error(
-            "Falta el token de acceso de GitHub (sección 0 arriba)."
-          );
+          throw new Error("Falta el token de acceso de GitHub (sección 0 arriba).");
         }
         const res = await fetch("https://api.github.com/" + path, {
           ...opts,
@@ -1086,39 +1457,32 @@
         confirmModal.classList.remove("show");
       }
 
-      document
-        .getElementById("btnModalCancel")
-        .addEventListener("click", hideConfirmModal);
+      document.getElementById("btnModalCancel").addEventListener("click", hideConfirmModal);
 
-      document
-        .getElementById("btnModalConfirm")
-        .addEventListener("click", async () => {
-          hideConfirmModal();
-          const applyBtn = document.getElementById("btnApply");
-          applyBtn.disabled = true;
-          try {
-            const pr = await createContentPullRequest();
-            setStatus(
-              "Pull Request creado: " + pr.html_url,
-              "ok"
-            );
-            statusEl.innerHTML =
-              'Pull Request creado: <a href="' +
-              pr.html_url +
-              '" target="_blank" rel="noopener">' +
-              pr.html_url +
-              "</a>";
-          } catch (err) {
-            let msg = "No se pudo crear el Pull Request: " + err.message;
-            if (/403/.test(err.message)) {
-              msg +=
-                ' — revisa que tu token tenga permisos "Contents: Read and write" y "Pull requests: Read and write" para este repositorio (github.com/settings/tokens).';
-            }
-            setStatus(msg, "err");
-          } finally {
-            applyBtn.disabled = false;
+      document.getElementById("btnModalConfirm").addEventListener("click", async () => {
+        hideConfirmModal();
+        const applyBtn = document.getElementById("btnApply");
+        applyBtn.disabled = true;
+        try {
+          const pr = await createContentPullRequest();
+          statusEl.innerHTML =
+            'Pull Request creado: <a href="' +
+            pr.html_url +
+            '" target="_blank" rel="noopener">' +
+            pr.html_url +
+            "</a>";
+          statusEl.className = "show ok";
+        } catch (err) {
+          let msg = "No se pudo crear el Pull Request: " + err.message;
+          if (/403/.test(err.message)) {
+            msg +=
+              ' — revisa que tu token tenga permisos "Contents: Read and write" y "Pull requests: Read and write" para este repositorio (github.com/settings/tokens).';
           }
-        });
+          setStatus(msg, "err");
+        } finally {
+          applyBtn.disabled = false;
+        }
+      });
 
       document.getElementById("btnLoad").addEventListener("click", loadFromServer);
 
