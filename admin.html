@@ -120,6 +120,10 @@
       .btn-secondary:hover {
         background: #e2e5ea;
       }
+      button:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+      }
       #fileFallback {
         display: none;
       }
@@ -210,15 +214,22 @@
           </p>
         </div>
 
-        <form id="editorForm"></form>
+        <form id="editorForm">
+          <div class="card" id="emptyState">
+            <p class="hint" style="margin: 0">
+              Aún no se ha cargado ningún contenido. Usa "Cargar contenido
+              actual" o "Cargar desde archivo…" arriba antes de editar.
+            </p>
+          </div>
+        </form>
 
         <div class="card">
           <h2>3. Guardar cambios</h2>
           <div class="toolbar">
-            <button class="btn-primary" id="btnApply">
+            <button class="btn-primary" id="btnApply" disabled>
               Aplicar y previsualizar
             </button>
-            <button class="btn-secondary" id="btnDownload">
+            <button class="btn-secondary" id="btnDownload" disabled>
               Descargar index.html actualizado
             </button>
           </div>
@@ -377,9 +388,15 @@
         return keys;
       }
 
+      function setActionsEnabled(enabled) {
+        document.getElementById("btnApply").disabled = !enabled;
+        document.getElementById("btnDownload").disabled = !enabled;
+      }
+
       function buildForm() {
         form.innerHTML = "";
         if (!parsedDoc) return;
+        setActionsEnabled(true);
 
         const known = allKnownKeys();
 
@@ -588,7 +605,16 @@
       });
 
       // Try loading automatically on open (works when served over http/https).
-      loadFromServer();
+      // Over file:// the browser blocks this fetch by CORS policy, so skip
+      // straight to asking for the file instead of showing a confusing error.
+      if (location.protocol === "file:") {
+        setStatus(
+          'Abriste este panel directamente desde tu computador. Usa el botón "Cargar desde archivo…" y selecciona tu index.html para empezar.',
+          "warn"
+        );
+      } else {
+        loadFromServer();
+      }
     </script>
   </body>
 </html>
