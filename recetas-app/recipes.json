@@ -1,7 +1,7 @@
 [
   {
     "id": "lentejas",
-    "title": "LENTEJAS",
+    "title": "Lentejas",
     "icon": "🥘",
     "diet": [],
     "mealTypes": [
@@ -49,7 +49,7 @@
   },
   {
     "id": "crepes-de-zanahoria",
-    "title": "CREPES DE ZANAHORIA",
+    "title": "Crepes de zanahoria",
     "icon": "🥘",
     "diet": [],
     "mealTypes": [
@@ -76,7 +76,7 @@
   },
   {
     "id": "coliflor-gratinada",
-    "title": "COLIFLOR GRATINADA",
+    "title": "Coliflor gratinada",
     "icon": "",
     "diet": [],
     "mealTypes": [
@@ -102,7 +102,7 @@
   },
   {
     "id": "trufas-de-brownie",
-    "title": "TRUFAS DE BROWNIE",
+    "title": "Trufas de brownie",
     "icon": "",
     "diet": [],
     "mealTypes": [],
@@ -121,7 +121,7 @@
   },
   {
     "id": "tortillitas-de-papa-rellenas",
-    "title": "TORTILLITAS DE PAPA RELLENAS",
+    "title": "Tortillitas de papa rellenas",
     "icon": "🥔",
     "diet": [],
     "mealTypes": [],
@@ -150,7 +150,7 @@
   },
   {
     "id": "rollo-de-espinacas-relleno-con-salmon-y-queso",
-    "title": "ROLLO DE ESPINACAS RELLENO CON SALMÓN Y QUESO",
+    "title": "Rollo de espinacas relleno con salmón y queso",
     "icon": "🍣",
     "diet": [],
     "mealTypes": [
@@ -182,7 +182,7 @@
   },
   {
     "id": "ensalada-de-quinua-marroqui",
-    "title": "ENSALADA DE QUINUA MARROQUÍ",
+    "title": "Ensalada de quinua marroquí",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -218,7 +218,7 @@
   },
   {
     "id": "tortilla-de-espinaca",
-    "title": "TORTILLA DE ESPINACA",
+    "title": "Tortilla de espinaca",
     "icon": "🍳",
     "diet": [],
     "mealTypes": [],
@@ -239,7 +239,7 @@
   },
   {
     "id": "waffle-de-platano-maduro",
-    "title": "WAFFLE DE PLÁTANO MADURO",
+    "title": "Waffle de plátano maduro",
     "icon": "🥞",
     "diet": [],
     "mealTypes": [
@@ -268,7 +268,7 @@
   },
   {
     "id": "paleo-biscuits",
-    "title": "PALEO BISCUITS",
+    "title": "Paleo biscuits",
     "icon": "",
     "diet": [
       "Paleo"
@@ -303,7 +303,7 @@
   },
   {
     "id": "tartar-de-salmon",
-    "title": "TARTAR DE SALMÓN",
+    "title": "Tartar de salmón",
     "icon": "🍲",
     "diet": [],
     "mealTypes": [
@@ -364,7 +364,7 @@
   },
   {
     "id": "arepas-de-zanahoria",
-    "title": "AREPAS de ZANAHORIA",
+    "title": "Arepas de zanahoria",
     "icon": "",
     "diet": [],
     "mealTypes": [
@@ -392,7 +392,7 @@
   },
   {
     "id": "ensalada-de-lentejas",
-    "title": "ENSALADA DE LENTEJAS",
+    "title": "Ensalada de lentejas",
     "icon": "🥙",
     "diet": [],
     "mealTypes": [],
@@ -427,7 +427,7 @@
   },
   {
     "id": "sopa-de-ahuyama-y-jengibre",
-    "title": "SOPA DE AHUYAMA Y JENGIBRE",
+    "title": "Sopa de ahuyama y jengibre",
     "icon": "🍲",
     "diet": [],
     "mealTypes": [],
@@ -457,7 +457,7 @@
   },
   {
     "id": "ensalada-de-fresas-y-espinaca",
-    "title": "ENSALADA DE FRESAS Y ESPINACA",
+    "title": "Ensalada de fresas y espinaca",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -486,7 +486,7 @@
   },
   {
     "id": "pescado-en-salsa-de-tomate",
-    "title": "PESCADO EN SALSA DE TOMATE",
+    "title": "Pescado en salsa de tomate",
     "icon": "",
     "diet": [
       "Paleo"
@@ -519,7 +519,7 @@
   },
   {
     "id": "carrot-cake",
-    "title": "CARROT CAKE",
+    "title": "Carrot cake",
     "icon": "",
     "diet": [],
     "mealTypes": [],
@@ -549,7 +549,7 @@
   },
   {
     "id": "ensalada-de-quinua-y-pollo",
-    "title": "ENSALADA DE QUINUA Y POLLO",
+    "title": "Ensalada de quinua y pollo",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -577,7 +577,7 @@
   },
   {
     "id": "porridge-de-avena",
-    "title": "PORRIDGE DE AVENA",
+    "title": "Porridge de avena",
     "icon": "🥣",
     "diet": [],
     "mealTypes": [],
@@ -604,7 +604,7 @@
   },
   {
     "id": "muffins-de-chocolate-con-zucchini",
-    "title": "MUFFINS DE CHOCOLATE CON ZUCCHINI",
+    "title": "Muffins de chocolate con zucchini",
     "icon": "🧁",
     "diet": [],
     "mealTypes": [],
@@ -637,7 +637,7 @@
   },
   {
     "id": "tortilla-de-yuca",
-    "title": "TORTILLA DE YUCA",
+    "title": "Tortilla de yuca",
     "icon": "",
     "diet": [
       "Paleo"
@@ -668,7 +668,7 @@
   },
   {
     "id": "pudin-de-chocolate-saludable",
-    "title": "PUDIN DE CHOCOLATE SALUDABLE",
+    "title": "Pudin de chocolate saludable",
     "icon": "",
     "diet": [],
     "mealTypes": [
@@ -694,7 +694,7 @@
   },
   {
     "id": "papitas-con-salsa-de-curry",
-    "title": "PAPITAS CON SALSA DE CURRY",
+    "title": "Papitas con salsa de curry",
     "icon": "🥔",
     "diet": [],
     "mealTypes": [],
@@ -728,7 +728,7 @@
   },
   {
     "id": "arroz-de-coliflor",
-    "title": "ARROZ DE COLIFLOR",
+    "title": "Arroz de coliflor",
     "icon": "",
     "diet": [
       "Paleo"
@@ -758,7 +758,7 @@
   },
   {
     "id": "muffins-de-huevos-pavo-y-espinacas",
-    "title": "MUFFINS DE HUEVOS, PAVO Y ESPINACAS",
+    "title": "Muffins de huevos, pavo y espinacas",
     "icon": "",
     "diet": [
       "Paleo"
@@ -789,7 +789,7 @@
   },
   {
     "id": "canasticas-de-zucchini",
-    "title": "CANASTICAS DE ZUCCHINI",
+    "title": "Canasticas de zucchini",
     "icon": "",
     "diet": [
       "Paleo"
@@ -822,7 +822,7 @@
   },
   {
     "id": "helado-chocolate-y-papaya",
-    "title": "Helado Chocolate y papaya",
+    "title": "Helado chocolate y papaya",
     "icon": "",
     "diet": [],
     "mealTypes": [],
@@ -868,7 +868,7 @@
   },
   {
     "id": "pure-de-papa-criolla",
-    "title": "PURÉ DE PAPA CRIOLLA",
+    "title": "Puré de papa criolla",
     "icon": "",
     "diet": [
       "Paleo"
@@ -899,7 +899,7 @@
   },
   {
     "id": "ensalada-de-garbanzos",
-    "title": "ENSALADA DE GARBANZOS",
+    "title": "Ensalada de garbanzos",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -994,7 +994,7 @@
   },
   {
     "id": "sopa-de-pollo",
-    "title": "SOPA DE POLLO",
+    "title": "Sopa de pollo",
     "icon": "🍲",
     "diet": [],
     "mealTypes": [],
@@ -1040,7 +1040,7 @@
   },
   {
     "id": "crema-de-espinaca-puerro-y-papa",
-    "title": "CREMA DE ESPINACA, PUERRO Y PAPA",
+    "title": "Crema de espinaca, puerro y papa",
     "icon": "🥣",
     "diet": [],
     "mealTypes": [],
@@ -1077,7 +1077,7 @@
   },
   {
     "id": "papas-mexicanas",
-    "title": "PAPAS MEXICANAS",
+    "title": "Papas mexicanas",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -1104,7 +1104,7 @@
   },
   {
     "id": "parfait",
-    "title": "PARFAIT",
+    "title": "Parfait",
     "icon": "🥣",
     "diet": [],
     "mealTypes": [],
@@ -1145,7 +1145,7 @@
   },
   {
     "id": "sanduche-de-atun-y-huevo",
-    "title": "SANDUCHE DE ATÚN Y HUEVO",
+    "title": "Sanduche de atún y huevo",
     "icon": "🥪",
     "diet": [],
     "mealTypes": [],
@@ -1171,7 +1171,7 @@
   },
   {
     "id": "3-versiones-de-pollo-para-la-semana",
-    "title": "3 VERSIONES DE POLLO PARA LA SEMANA",
+    "title": "3 versiones de pollo para la semana",
     "icon": "✨",
     "diet": [],
     "mealTypes": [],
@@ -1188,7 +1188,7 @@
   },
   {
     "id": "pastel-de-yuca-con-pollo",
-    "title": "PASTEL DE YUCA CON POLLO",
+    "title": "Pastel de yuca con pollo",
     "icon": "",
     "diet": [
       "Paleo"
@@ -1236,7 +1236,7 @@
   },
   {
     "id": "tortilla-espanola",
-    "title": "TORTILLA ESPAÑOLA",
+    "title": "Tortilla española",
     "icon": "",
     "diet": [
       "Paleo"
@@ -1288,7 +1288,7 @@
   },
   {
     "id": "ensalada-de-espinacas-y-frutas",
-    "title": "ENSALADA DE ESPINACAS Y FRUTAS",
+    "title": "Ensalada de espinacas y frutas",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -1320,7 +1320,7 @@
   },
   {
     "id": "pudin-de-chia-de-canela-y-datile",
-    "title": "PUDÍN DE CHÍA DE CANELA Y DÁTILE",
+    "title": "Pudín de chía de canela y dátile",
     "icon": "",
     "diet": [
       "Paleo"
@@ -1354,7 +1354,7 @@
   },
   {
     "id": "pasta-con-salsa-de-pimenton-rostizada",
-    "title": "PASTA CON SALSA DE PIMENTÓN ROSTIZADA",
+    "title": "Pasta con salsa de pimentón rostizada",
     "icon": "🍝",
     "diet": [],
     "mealTypes": [],
@@ -1422,7 +1422,7 @@
   },
   {
     "id": "ensalada-de-manzana-y-nueces",
-    "title": "ENSALADA DE MANZANA Y NUECES",
+    "title": "Ensalada de manzana y nueces",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -1447,7 +1447,7 @@
   },
   {
     "id": "torta-de-naranja",
-    "title": "TORTA DE NARANJA",
+    "title": "Torta de naranja",
     "icon": "🥮",
     "diet": [],
     "mealTypes": [],
@@ -1484,7 +1484,7 @@
   },
   {
     "id": "espaguetis-de-calabacin-y-auyama-al-pesto",
-    "title": "ESPAGUETIS DE CALABACÍN Y AUYAMA AL PESTO",
+    "title": "Espaguetis de calabacín y auyama al pesto",
     "icon": "",
     "diet": [
       "Paleo"
@@ -1517,7 +1517,7 @@
   },
   {
     "id": "ensalada-la-basica",
-    "title": "ENSALADA LA BÁSICA",
+    "title": "Ensalada la básica",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -1542,7 +1542,7 @@
   },
   {
     "id": "salmon-marinado-en-salsa-de-naranja-agria",
-    "title": "SALMÓN MARINADO EN SALSA DE NARANJA AGRIA",
+    "title": "Salmón marinado en salsa de naranja agria",
     "icon": "🍣",
     "diet": [],
     "mealTypes": [],
@@ -1570,7 +1570,7 @@
   },
   {
     "id": "pechugas-de-pollo-con-limon-y-romero",
-    "title": "PECHUGAS DE POLLO CON LIMÓN Y ROMERO",
+    "title": "Pechugas de pollo con limón y romero",
     "icon": "🍗",
     "diet": [],
     "mealTypes": [],
@@ -1596,7 +1596,7 @@
   },
   {
     "id": "crema-de-champinones",
-    "title": "CREMA DE CHAMPIÑONES",
+    "title": "Crema de champiñones",
     "icon": "🥘",
     "diet": [],
     "mealTypes": [],
@@ -1672,7 +1672,7 @@
   },
   {
     "id": "fajitas-de-pollo",
-    "title": "FAJITAS DE POLLO",
+    "title": "Fajitas de pollo",
     "icon": "🌮",
     "diet": [],
     "mealTypes": [],
@@ -1706,7 +1706,7 @@
   },
   {
     "id": "arepas-de-papa-o-papa-rost",
-    "title": "AREPAS DE PAPA O PAPA RÖST",
+    "title": "Arepas de papa o papa röst",
     "icon": "",
     "diet": [
       "Paleo"
@@ -1736,7 +1736,7 @@
   },
   {
     "id": "coliflor-con-pure",
-    "title": "COLIFLOR CON PURÉ",
+    "title": "Coliflor con puré",
     "icon": "",
     "diet": [],
     "mealTypes": [],
@@ -1768,7 +1768,7 @@
   },
   {
     "id": "crema-de-tomate",
-    "title": "CREMA DE TOMATE",
+    "title": "Crema de tomate",
     "icon": "",
     "diet": [
       "Paleo"
@@ -1799,7 +1799,7 @@
   },
   {
     "id": "tostadas-con-toppings",
-    "title": "TOSTADAS CON TOPPINGS",
+    "title": "Tostadas con toppings",
     "icon": "🍞",
     "diet": [],
     "mealTypes": [],
@@ -1821,7 +1821,7 @@
   },
   {
     "id": "deditos-de-pollo-apanados",
-    "title": "DEDITOS DE POLLO APANADOS",
+    "title": "Deditos de pollo apanados",
     "icon": "",
     "diet": [
       "Paleo"
@@ -1857,7 +1857,7 @@
   },
   {
     "id": "huevos-shakshuka-verdes",
-    "title": "HUEVOS SHAKSHUKA verdes",
+    "title": "Huevos shakshuka verdes",
     "icon": "",
     "diet": [
       "Paleo"
@@ -1899,7 +1899,7 @@
   },
   {
     "id": "granola-keto-de-chocolate",
-    "title": "GRANOLA KETO DE CHOCOLATE",
+    "title": "Granola keto de chocolate",
     "icon": "",
     "diet": [
       "Paleo"
@@ -1949,7 +1949,7 @@
   },
   {
     "id": "tortillas-de-lentejas-rojas",
-    "title": "Tortillas de Lentejas rojas",
+    "title": "Tortillas de lentejas rojas",
     "icon": "",
     "diet": [],
     "mealTypes": [],
@@ -1973,7 +1973,7 @@
   },
   {
     "id": "coliflor-rostizada",
-    "title": "COLIFLOR ROSTIZADA",
+    "title": "Coliflor rostizada",
     "icon": "",
     "diet": [
       "Paleo"
@@ -2004,7 +2004,7 @@
   },
   {
     "id": "sweet-potato-hash-browns",
-    "title": "SWEET POTATO HASH BROWNS",
+    "title": "Sweet potato hash browns",
     "icon": "",
     "diet": [
       "Paleo"
@@ -2035,7 +2035,7 @@
   },
   {
     "id": "mayonesa",
-    "title": "MAYONESA",
+    "title": "Mayonesa",
     "icon": "🍾",
     "diet": [],
     "mealTypes": [],
@@ -2071,7 +2071,7 @@
   },
   {
     "id": "avena-horneada-con-chocolate-2",
-    "title": "AVENA HORNEADA CON CHOCOLATE 2",
+    "title": "Avena horneada con chocolate 2",
     "icon": "🍫",
     "diet": [],
     "mealTypes": [],
@@ -2092,7 +2092,7 @@
   },
   {
     "id": "muffins-de-arandanos",
-    "title": "MUFFINS DE ARÁNDANOS",
+    "title": "Muffins de arándanos",
     "icon": "",
     "diet": [
       "Paleo"
@@ -2161,7 +2161,7 @@
   },
   {
     "id": "curry-de-pollo",
-    "title": "CURRY DE POLLO",
+    "title": "Curry de pollo",
     "icon": "",
     "diet": [
       "Paleo"
@@ -2237,7 +2237,7 @@
   },
   {
     "id": "cinnamon-apple-porridge",
-    "title": "CINNAMON APPLE PORRIDGE",
+    "title": "Cinnamon apple porridge",
     "icon": "🥣",
     "diet": [],
     "mealTypes": [
@@ -2297,7 +2297,7 @@
   },
   {
     "id": "arepa-de-maiz-con-aguacate-y-huevo",
-    "title": "AREPA DE MAÍZ CON AGUACATE Y HUEVO",
+    "title": "Arepa de maíz con aguacate y huevo",
     "icon": "🫓",
     "diet": [],
     "mealTypes": [
@@ -2322,7 +2322,7 @@
   },
   {
     "id": "jamon-casero",
-    "title": "JAMÓN CASERO",
+    "title": "Jamón casero",
     "icon": "",
     "diet": [],
     "mealTypes": [],
@@ -2345,7 +2345,7 @@
   },
   {
     "id": "arroz-cremoso-de-camarones-y-vegetales",
-    "title": "ARROZ CREMOSO DE CAMARONES Y VEGETALES",
+    "title": "Arroz cremoso de camarones y vegetales",
     "icon": "🍚",
     "diet": [],
     "mealTypes": [
@@ -2379,7 +2379,7 @@
   },
   {
     "id": "albongidas-de-pollo-en-salsa-de-coco",
-    "title": "ALBONGIDAS DE POLLO EN SALSA DE COCO",
+    "title": "Albongidas de pollo en salsa de coco",
     "icon": "🥘",
     "diet": [],
     "mealTypes": [
@@ -2421,7 +2421,7 @@
   },
   {
     "id": "galletas-de-chips-de-chocolate",
-    "title": "GALLETAS DE CHIPS DE CHOCOLATE",
+    "title": "Galletas de chips de chocolate",
     "icon": "🍪",
     "diet": [],
     "mealTypes": [],
@@ -2456,7 +2456,7 @@
   },
   {
     "id": "smoothie-bowl",
-    "title": "SMOOTHIE BOWL",
+    "title": "Smoothie bowl",
     "icon": "🥣",
     "diet": [],
     "mealTypes": [
@@ -2478,7 +2478,7 @@
   },
   {
     "id": "tortillas-de-avena",
-    "title": "TORTILLAS DE AVENA",
+    "title": "Tortillas de avena",
     "icon": "🌮",
     "diet": [],
     "mealTypes": [],
@@ -2502,7 +2502,7 @@
   },
   {
     "id": "hamburguesas-de-atun-y-platano-maduro",
-    "title": "HAMBURGUESAS DE ATÚN Y PLÁTANO MADURO",
+    "title": "Hamburguesas de atún y plátano maduro",
     "icon": "🍔",
     "diet": [],
     "mealTypes": [
@@ -2537,7 +2537,7 @@
   },
   {
     "id": "tortilla-espanola-de-cebolla-y-papa",
-    "title": "TORTILLA ESPAÑOLA DE CEBOLLA Y PAPA",
+    "title": "Tortilla española de cebolla y papa",
     "icon": "🍳",
     "diet": [],
     "mealTypes": [],
@@ -2567,7 +2567,7 @@
   },
   {
     "id": "lasana-de-platano-maduro",
-    "title": "LASAÑA DE PLÁTANO MADURO",
+    "title": "Lasaña de plátano maduro",
     "icon": "🥘",
     "diet": [],
     "mealTypes": [],
@@ -2681,7 +2681,7 @@
   },
   {
     "id": "pancakes-de-ahuyama",
-    "title": "PANCAKES DE AHUYAMA",
+    "title": "Pancakes de ahuyama",
     "icon": "🥞",
     "diet": [],
     "mealTypes": [],
@@ -2712,7 +2712,7 @@
   },
   {
     "id": "huevos-al-pesto",
-    "title": "HUEVOS AL PESTO",
+    "title": "Huevos al pesto",
     "icon": "🍳",
     "diet": [],
     "mealTypes": [
@@ -2733,7 +2733,7 @@
   },
   {
     "id": "albondigas",
-    "title": "ALBÓNDIGAS",
+    "title": "Albóndigas",
     "icon": "",
     "diet": [
       "Paleo"
@@ -2765,7 +2765,7 @@
   },
   {
     "id": "huevos-shakshuka",
-    "title": "HUEVOS SHAKSHUKA",
+    "title": "Huevos shakshuka",
     "icon": "🍳",
     "diet": [],
     "mealTypes": [
@@ -2799,7 +2799,7 @@
   },
   {
     "id": "hash-brown-waffles",
-    "title": "HASH BROWN WAFFLES",
+    "title": "Hash brown waffles",
     "icon": "",
     "diet": [
       "Paleo"
@@ -2850,7 +2850,7 @@
   },
   {
     "id": "pancakes-de-manzana",
-    "title": "PANCAKES DE MANZANA",
+    "title": "Pancakes de manzana",
     "icon": "🥞",
     "diet": [],
     "mealTypes": [
@@ -2908,7 +2908,7 @@
   },
   {
     "id": "pasta-con-salsa-cremosa-de-coliflor-y-pollo",
-    "title": "PASTA CON SALSA CREMOSA DE COLIFLOR Y POLLO",
+    "title": "Pasta con salsa cremosa de coliflor y pollo",
     "icon": "🍝",
     "diet": [],
     "mealTypes": [],
@@ -3002,7 +3002,7 @@
   },
   {
     "id": "cheesecake-japones-fit",
-    "title": "CHEESECAKE JAPONES FIT",
+    "title": "Cheesecake japones fit",
     "icon": "",
     "diet": [],
     "mealTypes": [
@@ -3026,7 +3026,7 @@
   },
   {
     "id": "salsa-napolitana",
-    "title": "SALSA NAPOLITANA",
+    "title": "Salsa napolitana",
     "icon": "🍅",
     "diet": [],
     "mealTypes": [],
@@ -3052,7 +3052,7 @@
   },
   {
     "id": "tostada-de-aguacate-y-huevo",
-    "title": "TOSTADA DE AGUACATE Y HUEVO",
+    "title": "Tostada de aguacate y huevo",
     "icon": "🍞",
     "diet": [],
     "mealTypes": [],
@@ -3078,7 +3078,7 @@
   },
   {
     "id": "camarones-con-mantequilla-ajo-y-miel",
-    "title": "CAMARONES CON MANTEQUILLA, AJO Y MIEL",
+    "title": "Camarones con mantequilla, ajo y miel",
     "icon": "🦐",
     "diet": [],
     "mealTypes": [
@@ -3108,7 +3108,7 @@
   },
   {
     "id": "zucchinis-rellenos-de-atun",
-    "title": "ZUCCHINIS RELLENOS DE ATÚN",
+    "title": "Zucchinis rellenos de atún",
     "icon": "🥣",
     "diet": [],
     "mealTypes": [
@@ -3179,7 +3179,7 @@
   },
   {
     "id": "waffle-de-papa-criolla-2",
-    "title": "WAFFLE DE PAPA CRIOLLA",
+    "title": "Waffle de papa criolla",
     "icon": "🧇",
     "diet": [],
     "mealTypes": [
@@ -3206,7 +3206,7 @@
   },
   {
     "id": "pan-de-banano",
-    "title": "PAN DE BANANO",
+    "title": "Pan de banano",
     "icon": "",
     "diet": [
       "Paleo"
@@ -3247,7 +3247,7 @@
   },
   {
     "id": "pan-paleo",
-    "title": "PAN PALEO",
+    "title": "Pan paleo",
     "icon": "🍞",
     "diet": [],
     "mealTypes": [
@@ -3284,7 +3284,7 @@
   },
   {
     "id": "salmon-al-ajo-y-limon",
-    "title": "SALMÓN AL AJO Y LIMÓN",
+    "title": "Salmón al ajo y limón",
     "icon": "",
     "diet": [
       "Paleo"
@@ -3318,7 +3318,7 @@
   },
   {
     "id": "curry-rojo-de-pollo",
-    "title": "CURRY ROJO DE POLLO",
+    "title": "Curry rojo de pollo",
     "icon": "🍗",
     "diet": [],
     "mealTypes": [
@@ -3354,7 +3354,7 @@
   },
   {
     "id": "sushi-di-zucchine-salmone-low-carb",
-    "title": "SUSHI DI ZUCCHINE & SALMONE LOW CARB",
+    "title": "Sushi di zucchine & salmone low carb",
     "icon": "",
     "diet": [],
     "mealTypes": [],
@@ -3380,7 +3380,7 @@
   },
   {
     "id": "muffins-de-limon-y-chia",
-    "title": "MUFFINS DE LIMÓN Y CHÍA",
+    "title": "Muffins de limón y chía",
     "icon": "🧁",
     "diet": [],
     "mealTypes": [],
@@ -3413,7 +3413,7 @@
   },
   {
     "id": "chocolate-protein-chia-pudding",
-    "title": "Chocolate Protein Chia Pudding",
+    "title": "Chocolate protein chia pudding",
     "icon": "",
     "diet": [],
     "mealTypes": [],
@@ -3436,7 +3436,7 @@
   },
   {
     "id": "crema-de-zanahoria",
-    "title": "CREMA DE ZANAHORIA",
+    "title": "Crema de zanahoria",
     "icon": "🍲",
     "diet": [],
     "mealTypes": [
@@ -3501,7 +3501,7 @@
   },
   {
     "id": "ensalada-de-esparragos-y-pimenton",
-    "title": "ENSALADA DE ESPÁRRAGOS Y PIMENTON",
+    "title": "Ensalada de espárragos y pimenton",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -3536,7 +3536,7 @@
   },
   {
     "id": "platanos-rellenos-de-carne-molida",
-    "title": "PLÁTANOS RELLENOS DE CARNE MOLIDA",
+    "title": "Plátanos rellenos de carne molida",
     "icon": "",
     "diet": [
       "Paleo"
@@ -3578,7 +3578,7 @@
   },
   {
     "id": "crepes-zanahoria",
-    "title": "Crepes Zanahoria",
+    "title": "Crepes zanahoria",
     "icon": "",
     "diet": [],
     "mealTypes": [
@@ -3604,7 +3604,7 @@
   },
   {
     "id": "lasana-de-zucchini-o-berenjena",
-    "title": "LASAÑA DE ZUCCHINI O BERENJENA",
+    "title": "Lasaña de zucchini o berenjena",
     "icon": "🥘",
     "diet": [],
     "mealTypes": [
@@ -3635,7 +3635,7 @@
   },
   {
     "id": "papas-asadas-con-hierbas-y-mostaza",
-    "title": "PAPAS ASADAS CON HIERBAS Y MOSTAZA",
+    "title": "Papas asadas con hierbas y mostaza",
     "icon": "🥔",
     "diet": [],
     "mealTypes": [],
@@ -3665,7 +3665,7 @@
   },
   {
     "id": "waffles-de-yuca",
-    "title": "WAFFLES DE YUCA",
+    "title": "Waffles de yuca",
     "icon": "🧇",
     "diet": [],
     "mealTypes": [
@@ -3695,7 +3695,7 @@
   },
   {
     "id": "poke-bowl-de-salmon",
-    "title": "POKE BOWL DE SALMÓN",
+    "title": "Poke bowl de salmón",
     "icon": "🥙",
     "diet": [],
     "mealTypes": [],
@@ -3724,7 +3724,7 @@
   },
   {
     "id": "papa-rosti",
-    "title": "PAPA RÖSTI",
+    "title": "Papa rösti",
     "icon": "🥔",
     "diet": [],
     "mealTypes": [],
@@ -3751,7 +3751,7 @@
   },
   {
     "id": "pure-de-platano-maduro-pure-de-papa-pastusa-o-criolla",
-    "title": "PURE DE PLATANO MADURO – PURE DE PAPA PASTUSA O CRIOLLA",
+    "title": "Pure de platano maduro – pure de papa pastusa o criolla",
     "icon": "",
     "diet": [
       "Paleo"
@@ -3771,7 +3771,7 @@
   },
   {
     "id": "pesto",
-    "title": "PESTO",
+    "title": "Pesto",
     "icon": "🥣",
     "diet": [],
     "mealTypes": [],
@@ -3796,7 +3796,7 @@
   },
   {
     "id": "granola-keto",
-    "title": "GRANOLA KETO",
+    "title": "Granola keto",
     "icon": "",
     "diet": [
       "Keto"
@@ -3855,7 +3855,7 @@
   },
   {
     "id": "crepes-paleo",
-    "title": "Crepes Paleo",
+    "title": "Crepes paleo",
     "icon": "",
     "diet": [
       "Paleo"
@@ -3921,7 +3921,7 @@
   },
   {
     "id": "rollito-de-brocoli-facil-de-preparar",
-    "title": "ROLLITO DE BRÓCOLI FÁCIL DE PREPARAR",
+    "title": "Rollito de brócoli fácil de preparar",
     "icon": "🥦",
     "diet": [],
     "mealTypes": [
@@ -3950,7 +3950,7 @@
   },
   {
     "id": "pan-de-banano-2",
-    "title": "PAN DE BANANO",
+    "title": "Pan de banano",
     "icon": "🍞",
     "diet": [],
     "mealTypes": [],
@@ -3984,7 +3984,7 @@
   },
   {
     "id": "taquitos-de-camarones",
-    "title": "TAQUITOS DE CAMARONES",
+    "title": "Taquitos de camarones",
     "icon": "",
     "diet": [
       "Paleo"
@@ -4023,7 +4023,7 @@
   },
   {
     "id": "tortilla-de-papa",
-    "title": "TORTILLA DE PAPA",
+    "title": "Tortilla de papa",
     "icon": "",
     "diet": [
       "Paleo"
@@ -4056,7 +4056,7 @@
   },
   {
     "id": "pollo-con-hierbas-y-ahuyama",
-    "title": "POLLO CON HIERBAS Y AHUYAMA",
+    "title": "Pollo con hierbas y ahuyama",
     "icon": "🍗",
     "diet": [],
     "mealTypes": [],
@@ -4119,7 +4119,7 @@
   },
   {
     "id": "tacos-de-huevo",
-    "title": "TACOS DE HUEVO",
+    "title": "Tacos de huevo",
     "icon": "🌮",
     "diet": [],
     "mealTypes": [],
@@ -4237,7 +4237,7 @@
   },
   {
     "id": "kale-chips",
-    "title": "KALE CHIPS",
+    "title": "Kale chips",
     "icon": "",
     "diet": [
       "Paleo"
@@ -4267,7 +4267,7 @@
   },
   {
     "id": "ensalada-de-pasta-con-aderezo-de-aguacate",
-    "title": "ENSALADA DE PASTA CON ADEREZO DE AGUACATE",
+    "title": "Ensalada de pasta con aderezo de aguacate",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -4302,7 +4302,7 @@
   },
   {
     "id": "risotto-de-ahuyama",
-    "title": "RISOTTO DE AHUYAMA",
+    "title": "Risotto de ahuyama",
     "icon": "🥘",
     "diet": [],
     "mealTypes": [],
@@ -4348,7 +4348,7 @@
   },
   {
     "id": "pan-de-ahuyama-y-chocolate",
-    "title": "PAN DE AHUYAMA Y CHOCOLATE",
+    "title": "Pan de ahuyama y chocolate",
     "icon": "🍞",
     "diet": [],
     "mealTypes": [],
@@ -4384,7 +4384,7 @@
   },
   {
     "id": "croquetas-de-quinoa-y-zanahoria",
-    "title": "CROQUETAS DE QUINOA Y ZANAHORIA",
+    "title": "Croquetas de quinoa y zanahoria",
     "icon": "🥕",
     "diet": [],
     "mealTypes": [
@@ -4438,7 +4438,7 @@
   },
   {
     "id": "berenjenas-con-miel-al-horno",
-    "title": "BERENJENAS CON MIEL AL HORNO",
+    "title": "Berenjenas con miel al horno",
     "icon": "",
     "diet": [
       "Paleo"
@@ -4471,7 +4471,7 @@
   },
   {
     "id": "yuquitas-fritas",
-    "title": "YUQUITAS \"FRITAS\"",
+    "title": "Yuquitas \"fritas\"",
     "icon": "🥔",
     "diet": [],
     "mealTypes": [
@@ -4497,7 +4497,7 @@
   },
   {
     "id": "pan-paleo-linaza",
-    "title": "Pan Paleo - Linaza",
+    "title": "Pan paleo - linaza",
     "icon": "",
     "diet": [
       "Paleo"
@@ -4560,7 +4560,7 @@
   },
   {
     "id": "granola-keto-2",
-    "title": "GRANOLA KETO",
+    "title": "Granola keto",
     "icon": "",
     "diet": [
       "Keto"
@@ -4626,7 +4626,7 @@
   },
   {
     "id": "muffins-de-banano",
-    "title": "MUFFINS DE BANANO",
+    "title": "Muffins de banano",
     "icon": "🍌",
     "diet": [],
     "mealTypes": [],
@@ -4659,7 +4659,7 @@
   },
   {
     "id": "avena-horneada-de-chocolate",
-    "title": "AVENA HORNEADA DE CHOCOLATE",
+    "title": "Avena horneada de chocolate",
     "icon": "🥣",
     "diet": [],
     "mealTypes": [
@@ -4710,7 +4710,7 @@
   },
   {
     "id": "pancakes-de-pure-de-auyama",
-    "title": "Pancakes de puré de Auyama",
+    "title": "Pancakes de puré de auyama",
     "icon": "",
     "diet": [
       "Paleo"
@@ -4744,7 +4744,7 @@
   },
   {
     "id": "ensalada-de-pepino-y-rabano-con-aderezo-de-ajo-y-yogur",
-    "title": "ENSALADA DE PEPINO Y RÁBANO CON ADEREZO DE AJO Y YOGUR",
+    "title": "Ensalada de pepino y rábano con aderezo de ajo y yogur",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -4770,7 +4770,7 @@
   },
   {
     "id": "waffles-de-batata",
-    "title": "WAFFLES DE BATATA",
+    "title": "Waffles de batata",
     "icon": "🧇",
     "diet": [],
     "mealTypes": [
@@ -4800,7 +4800,7 @@
   },
   {
     "id": "ratatouille-gratinada-con-queso",
-    "title": "RATATOUILLE GRATINADA CON QUESO",
+    "title": "Ratatouille gratinada con queso",
     "icon": "",
     "diet": [
       "Paleo"
@@ -4877,7 +4877,7 @@
   },
   {
     "id": "salchichas-de-pollo",
-    "title": "Salchichas de Pollo",
+    "title": "Salchichas de pollo",
     "icon": "",
     "diet": [],
     "mealTypes": [],
@@ -4921,7 +4921,7 @@
   },
   {
     "id": "waffles-paleo-chocolate",
-    "title": "Waffles Paleo - Chocolate",
+    "title": "Waffles paleo - chocolate",
     "icon": "",
     "diet": [
       "Paleo"
@@ -4955,7 +4955,7 @@
   },
   {
     "id": "crema-de-brocoli",
-    "title": "CREMA DE BROCOLI",
+    "title": "Crema de brocoli",
     "icon": "🥘",
     "diet": [],
     "mealTypes": [
@@ -5014,7 +5014,7 @@
   },
   {
     "id": "ensalada-de-kale-y-coliflor-crispy",
-    "title": "ENSALADA DE KALE Y COLIFLOR CRISPY",
+    "title": "Ensalada de kale y coliflor crispy",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -5053,7 +5053,7 @@
   },
   {
     "id": "ensalada-cobb-con-camarones-cajun",
-    "title": "ENSALADA COBB CON CAMARONES CAJÚN",
+    "title": "Ensalada cobb con camarones cajún",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [
@@ -5099,7 +5099,7 @@
   },
   {
     "id": "pescado-con-vegetales",
-    "title": "PESCADO CON VEGETALES",
+    "title": "Pescado con vegetales",
     "icon": "",
     "diet": [],
     "mealTypes": [],
@@ -5112,7 +5112,7 @@
   },
   {
     "id": "ensalada-de-quinua-con-champinones-y-tomate-cherry",
-    "title": "ENSALADA DE QUINUA CON CHAMPIÑONES Y TOMATE CHERRY",
+    "title": "Ensalada de quinua con champiñones y tomate cherry",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -5161,7 +5161,7 @@
   },
   {
     "id": "pancakes-de-avena-y-banano",
-    "title": "PANCAKES DE AVENA Y BANANO",
+    "title": "Pancakes de avena y banano",
     "icon": "🥞",
     "diet": [],
     "mealTypes": [],
@@ -5202,7 +5202,7 @@
   },
   {
     "id": "sopa-de-tomate",
-    "title": "SOPA DE TOMATE",
+    "title": "Sopa de tomate",
     "icon": "🍲",
     "diet": [],
     "mealTypes": [],
@@ -5269,7 +5269,7 @@
   },
   {
     "id": "paleo-zucchini-fries",
-    "title": "PALEO ZUCCHINI FRIES",
+    "title": "Paleo zucchini fries",
     "icon": "",
     "diet": [
       "Paleo"
@@ -5306,7 +5306,7 @@
   },
   {
     "id": "lasana-de-platano-maduro-y-pollo",
-    "title": "LASAÑA DE PLÁTANO MADURO Y POLLO",
+    "title": "Lasaña de plátano maduro y pollo",
     "icon": "",
     "diet": [
       "Paleo"
@@ -5393,7 +5393,7 @@
   },
   {
     "id": "mayonesa-casera-saludable",
-    "title": "Mayonesa casera Saludable",
+    "title": "Mayonesa casera saludable",
     "icon": "",
     "diet": [
       "Keto"
@@ -5417,7 +5417,7 @@
   },
   {
     "id": "flan-de-cafe",
-    "title": "FLAN DE CAFÉ",
+    "title": "Flan de café",
     "icon": "",
     "diet": [],
     "mealTypes": [
@@ -5442,7 +5442,7 @@
   },
   {
     "id": "tortillas-de-quinoa",
-    "title": "TORTILLAS DE QUINOA",
+    "title": "Tortillas de quinoa",
     "icon": "",
     "diet": [],
     "mealTypes": [
@@ -5495,7 +5495,7 @@
   },
   {
     "id": "pinchos-de-salmon",
-    "title": "PINCHOS DE SALMÓN",
+    "title": "Pinchos de salmón",
     "icon": "🍣",
     "diet": [],
     "mealTypes": [],
@@ -5581,7 +5581,7 @@
   },
   {
     "id": "huevos-al-horno-con-espinaca-y-tomates-secos",
-    "title": "HUEVOS AL HORNO CON ESPINACA Y TOMATES SECOS",
+    "title": "Huevos al horno con espinaca y tomates secos",
     "icon": "🍳",
     "diet": [],
     "mealTypes": [],
@@ -5666,7 +5666,7 @@
   },
   {
     "id": "ensalada-de-esparragos-y-pimento",
-    "title": "ENSALADA DE ESPARRAGOS Y PIMENTO",
+    "title": "Ensalada de esparragos y pimento",
     "icon": "",
     "diet": [
       "Paleo"
@@ -5710,7 +5710,7 @@
   },
   {
     "id": "brownies-paleo-chocolatudos",
-    "title": "BROWNIES PALEO CHOCOLATUDOS",
+    "title": "Brownies paleo chocolatudos",
     "icon": "🍫",
     "diet": [],
     "mealTypes": [],
@@ -5743,7 +5743,7 @@
   },
   {
     "id": "tilapia-con-mantequilla-de-limon",
-    "title": "TILAPIA CON MANTEQUILLA DE LIMÓN",
+    "title": "Tilapia con mantequilla de limón",
     "icon": "🐟",
     "diet": [],
     "mealTypes": [],
@@ -5769,7 +5769,7 @@
   },
   {
     "id": "ensalada-de-papa-con-yogur",
-    "title": "ENSALADA DE PAPA CON YOGUR",
+    "title": "Ensalada de papa con yogur",
     "icon": "",
     "diet": [
       "Paleo"
@@ -5871,7 +5871,7 @@
   },
   {
     "id": "waffles-de-platano-maduro",
-    "title": "WAFFLES DE PLÁTANO MADURO",
+    "title": "Waffles de plátano maduro",
     "icon": "🧇",
     "diet": [],
     "mealTypes": [],
@@ -5895,7 +5895,7 @@
   },
   {
     "id": "tostadas-francesas",
-    "title": "TOSTADAS FRANCESAS",
+    "title": "Tostadas francesas",
     "icon": "🥞",
     "diet": [],
     "mealTypes": [
@@ -5925,7 +5925,7 @@
   },
   {
     "id": "hamburguesas-de-pollo",
-    "title": "HAMBURGUESAS DE POLLO",
+    "title": "Hamburguesas de pollo",
     "icon": "🍗",
     "diet": [],
     "mealTypes": [
@@ -5952,7 +5952,7 @@
   },
   {
     "id": "pan-keto",
-    "title": "Pan Keto",
+    "title": "Pan keto",
     "icon": "",
     "diet": [],
     "mealTypes": [],
@@ -5971,7 +5971,7 @@
   },
   {
     "id": "bowl-mexicano",
-    "title": "BOWL MEXICANO",
+    "title": "Bowl mexicano",
     "icon": "🥙",
     "diet": [],
     "mealTypes": [
@@ -6024,7 +6024,7 @@
   },
   {
     "id": "ensalada-tibia-de-tomate-cherry-y-mazorca",
-    "title": "ENSALADA TIBIA DE TOMATE CHERRY Y MAZORCA",
+    "title": "Ensalada tibia de tomate cherry y mazorca",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -6051,7 +6051,7 @@
   },
   {
     "id": "pure-de-papa",
-    "title": "PURÉ DE PAPA",
+    "title": "Puré de papa",
     "icon": "🥔",
     "diet": [],
     "mealTypes": [],
@@ -6075,7 +6075,7 @@
   },
   {
     "id": "cuadrados-de-arroz-y-chocolate",
-    "title": "CUADRADOS DE ARROZ Y CHOCOLATE",
+    "title": "Cuadrados de arroz y chocolate",
     "icon": "🍫",
     "diet": [],
     "mealTypes": [],
@@ -6095,7 +6095,7 @@
   },
   {
     "id": "lomito-con-tocineta-y-champinones",
-    "title": "LOMITO CON TOCINETA Y CHAMPIÑONES",
+    "title": "Lomito con tocineta y champiñones",
     "icon": "🥓",
     "diet": [],
     "mealTypes": [
