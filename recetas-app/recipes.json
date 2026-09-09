@@ -1,7 +1,7 @@
 [
   {
     "id": "lentejas",
-    "title": "LENTEJAS",
+    "title": "Lentejas",
     "icon": "🥘",
     "diet": [],
     "mealTypes": [
@@ -49,7 +49,7 @@
   },
   {
     "id": "crepes-de-zanahoria",
-    "title": "CREPES DE ZANAHORIA",
+    "title": "Crepes de zanahoria",
     "icon": "🥘",
     "diet": [],
     "mealTypes": [
@@ -76,7 +76,7 @@
   },
   {
     "id": "coliflor-gratinada",
-    "title": "COLIFLOR GRATINADA",
+    "title": "Coliflor gratinada",
     "icon": "",
     "diet": [],
     "mealTypes": [
@@ -102,7 +102,7 @@
   },
   {
     "id": "trufas-de-brownie",
-    "title": "TRUFAS DE BROWNIE",
+    "title": "Trufas de brownie",
     "icon": "",
     "diet": [],
     "mealTypes": [],
@@ -121,7 +121,7 @@
   },
   {
     "id": "tortillitas-de-papa-rellenas",
-    "title": "TORTILLITAS DE PAPA RELLENAS",
+    "title": "Tortillitas de papa rellenas",
     "icon": "🥔",
     "diet": [],
     "mealTypes": [],
@@ -150,7 +150,7 @@
   },
   {
     "id": "rollo-de-espinacas-relleno-con-salmon-y-queso",
-    "title": "ROLLO DE ESPINACAS RELLENO CON SALMÓN Y QUESO",
+    "title": "Rollo de espinacas relleno con salmón y queso",
     "icon": "🍣",
     "diet": [],
     "mealTypes": [
@@ -182,7 +182,7 @@
   },
   {
     "id": "ensalada-de-quinua-marroqui",
-    "title": "ENSALADA DE QUINUA MARROQUÍ",
+    "title": "Ensalada de quinua marroquí",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -218,7 +218,7 @@
   },
   {
     "id": "tortilla-de-espinaca",
-    "title": "TORTILLA DE ESPINACA",
+    "title": "Tortilla de espinaca",
     "icon": "🍳",
     "diet": [],
     "mealTypes": [],
@@ -239,7 +239,7 @@
   },
   {
     "id": "waffle-de-platano-maduro",
-    "title": "WAFFLE DE PLÁTANO MADURO",
+    "title": "Waffle de plátano maduro",
     "icon": "🥞",
     "diet": [],
     "mealTypes": [
@@ -268,7 +268,7 @@
   },
   {
     "id": "paleo-biscuits",
-    "title": "PALEO BISCUITS",
+    "title": "Paleo biscuits",
     "icon": "",
     "diet": [
       "Paleo"
@@ -303,7 +303,7 @@
   },
   {
     "id": "tartar-de-salmon",
-    "title": "TARTAR DE SALMÓN",
+    "title": "Tartar de salmón",
     "icon": "🍲",
     "diet": [],
     "mealTypes": [
@@ -364,7 +364,7 @@
   },
   {
     "id": "arepas-de-zanahoria",
-    "title": "AREPAS de ZANAHORIA",
+    "title": "Arepas de zanahoria",
     "icon": "",
     "diet": [],
     "mealTypes": [
@@ -392,7 +392,7 @@
   },
   {
     "id": "ensalada-de-lentejas",
-    "title": "ENSALADA DE LENTEJAS",
+    "title": "Ensalada de lentejas",
     "icon": "🥙",
     "diet": [],
     "mealTypes": [],
@@ -427,7 +427,7 @@
   },
   {
     "id": "sopa-de-ahuyama-y-jengibre",
-    "title": "SOPA DE AHUYAMA Y JENGIBRE",
+    "title": "Sopa de ahuyama y jengibre",
     "icon": "🍲",
     "diet": [],
     "mealTypes": [],
@@ -457,7 +457,7 @@
   },
   {
     "id": "ensalada-de-fresas-y-espinaca",
-    "title": "ENSALADA DE FRESAS Y ESPINACA",
+    "title": "Ensalada de fresas y espinaca",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -486,7 +486,7 @@
   },
   {
     "id": "pescado-en-salsa-de-tomate",
-    "title": "PESCADO EN SALSA DE TOMATE",
+    "title": "Pescado en salsa de tomate",
     "icon": "",
     "diet": [
       "Paleo"
@@ -519,7 +519,7 @@
   },
   {
     "id": "carrot-cake",
-    "title": "CARROT CAKE",
+    "title": "Carrot cake",
     "icon": "",
     "diet": [],
     "mealTypes": [],
@@ -549,7 +549,7 @@
   },
   {
     "id": "ensalada-de-quinua-y-pollo",
-    "title": "ENSALADA DE QUINUA Y POLLO",
+    "title": "Ensalada de quinua y pollo",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -577,7 +577,7 @@
   },
   {
     "id": "porridge-de-avena",
-    "title": "PORRIDGE DE AVENA",
+    "title": "Porridge de avena",
     "icon": "🥣",
     "diet": [],
     "mealTypes": [],
@@ -604,7 +604,7 @@
   },
   {
     "id": "muffins-de-chocolate-con-zucchini",
-    "title": "MUFFINS DE CHOCOLATE CON ZUCCHINI",
+    "title": "Muffins de chocolate con zucchini",
     "icon": "🧁",
     "diet": [],
     "mealTypes": [],
@@ -637,7 +637,7 @@
   },
   {
     "id": "tortilla-de-yuca",
-    "title": "TORTILLA DE YUCA",
+    "title": "Tortilla de yuca",
     "icon": "",
     "diet": [
       "Paleo"
@@ -668,7 +668,7 @@
   },
   {
     "id": "pudin-de-chocolate-saludable",
-    "title": "PUDIN DE CHOCOLATE SALUDABLE",
+    "title": "Pudin de chocolate saludable",
     "icon": "",
     "diet": [],
     "mealTypes": [
@@ -694,7 +694,7 @@
   },
   {
     "id": "papitas-con-salsa-de-curry",
-    "title": "PAPITAS CON SALSA DE CURRY",
+    "title": "Papitas con salsa de curry",
     "icon": "🥔",
     "diet": [],
     "mealTypes": [],
@@ -728,7 +728,7 @@
   },
   {
     "id": "arroz-de-coliflor",
-    "title": "ARROZ DE COLIFLOR",
+    "title": "Arroz de coliflor",
     "icon": "",
     "diet": [
       "Paleo"
@@ -758,7 +758,7 @@
   },
   {
     "id": "muffins-de-huevos-pavo-y-espinacas",
-    "title": "MUFFINS DE HUEVOS, PAVO Y ESPINACAS",
+    "title": "Muffins de huevos, pavo y espinacas",
     "icon": "",
     "diet": [
       "Paleo"
@@ -789,7 +789,7 @@
   },
   {
     "id": "canasticas-de-zucchini",
-    "title": "CANASTICAS DE ZUCCHINI",
+    "title": "Canasticas de zucchini",
     "icon": "",
     "diet": [
       "Paleo"
@@ -822,7 +822,7 @@
   },
   {
     "id": "helado-chocolate-y-papaya",
-    "title": "Helado Chocolate y papaya",
+    "title": "Helado chocolate y papaya",
     "icon": "",
     "diet": [],
     "mealTypes": [],
@@ -868,7 +868,7 @@
   },
   {
     "id": "pure-de-papa-criolla",
-    "title": "PURÉ DE PAPA CRIOLLA",
+    "title": "Puré de papa criolla",
     "icon": "",
     "diet": [
       "Paleo"
@@ -899,7 +899,7 @@
   },
   {
     "id": "ensalada-de-garbanzos",
-    "title": "ENSALADA DE GARBANZOS",
+    "title": "Ensalada de garbanzos",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -994,7 +994,7 @@
   },
   {
     "id": "sopa-de-pollo",
-    "title": "SOPA DE POLLO",
+    "title": "Sopa de pollo",
     "icon": "🍲",
     "diet": [],
     "mealTypes": [],
@@ -1040,7 +1040,7 @@
   },
   {
     "id": "crema-de-espinaca-puerro-y-papa",
-    "title": "CREMA DE ESPINACA, PUERRO Y PAPA",
+    "title": "Crema de espinaca, puerro y papa",
     "icon": "🥣",
     "diet": [],
     "mealTypes": [],
@@ -1077,7 +1077,7 @@
   },
   {
     "id": "papas-mexicanas",
-    "title": "PAPAS MEXICANAS",
+    "title": "Papas mexicanas",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -1104,7 +1104,7 @@
   },
   {
     "id": "parfait",
-    "title": "PARFAIT",
+    "title": "Parfait",
     "icon": "🥣",
     "diet": [],
     "mealTypes": [],
@@ -1145,7 +1145,7 @@
   },
   {
     "id": "sanduche-de-atun-y-huevo",
-    "title": "SANDUCHE DE ATÚN Y HUEVO",
+    "title": "Sanduche de atún y huevo",
     "icon": "🥪",
     "diet": [],
     "mealTypes": [],
@@ -1171,7 +1171,7 @@
   },
   {
     "id": "3-versiones-de-pollo-para-la-semana",
-    "title": "3 VERSIONES DE POLLO PARA LA SEMANA",
+    "title": "3 versiones de pollo para la semana",
     "icon": "✨",
     "diet": [],
     "mealTypes": [],
@@ -1188,7 +1188,7 @@
   },
   {
     "id": "pastel-de-yuca-con-pollo",
-    "title": "PASTEL DE YUCA CON POLLO",
+    "title": "Pastel de yuca con pollo",
     "icon": "",
     "diet": [
       "Paleo"
@@ -1236,7 +1236,7 @@
   },
   {
     "id": "tortilla-espanola",
-    "title": "TORTILLA ESPAÑOLA",
+    "title": "Tortilla española",
     "icon": "",
     "diet": [
       "Paleo"
@@ -1288,7 +1288,7 @@
   },
   {
     "id": "ensalada-de-espinacas-y-frutas",
-    "title": "ENSALADA DE ESPINACAS Y FRUTAS",
+    "title": "Ensalada de espinacas y frutas",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -1320,7 +1320,7 @@
   },
   {
     "id": "pudin-de-chia-de-canela-y-datile",
-    "title": "PUDÍN DE CHÍA DE CANELA Y DÁTILE",
+    "title": "Pudín de chía de canela y dátile",
     "icon": "",
     "diet": [
       "Paleo"
@@ -1354,7 +1354,7 @@
   },
   {
     "id": "pasta-con-salsa-de-pimenton-rostizada",
-    "title": "PASTA CON SALSA DE PIMENTÓN ROSTIZADA",
+    "title": "Pasta con salsa de pimentón rostizada",
     "icon": "🍝",
     "diet": [],
     "mealTypes": [],
@@ -1422,7 +1422,7 @@
   },
   {
     "id": "ensalada-de-manzana-y-nueces",
-    "title": "ENSALADA DE MANZANA Y NUECES",
+    "title": "Ensalada de manzana y nueces",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -1447,7 +1447,7 @@
   },
   {
     "id": "torta-de-naranja",
-    "title": "TORTA DE NARANJA",
+    "title": "Torta de naranja",
     "icon": "🥮",
     "diet": [],
     "mealTypes": [],
@@ -1484,7 +1484,7 @@
   },
   {
     "id": "espaguetis-de-calabacin-y-auyama-al-pesto",
-    "title": "ESPAGUETIS DE CALABACÍN Y AUYAMA AL PESTO",
+    "title": "Espaguetis de calabacín y auyama al pesto",
     "icon": "",
     "diet": [
       "Paleo"
@@ -1517,7 +1517,7 @@
   },
   {
     "id": "ensalada-la-basica",
-    "title": "ENSALADA LA BÁSICA",
+    "title": "Ensalada la básica",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -1542,7 +1542,7 @@
   },
   {
     "id": "salmon-marinado-en-salsa-de-naranja-agria",
-    "title": "SALMÓN MARINADO EN SALSA DE NARANJA AGRIA",
+    "title": "Salmón marinado en salsa de naranja agria",
     "icon": "🍣",
     "diet": [],
     "mealTypes": [],
@@ -1570,7 +1570,7 @@
   },
   {
     "id": "pechugas-de-pollo-con-limon-y-romero",
-    "title": "PECHUGAS DE POLLO CON LIMÓN Y ROMERO",
+    "title": "Pechugas de pollo con limón y romero",
     "icon": "🍗",
     "diet": [],
     "mealTypes": [],
@@ -1596,7 +1596,7 @@
   },
   {
     "id": "crema-de-champinones",
-    "title": "CREMA DE CHAMPIÑONES",
+    "title": "Crema de champiñones",
     "icon": "🥘",
     "diet": [],
     "mealTypes": [],
@@ -1672,7 +1672,7 @@
   },
   {
     "id": "fajitas-de-pollo",
-    "title": "FAJITAS DE POLLO",
+    "title": "Fajitas de pollo",
     "icon": "🌮",
     "diet": [],
     "mealTypes": [],
@@ -1706,7 +1706,7 @@
   },
   {
     "id": "arepas-de-papa-o-papa-rost",
-    "title": "AREPAS DE PAPA O PAPA RÖST",
+    "title": "Arepas de papa o papa röst",
     "icon": "",
     "diet": [
       "Paleo"
@@ -1736,7 +1736,7 @@
   },
   {
     "id": "coliflor-con-pure",
-    "title": "COLIFLOR CON PURÉ",
+    "title": "Coliflor con puré",
     "icon": "",
     "diet": [],
     "mealTypes": [],
@@ -1768,7 +1768,7 @@
   },
   {
     "id": "crema-de-tomate",
-    "title": "CREMA DE TOMATE",
+    "title": "Crema de tomate",
     "icon": "",
     "diet": [
       "Paleo"
@@ -1799,7 +1799,7 @@
   },
   {
     "id": "tostadas-con-toppings",
-    "title": "TOSTADAS CON TOPPINGS",
+    "title": "Tostadas con toppings",
     "icon": "🍞",
     "diet": [],
     "mealTypes": [],
@@ -1821,7 +1821,7 @@
   },
   {
     "id": "deditos-de-pollo-apanados",
-    "title": "DEDITOS DE POLLO APANADOS",
+    "title": "Deditos de pollo apanados",
     "icon": "",
     "diet": [
       "Paleo"
@@ -1857,7 +1857,7 @@
   },
   {
     "id": "huevos-shakshuka-verdes",
-    "title": "HUEVOS SHAKSHUKA verdes",
+    "title": "Huevos shakshuka verdes",
     "icon": "",
     "diet": [
       "Paleo"
@@ -1899,7 +1899,7 @@
   },
   {
     "id": "granola-keto-de-chocolate",
-    "title": "GRANOLA KETO DE CHOCOLATE",
+    "title": "Granola keto de chocolate",
     "icon": "",
     "diet": [
       "Paleo"
@@ -1949,7 +1949,7 @@
   },
   {
     "id": "tortillas-de-lentejas-rojas",
-    "title": "Tortillas de Lentejas rojas",
+    "title": "Tortillas de lentejas rojas",
     "icon": "",
     "diet": [],
     "mealTypes": [],
@@ -1973,7 +1973,7 @@
   },
   {
     "id": "coliflor-rostizada",
-    "title": "COLIFLOR ROSTIZADA",
+    "title": "Coliflor rostizada",
     "icon": "",
     "diet": [
       "Paleo"
@@ -2004,7 +2004,7 @@
   },
   {
     "id": "sweet-potato-hash-browns",
-    "title": "SWEET POTATO HASH BROWNS",
+    "title": "Sweet potato hash browns",
     "icon": "",
     "diet": [
       "Paleo"
@@ -2035,7 +2035,7 @@
   },
   {
     "id": "mayonesa",
-    "title": "MAYONESA",
+    "title": "Mayonesa",
     "icon": "🍾",
     "diet": [],
     "mealTypes": [],
@@ -2071,7 +2071,7 @@
   },
   {
     "id": "avena-horneada-con-chocolate-2",
-    "title": "AVENA HORNEADA CON CHOCOLATE 2",
+    "title": "Avena horneada con chocolate 2",
     "icon": "🍫",
     "diet": [],
     "mealTypes": [],
@@ -2092,7 +2092,7 @@
   },
   {
     "id": "muffins-de-arandanos",
-    "title": "MUFFINS DE ARÁNDANOS",
+    "title": "Muffins de arándanos",
     "icon": "",
     "diet": [
       "Paleo"
@@ -2161,7 +2161,7 @@
   },
   {
     "id": "curry-de-pollo",
-    "title": "CURRY DE POLLO",
+    "title": "Curry de pollo",
     "icon": "",
     "diet": [
       "Paleo"
@@ -2237,7 +2237,7 @@
   },
   {
     "id": "cinnamon-apple-porridge",
-    "title": "CINNAMON APPLE PORRIDGE",
+    "title": "Cinnamon apple porridge",
     "icon": "🥣",
     "diet": [],
     "mealTypes": [
@@ -2297,7 +2297,7 @@
   },
   {
     "id": "arepa-de-maiz-con-aguacate-y-huevo",
-    "title": "AREPA DE MAÍZ CON AGUACATE Y HUEVO",
+    "title": "Arepa de maíz con aguacate y huevo",
     "icon": "🫓",
     "diet": [],
     "mealTypes": [
@@ -2322,7 +2322,7 @@
   },
   {
     "id": "jamon-casero",
-    "title": "JAMÓN CASERO",
+    "title": "Jamón casero",
     "icon": "",
     "diet": [],
     "mealTypes": [],
@@ -2345,7 +2345,7 @@
   },
   {
     "id": "arroz-cremoso-de-camarones-y-vegetales",
-    "title": "ARROZ CREMOSO DE CAMARONES Y VEGETALES",
+    "title": "Arroz cremoso de camarones y vegetales",
     "icon": "🍚",
     "diet": [],
     "mealTypes": [
@@ -2379,7 +2379,7 @@
   },
   {
     "id": "albongidas-de-pollo-en-salsa-de-coco",
-    "title": "ALBONGIDAS DE POLLO EN SALSA DE COCO",
+    "title": "Albongidas de pollo en salsa de coco",
     "icon": "🥘",
     "diet": [],
     "mealTypes": [
@@ -2421,7 +2421,7 @@
   },
   {
     "id": "galletas-de-chips-de-chocolate",
-    "title": "GALLETAS DE CHIPS DE CHOCOLATE",
+    "title": "Galletas de chips de chocolate",
     "icon": "🍪",
     "diet": [],
     "mealTypes": [],
@@ -2456,7 +2456,7 @@
   },
   {
     "id": "smoothie-bowl",
-    "title": "SMOOTHIE BOWL",
+    "title": "Smoothie bowl",
     "icon": "🥣",
     "diet": [],
     "mealTypes": [
@@ -2478,7 +2478,7 @@
   },
   {
     "id": "tortillas-de-avena",
-    "title": "TORTILLAS DE AVENA",
+    "title": "Tortillas de avena",
     "icon": "🌮",
     "diet": [],
     "mealTypes": [],
@@ -2502,7 +2502,7 @@
   },
   {
     "id": "hamburguesas-de-atun-y-platano-maduro",
-    "title": "HAMBURGUESAS DE ATÚN Y PLÁTANO MADURO",
+    "title": "Hamburguesas de atún y plátano maduro",
     "icon": "🍔",
     "diet": [],
     "mealTypes": [
@@ -2537,7 +2537,7 @@
   },
   {
     "id": "tortilla-espanola-de-cebolla-y-papa",
-    "title": "TORTILLA ESPAÑOLA DE CEBOLLA Y PAPA",
+    "title": "Tortilla española de cebolla y papa",
     "icon": "🍳",
     "diet": [],
     "mealTypes": [],
@@ -2567,7 +2567,7 @@
   },
   {
     "id": "lasana-de-platano-maduro",
-    "title": "LASAÑA DE PLÁTANO MADURO",
+    "title": "Lasaña de plátano maduro",
     "icon": "🥘",
     "diet": [],
     "mealTypes": [],
@@ -2681,7 +2681,7 @@
   },
   {
     "id": "pancakes-de-ahuyama",
-    "title": "PANCAKES DE AHUYAMA",
+    "title": "Pancakes de ahuyama",
     "icon": "🥞",
     "diet": [],
     "mealTypes": [],
@@ -2712,7 +2712,7 @@
   },
   {
     "id": "huevos-al-pesto",
-    "title": "HUEVOS AL PESTO",
+    "title": "Huevos al pesto",
     "icon": "🍳",
     "diet": [],
     "mealTypes": [
@@ -2733,7 +2733,7 @@
   },
   {
     "id": "albondigas",
-    "title": "ALBÓNDIGAS",
+    "title": "Albóndigas",
     "icon": "",
     "diet": [
       "Paleo"
@@ -2765,7 +2765,7 @@
   },
   {
     "id": "huevos-shakshuka",
-    "title": "HUEVOS SHAKSHUKA",
+    "title": "Huevos shakshuka",
     "icon": "🍳",
     "diet": [],
     "mealTypes": [
@@ -2799,7 +2799,7 @@
   },
   {
     "id": "hash-brown-waffles",
-    "title": "HASH BROWN WAFFLES",
+    "title": "Hash brown waffles",
     "icon": "",
     "diet": [
       "Paleo"
@@ -2850,7 +2850,7 @@
   },
   {
     "id": "pancakes-de-manzana",
-    "title": "PANCAKES DE MANZANA",
+    "title": "Pancakes de manzana",
     "icon": "🥞",
     "diet": [],
     "mealTypes": [
@@ -2908,7 +2908,7 @@
   },
   {
     "id": "pasta-con-salsa-cremosa-de-coliflor-y-pollo",
-    "title": "PASTA CON SALSA CREMOSA DE COLIFLOR Y POLLO",
+    "title": "Pasta con salsa cremosa de coliflor y pollo",
     "icon": "🍝",
     "diet": [],
     "mealTypes": [],
@@ -3002,7 +3002,7 @@
   },
   {
     "id": "cheesecake-japones-fit",
-    "title": "CHEESECAKE JAPONES FIT",
+    "title": "Cheesecake japones fit",
     "icon": "",
     "diet": [],
     "mealTypes": [
@@ -3026,7 +3026,7 @@
   },
   {
     "id": "salsa-napolitana",
-    "title": "SALSA NAPOLITANA",
+    "title": "Salsa napolitana",
     "icon": "🍅",
     "diet": [],
     "mealTypes": [],
@@ -3052,7 +3052,7 @@
   },
   {
     "id": "tostada-de-aguacate-y-huevo",
-    "title": "TOSTADA DE AGUACATE Y HUEVO",
+    "title": "Tostada de aguacate y huevo",
     "icon": "🍞",
     "diet": [],
     "mealTypes": [],
@@ -3078,7 +3078,7 @@
   },
   {
     "id": "camarones-con-mantequilla-ajo-y-miel",
-    "title": "CAMARONES CON MANTEQUILLA, AJO Y MIEL",
+    "title": "Camarones con mantequilla, ajo y miel",
     "icon": "🦐",
     "diet": [],
     "mealTypes": [
@@ -3108,7 +3108,7 @@
   },
   {
     "id": "zucchinis-rellenos-de-atun",
-    "title": "ZUCCHINIS RELLENOS DE ATÚN",
+    "title": "Zucchinis rellenos de atún",
     "icon": "🥣",
     "diet": [],
     "mealTypes": [
@@ -3179,7 +3179,7 @@
   },
   {
     "id": "waffle-de-papa-criolla-2",
-    "title": "WAFFLE DE PAPA CRIOLLA",
+    "title": "Waffle de papa criolla",
     "icon": "🧇",
     "diet": [],
     "mealTypes": [
@@ -3206,7 +3206,7 @@
   },
   {
     "id": "pan-de-banano",
-    "title": "PAN DE BANANO",
+    "title": "Pan de banano",
     "icon": "",
     "diet": [
       "Paleo"
@@ -3247,7 +3247,7 @@
   },
   {
     "id": "pan-paleo",
-    "title": "PAN PALEO",
+    "title": "Pan paleo",
     "icon": "🍞",
     "diet": [],
     "mealTypes": [
@@ -3284,7 +3284,7 @@
   },
   {
     "id": "salmon-al-ajo-y-limon",
-    "title": "SALMÓN AL AJO Y LIMÓN",
+    "title": "Salmón al ajo y limón",
     "icon": "",
     "diet": [
       "Paleo"
@@ -3318,7 +3318,7 @@
   },
   {
     "id": "curry-rojo-de-pollo",
-    "title": "CURRY ROJO DE POLLO",
+    "title": "Curry rojo de pollo",
     "icon": "🍗",
     "diet": [],
     "mealTypes": [
@@ -3354,7 +3354,7 @@
   },
   {
     "id": "sushi-di-zucchine-salmone-low-carb",
-    "title": "SUSHI DI ZUCCHINE & SALMONE LOW CARB",
+    "title": "Sushi di zucchine & salmone low carb",
     "icon": "",
     "diet": [],
     "mealTypes": [],
@@ -3380,7 +3380,7 @@
   },
   {
     "id": "muffins-de-limon-y-chia",
-    "title": "MUFFINS DE LIMÓN Y CHÍA",
+    "title": "Muffins de limón y chía",
     "icon": "🧁",
     "diet": [],
     "mealTypes": [],
@@ -3413,7 +3413,7 @@
   },
   {
     "id": "chocolate-protein-chia-pudding",
-    "title": "Chocolate Protein Chia Pudding",
+    "title": "Chocolate protein chia pudding",
     "icon": "",
     "diet": [],
     "mealTypes": [],
@@ -3436,7 +3436,7 @@
   },
   {
     "id": "crema-de-zanahoria",
-    "title": "CREMA DE ZANAHORIA",
+    "title": "Crema de zanahoria",
     "icon": "🍲",
     "diet": [],
     "mealTypes": [
@@ -3501,7 +3501,7 @@
   },
   {
     "id": "ensalada-de-esparragos-y-pimenton",
-    "title": "ENSALADA DE ESPÁRRAGOS Y PIMENTON",
+    "title": "Ensalada de espárragos y pimenton",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -3536,7 +3536,7 @@
   },
   {
     "id": "platanos-rellenos-de-carne-molida",
-    "title": "PLÁTANOS RELLENOS DE CARNE MOLIDA",
+    "title": "Plátanos rellenos de carne molida",
     "icon": "",
     "diet": [
       "Paleo"
@@ -3578,7 +3578,7 @@
   },
   {
     "id": "crepes-zanahoria",
-    "title": "Crepes Zanahoria",
+    "title": "Crepes zanahoria",
     "icon": "",
     "diet": [],
     "mealTypes": [
@@ -3604,7 +3604,7 @@
   },
   {
     "id": "lasana-de-zucchini-o-berenjena",
-    "title": "LASAÑA DE ZUCCHINI O BERENJENA",
+    "title": "Lasaña de zucchini o berenjena",
     "icon": "🥘",
     "diet": [],
     "mealTypes": [
@@ -3635,7 +3635,7 @@
   },
   {
     "id": "papas-asadas-con-hierbas-y-mostaza",
-    "title": "PAPAS ASADAS CON HIERBAS Y MOSTAZA",
+    "title": "Papas asadas con hierbas y mostaza",
     "icon": "🥔",
     "diet": [],
     "mealTypes": [],
@@ -3665,7 +3665,7 @@
   },
   {
     "id": "waffles-de-yuca",
-    "title": "WAFFLES DE YUCA",
+    "title": "Waffles de yuca",
     "icon": "🧇",
     "diet": [],
     "mealTypes": [
@@ -3695,7 +3695,7 @@
   },
   {
     "id": "poke-bowl-de-salmon",
-    "title": "POKE BOWL DE SALMÓN",
+    "title": "Poke bowl de salmón",
     "icon": "🥙",
     "diet": [],
     "mealTypes": [],
@@ -3724,7 +3724,7 @@
   },
   {
     "id": "papa-rosti",
-    "title": "PAPA RÖSTI",
+    "title": "Papa rösti",
     "icon": "🥔",
     "diet": [],
     "mealTypes": [],
@@ -3751,7 +3751,7 @@
   },
   {
     "id": "pure-de-platano-maduro-pure-de-papa-pastusa-o-criolla",
-    "title": "PURE DE PLATANO MADURO – PURE DE PAPA PASTUSA O CRIOLLA",
+    "title": "Pure de platano maduro – pure de papa pastusa o criolla",
     "icon": "",
     "diet": [
       "Paleo"
@@ -3771,7 +3771,7 @@
   },
   {
     "id": "pesto",
-    "title": "PESTO",
+    "title": "Pesto",
     "icon": "🥣",
     "diet": [],
     "mealTypes": [],
@@ -3796,7 +3796,7 @@
   },
   {
     "id": "granola-keto",
-    "title": "GRANOLA KETO",
+    "title": "Granola keto",
     "icon": "",
     "diet": [
       "Keto"
@@ -3855,7 +3855,7 @@
   },
   {
     "id": "crepes-paleo",
-    "title": "Crepes Paleo",
+    "title": "Crepes paleo",
     "icon": "",
     "diet": [
       "Paleo"
@@ -3921,7 +3921,7 @@
   },
   {
     "id": "rollito-de-brocoli-facil-de-preparar",
-    "title": "ROLLITO DE BRÓCOLI FÁCIL DE PREPARAR",
+    "title": "Rollito de brócoli fácil de preparar",
     "icon": "🥦",
     "diet": [],
     "mealTypes": [
@@ -3950,7 +3950,7 @@
   },
   {
     "id": "pan-de-banano-2",
-    "title": "PAN DE BANANO",
+    "title": "Pan de banano",
     "icon": "🍞",
     "diet": [],
     "mealTypes": [],
@@ -3984,7 +3984,7 @@
   },
   {
     "id": "taquitos-de-camarones",
-    "title": "TAQUITOS DE CAMARONES",
+    "title": "Taquitos de camarones",
     "icon": "",
     "diet": [
       "Paleo"
@@ -4023,7 +4023,7 @@
   },
   {
     "id": "tortilla-de-papa",
-    "title": "TORTILLA DE PAPA",
+    "title": "Tortilla de papa",
     "icon": "",
     "diet": [
       "Paleo"
@@ -4056,7 +4056,7 @@
   },
   {
     "id": "pollo-con-hierbas-y-ahuyama",
-    "title": "POLLO CON HIERBAS Y AHUYAMA",
+    "title": "Pollo con hierbas y ahuyama",
     "icon": "🍗",
     "diet": [],
     "mealTypes": [],
@@ -4119,7 +4119,7 @@
   },
   {
     "id": "tacos-de-huevo",
-    "title": "TACOS DE HUEVO",
+    "title": "Tacos de huevo",
     "icon": "🌮",
     "diet": [],
     "mealTypes": [],
@@ -4237,7 +4237,7 @@
   },
   {
     "id": "kale-chips",
-    "title": "KALE CHIPS",
+    "title": "Kale chips",
     "icon": "",
     "diet": [
       "Paleo"
@@ -4267,7 +4267,7 @@
   },
   {
     "id": "ensalada-de-pasta-con-aderezo-de-aguacate",
-    "title": "ENSALADA DE PASTA CON ADEREZO DE AGUACATE",
+    "title": "Ensalada de pasta con aderezo de aguacate",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -4302,7 +4302,7 @@
   },
   {
     "id": "risotto-de-ahuyama",
-    "title": "RISOTTO DE AHUYAMA",
+    "title": "Risotto de ahuyama",
     "icon": "🥘",
     "diet": [],
     "mealTypes": [],
@@ -4348,7 +4348,7 @@
   },
   {
     "id": "pan-de-ahuyama-y-chocolate",
-    "title": "PAN DE AHUYAMA Y CHOCOLATE",
+    "title": "Pan de ahuyama y chocolate",
     "icon": "🍞",
     "diet": [],
     "mealTypes": [],
@@ -4384,7 +4384,7 @@
   },
   {
     "id": "croquetas-de-quinoa-y-zanahoria",
-    "title": "CROQUETAS DE QUINOA Y ZANAHORIA",
+    "title": "Croquetas de quinoa y zanahoria",
     "icon": "🥕",
     "diet": [],
     "mealTypes": [
@@ -4438,7 +4438,7 @@
   },
   {
     "id": "berenjenas-con-miel-al-horno",
-    "title": "BERENJENAS CON MIEL AL HORNO",
+    "title": "Berenjenas con miel al horno",
     "icon": "",
     "diet": [
       "Paleo"
@@ -4471,7 +4471,7 @@
   },
   {
     "id": "yuquitas-fritas",
-    "title": "YUQUITAS \"FRITAS\"",
+    "title": "Yuquitas \"fritas\"",
     "icon": "🥔",
     "diet": [],
     "mealTypes": [
@@ -4497,7 +4497,7 @@
   },
   {
     "id": "pan-paleo-linaza",
-    "title": "Pan Paleo - Linaza",
+    "title": "Pan paleo - linaza",
     "icon": "",
     "diet": [
       "Paleo"
@@ -4560,7 +4560,7 @@
   },
   {
     "id": "granola-keto-2",
-    "title": "GRANOLA KETO",
+    "title": "Granola keto",
     "icon": "",
     "diet": [
       "Keto"
@@ -4626,7 +4626,7 @@
   },
   {
     "id": "muffins-de-banano",
-    "title": "MUFFINS DE BANANO",
+    "title": "Muffins de banano",
     "icon": "🍌",
     "diet": [],
     "mealTypes": [],
@@ -4659,7 +4659,7 @@
   },
   {
     "id": "avena-horneada-de-chocolate",
-    "title": "AVENA HORNEADA DE CHOCOLATE",
+    "title": "Avena horneada de chocolate",
     "icon": "🥣",
     "diet": [],
     "mealTypes": [
@@ -4710,7 +4710,7 @@
   },
   {
     "id": "pancakes-de-pure-de-auyama",
-    "title": "Pancakes de puré de Auyama",
+    "title": "Pancakes de puré de auyama",
     "icon": "",
     "diet": [
       "Paleo"
@@ -4744,7 +4744,7 @@
   },
   {
     "id": "ensalada-de-pepino-y-rabano-con-aderezo-de-ajo-y-yogur",
-    "title": "ENSALADA DE PEPINO Y RÁBANO CON ADEREZO DE AJO Y YOGUR",
+    "title": "Ensalada de pepino y rábano con aderezo de ajo y yogur",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -4770,7 +4770,7 @@
   },
   {
     "id": "waffles-de-batata",
-    "title": "WAFFLES DE BATATA",
+    "title": "Waffles de batata",
     "icon": "🧇",
     "diet": [],
     "mealTypes": [
@@ -4800,7 +4800,7 @@
   },
   {
     "id": "ratatouille-gratinada-con-queso",
-    "title": "RATATOUILLE GRATINADA CON QUESO",
+    "title": "Ratatouille gratinada con queso",
     "icon": "",
     "diet": [
       "Paleo"
@@ -4877,7 +4877,7 @@
   },
   {
     "id": "salchichas-de-pollo",
-    "title": "Salchichas de Pollo",
+    "title": "Salchichas de pollo",
     "icon": "",
     "diet": [],
     "mealTypes": [],
@@ -4921,7 +4921,7 @@
   },
   {
     "id": "waffles-paleo-chocolate",
-    "title": "Waffles Paleo - Chocolate",
+    "title": "Waffles paleo - chocolate",
     "icon": "",
     "diet": [
       "Paleo"
@@ -4955,7 +4955,7 @@
   },
   {
     "id": "crema-de-brocoli",
-    "title": "CREMA DE BROCOLI",
+    "title": "Crema de brocoli",
     "icon": "🥘",
     "diet": [],
     "mealTypes": [
@@ -5014,7 +5014,7 @@
   },
   {
     "id": "ensalada-de-kale-y-coliflor-crispy",
-    "title": "ENSALADA DE KALE Y COLIFLOR CRISPY",
+    "title": "Ensalada de kale y coliflor crispy",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -5053,7 +5053,7 @@
   },
   {
     "id": "ensalada-cobb-con-camarones-cajun",
-    "title": "ENSALADA COBB CON CAMARONES CAJÚN",
+    "title": "Ensalada cobb con camarones cajún",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [
@@ -5099,7 +5099,7 @@
   },
   {
     "id": "pescado-con-vegetales",
-    "title": "PESCADO CON VEGETALES",
+    "title": "Pescado con vegetales",
     "icon": "",
     "diet": [],
     "mealTypes": [],
@@ -5112,7 +5112,7 @@
   },
   {
     "id": "ensalada-de-quinua-con-champinones-y-tomate-cherry",
-    "title": "ENSALADA DE QUINUA CON CHAMPIÑONES Y TOMATE CHERRY",
+    "title": "Ensalada de quinua con champiñones y tomate cherry",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -5161,7 +5161,7 @@
   },
   {
     "id": "pancakes-de-avena-y-banano",
-    "title": "PANCAKES DE AVENA Y BANANO",
+    "title": "Pancakes de avena y banano",
     "icon": "🥞",
     "diet": [],
     "mealTypes": [],
@@ -5202,7 +5202,7 @@
   },
   {
     "id": "sopa-de-tomate",
-    "title": "SOPA DE TOMATE",
+    "title": "Sopa de tomate",
     "icon": "🍲",
     "diet": [],
     "mealTypes": [],
@@ -5269,7 +5269,7 @@
   },
   {
     "id": "paleo-zucchini-fries",
-    "title": "PALEO ZUCCHINI FRIES",
+    "title": "Paleo zucchini fries",
     "icon": "",
     "diet": [
       "Paleo"
@@ -5306,7 +5306,7 @@
   },
   {
     "id": "lasana-de-platano-maduro-y-pollo",
-    "title": "LASAÑA DE PLÁTANO MADURO Y POLLO",
+    "title": "Lasaña de plátano maduro y pollo",
     "icon": "",
     "diet": [
       "Paleo"
@@ -5393,7 +5393,7 @@
   },
   {
     "id": "mayonesa-casera-saludable",
-    "title": "Mayonesa casera Saludable",
+    "title": "Mayonesa casera saludable",
     "icon": "",
     "diet": [
       "Keto"
@@ -5417,7 +5417,7 @@
   },
   {
     "id": "flan-de-cafe",
-    "title": "FLAN DE CAFÉ",
+    "title": "Flan de café",
     "icon": "",
     "diet": [],
     "mealTypes": [
@@ -5442,7 +5442,7 @@
   },
   {
     "id": "tortillas-de-quinoa",
-    "title": "TORTILLAS DE QUINOA",
+    "title": "Tortillas de quinoa",
     "icon": "",
     "diet": [],
     "mealTypes": [
@@ -5495,7 +5495,7 @@
   },
   {
     "id": "pinchos-de-salmon",
-    "title": "PINCHOS DE SALMÓN",
+    "title": "Pinchos de salmón",
     "icon": "🍣",
     "diet": [],
     "mealTypes": [],
@@ -5581,7 +5581,7 @@
   },
   {
     "id": "huevos-al-horno-con-espinaca-y-tomates-secos",
-    "title": "HUEVOS AL HORNO CON ESPINACA Y TOMATES SECOS",
+    "title": "Huevos al horno con espinaca y tomates secos",
     "icon": "🍳",
     "diet": [],
     "mealTypes": [],
@@ -5666,7 +5666,7 @@
   },
   {
     "id": "ensalada-de-esparragos-y-pimento",
-    "title": "ENSALADA DE ESPARRAGOS Y PIMENTO",
+    "title": "Ensalada de esparragos y pimento",
     "icon": "",
     "diet": [
       "Paleo"
@@ -5710,7 +5710,7 @@
   },
   {
     "id": "brownies-paleo-chocolatudos",
-    "title": "BROWNIES PALEO CHOCOLATUDOS",
+    "title": "Brownies paleo chocolatudos",
     "icon": "🍫",
     "diet": [],
     "mealTypes": [],
@@ -5743,7 +5743,7 @@
   },
   {
     "id": "tilapia-con-mantequilla-de-limon",
-    "title": "TILAPIA CON MANTEQUILLA DE LIMÓN",
+    "title": "Tilapia con mantequilla de limón",
     "icon": "🐟",
     "diet": [],
     "mealTypes": [],
@@ -5769,7 +5769,7 @@
   },
   {
     "id": "ensalada-de-papa-con-yogur",
-    "title": "ENSALADA DE PAPA CON YOGUR",
+    "title": "Ensalada de papa con yogur",
     "icon": "",
     "diet": [
       "Paleo"
@@ -5871,7 +5871,7 @@
   },
   {
     "id": "waffles-de-platano-maduro",
-    "title": "WAFFLES DE PLÁTANO MADURO",
+    "title": "Waffles de plátano maduro",
     "icon": "🧇",
     "diet": [],
     "mealTypes": [],
@@ -5895,7 +5895,7 @@
   },
   {
     "id": "tostadas-francesas",
-    "title": "TOSTADAS FRANCESAS",
+    "title": "Tostadas francesas",
     "icon": "🥞",
     "diet": [],
     "mealTypes": [
@@ -5925,7 +5925,7 @@
   },
   {
     "id": "hamburguesas-de-pollo",
-    "title": "HAMBURGUESAS DE POLLO",
+    "title": "Hamburguesas de pollo",
     "icon": "🍗",
     "diet": [],
     "mealTypes": [
@@ -5952,7 +5952,7 @@
   },
   {
     "id": "pan-keto",
-    "title": "Pan Keto",
+    "title": "Pan keto",
     "icon": "",
     "diet": [],
     "mealTypes": [],
@@ -5971,7 +5971,7 @@
   },
   {
     "id": "bowl-mexicano",
-    "title": "BOWL MEXICANO",
+    "title": "Bowl mexicano",
     "icon": "🥙",
     "diet": [],
     "mealTypes": [
@@ -6024,7 +6024,7 @@
   },
   {
     "id": "ensalada-tibia-de-tomate-cherry-y-mazorca",
-    "title": "ENSALADA TIBIA DE TOMATE CHERRY Y MAZORCA",
+    "title": "Ensalada tibia de tomate cherry y mazorca",
     "icon": "🥗",
     "diet": [],
     "mealTypes": [],
@@ -6051,7 +6051,7 @@
   },
   {
     "id": "pure-de-papa",
-    "title": "PURÉ DE PAPA",
+    "title": "Puré de papa",
     "icon": "🥔",
     "diet": [],
     "mealTypes": [],
@@ -6075,7 +6075,7 @@
   },
   {
     "id": "cuadrados-de-arroz-y-chocolate",
-    "title": "CUADRADOS DE ARROZ Y CHOCOLATE",
+    "title": "Cuadrados de arroz y chocolate",
     "icon": "🍫",
     "diet": [],
     "mealTypes": [],
@@ -6095,7 +6095,7 @@
   },
   {
     "id": "lomito-con-tocineta-y-champinones",
-    "title": "LOMITO CON TOCINETA Y CHAMPIÑONES",
+    "title": "Lomito con tocineta y champiñones",
     "icon": "🥓",
     "diet": [],
     "mealTypes": [
@@ -6135,6 +6135,1836 @@
       "(cocción) Mientras tanto, licúa los tomates juntos con la mostaza, la salsa negra, la cebolla, la pasta de tomate y la miel, hasta lograr una textura lisa y homogénea.",
       "(cocción) Vierte esa mezcla en la sartén que contiene el vino y el caldo, revuelve y cocina hasta que espese. Agrega los champiñones salteados y continúa la cocción.",
       "(cocción) Aparte, corta el lomo en medallones gruesos y ásalos en otra sartén o en una parrilla hasta lograr el termino deseado. Lleva los medallones a la sartén de la salsa, adiciona la tocineta y cocina hasta que hierva. Sirve y acompaña con 80gr de arroz y ensalada."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "arepa-o-waffles-de-yuca-sin-huevo",
+    "title": "Arepa o wafles de yuca",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Desayuno"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "1 yuca (cada waffle debe pesar 100 gramos)",
+      "Sal",
+      "Ajo en polvo",
+      "Aceite de oliva o mantequilla ghee"
+    ],
+    "steps": [
+      "Cocinar la yuca hasta que al ingresar el tenedor esté blanda.",
+      "Esperar a que se enfríe completamente. Luego se le quita la vena y se pica en cubos.",
+      "Procesar la yuca sola o machacar con un tenedor.",
+      "Cuando se forma la masa agregar los demás ingredientes (la cantidad de aceite es mínima, sólo para darle una mejor textura a la masa).",
+      "Precalentar la sartén o la wafflera y una vez esté caliente engrasarlo con aceite de oliva o ghee con ayuda de una brocha de silicona.",
+      "Hacer las arepitas del tamaño deseado y llevarlas a la sartén o a la wafflera. En caso de que la masa no esté manejable pueden adicionar harina de yuca, coco o almendras.",
+      "Cuando estén doradas, voltearlas y dejar unos minutos más o sacar de la wafflera."
+    ],
+    "notes": "Para variarla un poco y aumentar su valor nutricional puedes agregarle a la masa un poco de ajonjolí tostado o linaza molida."
+  },
+  {
+    "id": "pancakes-o-waffles-de-espinaca",
+    "title": "Pancakes o waffles de espinaca",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Desayuno"
+    ],
+    "restrictions": [],
+    "portions": "2",
+    "instagramLink": "",
+    "ingredients": [
+      "3 huevos o 1 huevo y 2 claras",
+      "1 taza de hojas de espinaca",
+      "Stevia liquida al gusto",
+      "1/2 taza de harina de almendras",
+      "1/4 de almidón de yuca",
+      "1 y ½ cucharadita de polvo de hornear",
+      "1 cucharadita de esencia de vainilla",
+      "1 pizca de sal"
+    ],
+    "steps": [
+      "Licuar todos los ingredientes.",
+      "En un sartén o wafflera con ghee, poner la mezcla y dorar por lado y lado."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "tortillas-de-linaza",
+    "title": "Tortillas de linaza",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Desayuno"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "250 gr de linaza molida",
+      "1 cdita de sal",
+      "1 taza de agua hirviendo",
+      "Ajo en polvo u otras especias (opcional)"
+    ],
+    "steps": [
+      "Mezclar muy bien los ingredientes secos.",
+      "Luego adicionar el agua hirviendo y seguir mezclando constantemente.",
+      "Cuando quede una masa, se deja reposar 15 minutos, luego se da la vuelta y se deja reposar 15 minutos más.",
+      "Cortar la masa en 4 y con cada parte hacer nuevamente una bola y ponerla entre papel antiadherente.",
+      "Con ayuda de un rodillo aplanarla de manera que esté pareja y cortar con ayuda de una tapa de olla.",
+      "Precalentar la sartén y engrasarla con un poco de aceite de coco u oliva. Poner la tortilla a fuego bajo y con ayuda de una brocha de silicona untar un poco más de aceite por los bordes.",
+      "Cuando despegue fácilmente voltearla y dejarla dos minutos más. Deben conservarlas en la nevera."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "tortillas-de-coco",
+    "title": "Tortillas de coco",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Desayuno"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "60 gr de harina de coco",
+      "18 gr de fibra psyllium",
+      "1/4 de cdita de bicarbonato",
+      "1/4 de cdita de sal",
+      "1 cda de aceite de oliva",
+      "1 taza de agua tibia"
+    ],
+    "steps": [
+      "En un bowl mezclar los ingredientes secos.",
+      "Agregar el aceite de oliva y luego el agua.",
+      "Amasar todo muy bien y dejar reposar por 10 minutos.",
+      "Hacer una bola con la masa y cortarla en 4.",
+      "Con cada parte hacer nuevamente una bola y ponerla entre papel antiadherente.",
+      "Con ayuda de un rodillo aplanarla de manera que quede pareja. No dejarla muy delgada.",
+      "Cortar con una tapa de olla.",
+      "Precalentar la sartén y engrasarla con un poco de aceite de coco.",
+      "Poner la tortilla a fuego bajo y con ayuda de una brochita untar un poco de aceite de coco por los bordes. Cuando despegue fácilmente voltearla y dejarla un minuto más.",
+      "Mantener en la nevera, duran una semana."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "tortillas-de-coliflor",
+    "title": "Tortillas de coliflor",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Desayuno"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "350g de yuca",
+      "Sal",
+      "Ajo en polvo",
+      "Aceite de oliva",
+      "2 tazas de arroz de coliflor",
+      "Aceite de coco"
+    ],
+    "steps": [
+      "Cocinar mínimamente la yuca. Cuando entre el tenedor, sacar del agua.",
+      "Esperar a que se enfríe completamente. Luego se le quita la vena y se pica en cubos.",
+      "Procesar la yuca sola y cuando se forme la masa agregar sal, ajo en polvo y aceite de oliva (la cantidad de aceite es mínima, solo para darle una mejor textura a la masa).",
+      "Rallar la coliflor hasta que se formen los 'arroces'.",
+      "Escurrir muy bien con un papel toalla el 'arroz de coliflor' y ponerlo a secar en un sartén sin nada de aceite. Debe quedar ligeramente dorado. Luego se deja enfriar.",
+      "Pesar 350 g de la masa de yuca y procesarla con el arroz de coliflor dorado.",
+      "Con la masa hacer bolitas y ponerlas entre papel parafinado o siliconas. En caso de que quede muy blandito o pegajoso, adicionar un poco de harina de yuca o de coco.",
+      "Aplanarlas con un rodillo y cortarlas con una tapa de olla.",
+      "Precalentar la sartén y una vez esté caliente, engrasarla con aceite de coco con ayuda de una brocha de silicona.",
+      "Poner la tortilla. Cuando esté dorada, voltearla y dejar unos minutos más."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "tortillas-de-platano-verde",
+    "title": "Tortillas de platano verde",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Desayuno"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "320g o 2 plátanos verdes",
+      "150g de yuca",
+      "Aceite de oliva",
+      "Sal",
+      "1/4 de cdita de cúrcuma (opcional)",
+      "1 Cda de chía (opcional)"
+    ],
+    "steps": [
+      "Cocinar un poco los plátanos y la yuca, solo hasta que entre el tenedor.",
+      "Sacarlos del agua y dejarlos reposar.",
+      "Cuando haya enfriado, procesar la yuca con un poco de aceite de oliva y sal hasta que se forme la masa. No puede procesarse de más porque ya es difícil darle forma.",
+      "Agregar el plátano y procesar nuevamente repitiendo el paso anterior, es decir, que cuando se forme la masa se apaga para no permitir que se exceda el calor y quede pegajosa.",
+      "Cortar la masa y poner cada parte entre papel antiadherente o siliconas.",
+      "Con ayuda de un rodillo aplanarla de manera que esté pareja y cortar con ayuda de una tapa de olla. El grosor debe quedar un poco más delgado que una arepa.",
+      "Precalentar la sartén y esparcir un poco de aceite de oliva o aguacate.",
+      "Poner cada tortilla y dejarla unos minutos por cada lado para terminar de sellar. Lo ideal es que en la sartén no esté mucho tiempo para que no se vaya a dorar. Debe quedar blanda para que sea más manejable y poder utilizarla bien como tortilla."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "pancakes-de-pure-de-ahuyama-almidon-de-yuca",
+    "title": "Pancakes o waffles de puré de ahuyama (con almidón de yuca)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Desayuno"
+    ],
+    "restrictions": [],
+    "portions": "2",
+    "instagramLink": "",
+    "ingredients": [
+      "3 huevos o 1 huevo y 2 claras",
+      "1/2 taza de puré de ahuyama",
+      "Stevia liquida al gusto",
+      "1/2 taza de harina de almendras",
+      "1/4 de almidón de yuca",
+      "1 y ½ cucharadita de polvo de hornear",
+      "1 pizca de nuez moscada",
+      "1 pizca de jengibre en polvo",
+      "1 cucharadita de canela",
+      "1 pizca de sal"
+    ],
+    "steps": [
+      "Poner en un bowl los huevos, el puré de ahuyama y la stevia, revolver muy bien.",
+      "En otro bowl poner todos los demás ingredientes secos. Revolver y agregar al bowl de los ingredientes húmedos.",
+      "Revolver hasta que todo esté integrado.",
+      "En un sartén con ghee o wafflera, poner la mezcla y dorar por lado y lado."
+    ],
+    "notes": "Para el puré de ahuyama: poner cuadritos de ahuyama pelada envueltos en papel aluminio en una bandeja para horno y llevar por 20 a 25 minutos al horno precalentado a 180 grados centígrados. Luego hacer puré con un tenedor, sin agregar ningún líquido."
+  },
+  {
+    "id": "waffle-o-pancake-de-vainilla-y-arandanos",
+    "title": "Waffle o pancake de vainilla y arandanos",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Desayuno"
+    ],
+    "restrictions": [],
+    "portions": "2",
+    "instagramLink": "",
+    "ingredients": [
+      "1/2 taza de harina de almendras",
+      "2 huevos",
+      "1 cucharada de harina de coco",
+      "1 cucharadita de esencia de vainilla",
+      "Stevia al gusto",
+      "1/2 cucharadita de Bicarbonato de Sodio",
+      "Sal al gusto",
+      "1/4 taza de arándanos"
+    ],
+    "steps": [
+      "Mezclar todos los ingredientes menos los arándanos.",
+      "Precalentar la wafflera o el sartén, poner la mezcla y agregar los arándanos encima mientras está en la cocción. Los arándanos se van a cocinar y van a explotar y quedan como una mermelada deliciosa."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "pan-mogolla",
+    "title": "Pan mogolla",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Desayuno"
+    ],
+    "restrictions": [],
+    "portions": "6",
+    "instagramLink": "",
+    "ingredients": [
+      "150 g de harina de almendra",
+      "40 g de psyllium husk",
+      "1/2 cdita de bicarbonato",
+      "1 cdita de sal",
+      "3 cdas de linaza molida o chía",
+      "1 cdita de vinagre blanco",
+      "2 cditas de vinagre de manzana",
+      "1 taza y media de agua caliente"
+    ],
+    "steps": [
+      "Precalentar el horno a 180°C.",
+      "Mezclar muy bien los ingredientes secos.",
+      "Adicionar los húmedos y mezclar con ayuda de la batidora, procesador o de manera manual.",
+      "Cuando la mezcla esté uniforme dejar reposar durante 20 minutos.",
+      "Humedecerse las manos con agua y hacer las bolitas de pan del tamaño deseado (recomendación hacer 6 panes).",
+      "Tiempo en el horno aproximado: 1 hora. Para saber que están listos se da un golpe en la parte de abajo y debe sonar como si estuvieran 'huecos' por dentro."
+    ],
+    "notes": "Para consumir: dejarlos enfriar, cortarlos a la mitad y tostar unos minutos con aceite de oliva."
+  },
+  {
+    "id": "rollo-de-pollo",
+    "title": "Rollo de pollo",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Almuerzo",
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "8 filetes de pechuga de pollo",
+      "5 tiras de tocineta (opcional)",
+      "Media taza de cebolla en cuadritos",
+      "6 aceitunas negras finamente picadas",
+      "3 tomates deshidratados finamente picados",
+      "3 cdas de aceite de oliva",
+      "Sal al gusto",
+      "Ajo en polvo al gusto",
+      "Aceite de coco"
+    ],
+    "steps": [
+      "Precalentar la sartén.",
+      "Con una brocha de silicona esparcir un poco de aceite y poner las tiras de tocineta extendidas, sin que quede una sobre la otra.",
+      "Dejarlas cocinar dándoles vuelta constantemente para que no se quemen.",
+      "Escurrir la grasa que va soltando.",
+      "Dejarlas al punto de preferencia; se recomienda no tan crocante para que se termine de cocinar en el horno y quede más jugoso el rollo.",
+      "Precalentar el horno a 200°C.",
+      "Moler/procesar el pollo.",
+      "Agregar los demás ingredientes y seguir procesando.",
+      "Pasar la mezcla a un papel film y organizarla bien para que quede en forma de rollo.",
+      "Llevarlo al horno durante una hora.",
+      "Dejar enfriar a temperatura ambiente y luego llevar a la nevera para cortar más fácil."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "papa-dulce-o-batata-al-horno-salada",
+    "title": "Papa dulce o batata al horno (salada)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Almuerzo",
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "Batata o papa dulce cortada en cuadros, rodajas o bastones",
+      "Sal",
+      "Pimienta",
+      "1 cucharada de aceite de oliva",
+      "Canela (opcional)"
+    ],
+    "steps": [
+      "Revuelve todos los ingredientes en un tazón hasta que se integren bien.",
+      "Precalienta y engrasa la bandeja del horno a 180 grados centígrados y hornea por 40 minutos aproximadamente, volteando de lado en la mitad del tiempo."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "pollo-molido",
+    "title": "Pollo molido",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Almuerzo",
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "Pechugas de pollo crudas",
+      "Aceite de oliva",
+      "Sal",
+      "Pimienta",
+      "Ajo",
+      "Paprika",
+      "Orégano"
+    ],
+    "steps": [
+      "Se hace exactamente igual que la carne molida.",
+      "Muele las pechugas de pollo crudas en un procesador.",
+      "Cocina en un sartén con aceite de oliva, sal, pimienta, ajo, paprika y orégano.",
+      "Puedes agregar otros condimentos o verduras a tu elección."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "ensalada-de-habichuelas",
+    "title": "Ensalada de habichuelas",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Almuerzo",
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "400g de habichuelas",
+      "1 pimentón",
+      "1 cebolla morada",
+      "Media taza de aceitunas negras",
+      "Aceite de oliva extra virgen",
+      "1/3 de taza de almendras laminadas o trituradas",
+      "Sal",
+      "2 cdas de aceite de oliva extra virgen (aderezo)",
+      "1 Cda de zumo de limón (aderezo)",
+      "1 cdita de mostaza dijon (aderezo)",
+      "1 diente de ajo machacado (aderezo)",
+      "Sal a gusto (aderezo)",
+      "Pimienta negra a gusto (aderezo)",
+      "Hojuelas de pimienta roja a gusto (aderezo)"
+    ],
+    "steps": [
+      "En una olla poner a hervir agua con un poco de sal y cuando hierva, poner las habichuelas cortadas en pedazos de 3cm.",
+      "Dejarlas 5 minutos, luego sacarlas con un colador y ponerlas otros 5 minutos en agua con hielo. El fogón con el agua caliente no se apaga.",
+      "Pasados los 5 minutos en el agua fría, colarlas y ponerlas nuevamente 10 minutos en el agua hirviendo.",
+      "Mientras se cocinan las habichuelas, cortar el pimentón y la cebolla en julianas y saltearlas en aceite de oliva con un poco de sal.",
+      "Cortar las aceitunas en rodajas y mezclarlas con las habichuelas, pimentones y cebollas.",
+      "Tostar las almendras en el horno o en una sartén.",
+      "Mezclar en un recipiente pequeño todos los ingredientes del aderezo.",
+      "Servir la ensalada, agregar el aderezo y encima las almendras."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "coli-arroz-con-pollo",
+    "title": "Coli arroz con pollo",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Almuerzo",
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "3 tazas de arroz de coliflor cruda",
+      "1/4 de cebolla picada en cubos",
+      "2 dientes de ajo",
+      "Ajo en polvo",
+      "1/4 de taza de repollo morado picado finamente",
+      "1/4 de taza de zanahoria rayada",
+      "1 taza de espinaca en juliana",
+      "Pollo desmechado",
+      "1 taza de champiñones",
+      "Aceite de oliva",
+      "1 tomate (opcional)",
+      "Aceitunas (opcional)"
+    ],
+    "steps": [
+      "Rayar la coliflor cruda hasta que se formen los 'arroces' y escurrirla muy bien con ayuda de un papel toalla absorbente o colador de tela.",
+      "Secar el arroz de coliflor a fuego muy bajo sin aceite hasta que comience a dorarse. Debe revolverse constantemente.",
+      "En sartenes diferentes sofreír la cebolla, los champiñones, la espinaca y el repollo morado en aceite de oliva o de coco.",
+      "Cuando la cebolla empiece a dorarse agregarla a la sartén donde está la coliflor, adicionar aceite de oliva, los dientes de ajo picados finamente, ajo en polvo, sal, especias favoritas y mezclar.",
+      "Cuando esté bien integrado, adicionar el pollo desmechado, los champiñones salteados al punto de preferencia y la espinaca.",
+      "Rayar un tomate y adicionar su 'carnita'; puede sustituirse por pesto cremoso u otras especias.",
+      "Por último agregar el repollo morado, la zanahoria rayada cruda y las aceitunas."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "spaguettis-de-zucchini-con-pollo-y-salsa-napolitana",
+    "title": "Spaguettis de zucchini con pollo y salsa napolitana",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Almuerzo",
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "150 g de zucchini",
+      "Pollo desmechado según tu porción",
+      "Media cebolla picada en cubos",
+      "2 dientes de ajo finamente picados",
+      "Salsa napolitana",
+      "Leche de coco (opcional)",
+      "Caldo de hueso o fondo de pollo o vegetales",
+      "Aceite de coco, oliva o aguacate",
+      "Ajo en polvo y sal"
+    ],
+    "steps": [
+      "Sofreír a fuego bajo la cebolla en el aceite de preferencia durante 5 minutos.",
+      "Agregar los dientes de ajo y el pollo desmechado, pavo o champiñones y revolver bien.",
+      "Adicionar ajo en polvo y sal al gusto y seguir revolviendo.",
+      "Pasados 5 minutos agregar la salsa napolitana y un poco de leche de coco, caldo de hueso o fondo de vegetales o pollo y mezclar bien.",
+      "Con un spiralizer cortar el zucchini en forma de espagueti y adicionar los noodles de zucchini, apagar el fogón y mezclar con ayuda de una pinza."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "pollo-cremoso-con-vegetales",
+    "title": "Pollo cremoso con vegetales",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Almuerzo",
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "320g de filete de pechuga de pollo picado en cubos",
+      "155g de ahuyama en cubos pequeños",
+      "155g de champiñones picados en cubos pequeños",
+      "3-4 cdas de yogurt de coco o leche de coco",
+      "1 cdita de canela",
+      "1 cdita de nuez moscada",
+      "1/4 de cdita de jengibre en polvo o rallado",
+      "Sal marina a gusto",
+      "Aceite de coco"
+    ],
+    "steps": [
+      "Precalentar 2 sartenes; cuando estén calientes agregar el aceite de coco.",
+      "Esparcir sobre el pollo la canela, nuez moscada, jengibre y un poco de sal.",
+      "Poner en una sartén los champiñones bien esparcidos, sin que queden unos encima de otros.",
+      "En la otra sartén poner en un lado el pollo y un poco separado la ahuyama.",
+      "Darle la vuelta al pollo y a la ahuyama por aparte hasta que estén bien cocinados.",
+      "Realizar el proceso anterior también con los champiñones, de manera más cuidadosa garantizando que queden dorados.",
+      "Cuando todo esté al punto deseado, integrarlo muy bien en una misma sartén y agregar el yogurt de coco. Mezclar bien y apagar inmediatamente."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "base-de-pizza-yuca-y-arroz-de-coliflor",
+    "title": "Base de pizza (yuca y arroz de coliflor)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Almuerzo",
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "5",
+    "instagramLink": "",
+    "ingredients": [
+      "500g de yuca",
+      "1 taza de arroz de coliflor",
+      "1 cdita de aceite de oliva extra virgen",
+      "1 cdita de sal",
+      "2 cditas de orégano",
+      "1 cdita de ajo en polvo",
+      "1 cdita de paprika ahumada",
+      "2 cdas de queso crema vegano o yogurt de coco o más aceite de oliva"
+    ],
+    "steps": [
+      "Cocinar la yuca hasta que le entre el tenedor y retirarla inmediatamente del agua. No dejar que quede blandita. Dejarla enfriar.",
+      "En una sartén sin nada de aceite secar el arroz de coliflor mientras se le da vuelta constantemente. Se deja un poco dorado.",
+      "Dejar enfriar el arroz de coliflor.",
+      "Mientras tanto procesar un poco la yuca sin dejar que se forme la masa, sino que esté triturada.",
+      "Agregar los demás ingredientes bien esparcidos para que al terminar de procesar se integren bien los sabores.",
+      "Procesar hasta que se forme la masa e inmediatamente apagar. Si se sobreprocesa queda pegajoso y es difícil darle forma.",
+      "Formar las bases de pizza del tamaño deseado y llevarlas al horno a temperatura máxima durante 5 minutos. Poner los toppings de preferencia y meterla nuevamente al horno 3 minutos más."
+    ],
+    "notes": "Nota 1: en caso de que la masa quede difícil de manejar, se puede guardar en la nevera un rato para que compacte o ponerle un poco de harina de yuca encima para que sea más fácil darle forma. Nota 2: si se quiere crocante se puede poner la base en la sartén con aceite de oliva y dorarla por ambos lados (como si fuera una arepa) y terminarla en el horno con los toppings."
+  },
+  {
+    "id": "lasana-de-zucchini-y-pollo-o-carne-con-bechamel",
+    "title": "Lasaña de zucchini y pollo o carne (con bechamel)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Almuerzo",
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "650gr de pechuga de pollo o carne molida (o pesar tu porción antes de armarla)",
+      "2 zucchinis",
+      "Salsa napolitana y/o salsa bechamel (a elección)",
+      "1 cebolla",
+      "Ghee o aceite de oliva",
+      "Sal",
+      "Ajo en polvo",
+      "Orégano seco",
+      "Queso vegano (opcional)"
+    ],
+    "steps": [
+      "Precalentar el horno a 180°C / 350°F.",
+      "Cocinar el pollo o la carne en agua con sal, ajo en polvo y orégano seco por 30 minutos o hasta que esté totalmente cocinado. Después desmecharlo.",
+      "Cortar el zucchini en lonjas delgadas o con una mandolina; serán las capas de la lasaña.",
+      "En un sartén con ghee o aceite de oliva, sofreír la cebolla hasta que esté transparente, agregar el pollo o la carne y la salsa napolitana, pomodoro o bechamel.",
+      "Engrasar un molde apto para horno, puede ser con ghee o aceite de oliva.",
+      "Armar las capas en el molde (proteína - zucchini - salsa - queso vegano si se va a usar) y hornear por 30 minutos o hasta que se vea doradito. Sacar del horno, dejar enfriar y disfrutar."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "spaguettis-de-zucchini-con-pollo-y-pesto",
+    "title": "Spaguettis de zucchini con pollo y pesto",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Almuerzo",
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "150 g de zucchini",
+      "Pollo desmechado según tu porción",
+      "Media cebolla picada en cubos",
+      "2 dientes de ajo finamente picados",
+      "Pesto cremoso",
+      "Leche de coco (opcional)",
+      "Caldo de hueso o fondo de pollo o vegetales",
+      "Aceite de coco, oliva o aguacate",
+      "Ajo en polvo y sal"
+    ],
+    "steps": [
+      "Sofreír a fuego bajo la cebolla en el aceite de preferencia durante 5 minutos.",
+      "Agregar los dientes de ajo y el pollo desmechado, pavo o champiñones y revolver bien.",
+      "Adicionar ajo en polvo y sal al gusto y seguir revolviendo.",
+      "Pasados 5 minutos agregar el pesto y un poco de leche de coco, caldo de hueso o fondo de vegetales o pollo y mezclar bien.",
+      "Con un spiralizer cortar el zucchini en forma de espagueti y adicionar los noodles de zucchini, apagar el fogón y mezclar con ayuda de una pinza."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "ensalada-de-fresas-espinaca-y-pollo",
+    "title": "Ensalada de fresas, espinaca y pollo",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Almuerzo",
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "200 gramos de espinaca baby",
+      "100 gramos de fresas",
+      "3 cucharadas de hojas de albahaca fresca",
+      "20 gramos de nueces tostadas picadas (pueden tostarse unos minuticos en un sartén)",
+      "Pollo en la cocción que desees",
+      "10ml de aceite de oliva (vinagreta)",
+      "2 cucharadas de vinagre balsámico (vinagreta)",
+      "Gotas de stevia (vinagreta)",
+      "1 cucharada de cebolla morada cortada muy chiquitica (vinagreta)",
+      "¼ cucharadita de sal (vinagreta)",
+      "Pimienta (vinagreta)"
+    ],
+    "steps": [
+      "Combinar todos los ingredientes de la vinagreta en un bowl.",
+      "Combinar en otro bowl grande todos los ingredientes de la ensalada, las fresas pueden ir en rodajas. Por último, poner el aderezo."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "crackers-de-semillas",
+    "title": "Crackers de semillas",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "1 taza + 1/4 de semillas de calabaza",
+      "1 taza de linaza en semilla",
+      "3/4 de taza de linaza molida",
+      "1 Cda de psyllium husk",
+      "1 cdita de sal marina",
+      "1 cdita de ajo en polvo",
+      "1 cdita de paprika ahumada",
+      "1 cdita de orégano",
+      "1 taza + 1/4 de agua ligeramente caliente"
+    ],
+    "steps": [
+      "Mezclar muy bien todos los ingredientes menos el agua.",
+      "Calentar un poco el agua, es decir que esté más caliente que la temperatura ambiente pero que no hierva.",
+      "Agregar el agua poco a poco mientras se va mezclando. Cuando termine de agregarse toda el agua mezclar un poco más.",
+      "Dejar reposar 20 minutos.",
+      "En una bandeja de horno grande poner la mezcla sobre papel parafinado un poco engrasado o sobre siliconas.",
+      "Con otro papel parafinado o silicona aplanarlo suavemente hasta que toda la masa esté lo más delgada posible. Entre más delgada esté, más crocante quedará.",
+      "Llevar al horno previamente precalentado a 180°C durante 50 minutos aproximadamente o hasta que esté crocante. Tener cuidado de no dejar quemar los bordes.",
+      "Dejar enfriar y partir manualmente. Si al dejar enfriar se siente blando en algunas partes, darle la vuelta y llevar al horno unos minutos más. Otra opción es armar el cracker individualmente."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "kale-dip",
+    "title": "Kale dip",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "2 tazas de kale crespo finamente picado",
+      "Media cebolla picada en cubos",
+      "130g de yogurt de coco o queso crema vegano",
+      "Sal al gusto",
+      "2 dientes de ajo",
+      "Zumo de medio limón",
+      "¼ de taza de aceite de oliva",
+      "Un nudo de cilantro finamente picado"
+    ],
+    "steps": [
+      "Precalentar sartén, poner aceite de oliva e inmediatamente agregar la cebolla y pasados dos minutos agregar los dientes de ajo.",
+      "Cuando la cebolla y los ajos estén al punto de preferencia, adicionar el kale para cocinarlo un poco. Solo es necesario que pierda rigidez.",
+      "Agregar al procesador el queso crema o yogurt, adicionar también un poco de kale y procesar. A medida que se vaya integrando ir agregando más kale; la idea es que sea progresivo para ayudarle al procesador a que sea más fácil.",
+      "Adicionar el cilantro y repetir el proceso anterior."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "salsa-pomodoro-tomates-asados",
+    "title": "Salsa pomodoro (tomates asados)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "250 g de tomates",
+      "Media taza de cebolla picada en cubos",
+      "Dos dientes de ajo",
+      "5 gramos de albahaca",
+      "Dos cucharadas de aceite de oliva",
+      "Una cucharadita de sal",
+      "50 gramos de zanahoria en rodajas",
+      "Stevia (opcional)"
+    ],
+    "steps": [
+      "Lavar bien los tomates.",
+      "Cortarlos en mitades y agregar el aceite de oliva y sal sobre ellos, luego llevarlos junto con los dientes de ajo y la albahaca al horno/airfryer a 200°C hasta que comiencen a deshidratarse y la cáscara se dore. Aproximadamente 10 a 15 minutos.",
+      "Darles la vuelta en ese tiempo para que queden lo más uniformemente cocinados y, si se considera necesario, adicionarles un poco más de aceite de oliva.",
+      "En una sartén saltear la cebolla con un poco de aceite de coco hasta que se cristalice o quede dorada; realizar el mismo proceso con la zanahoria.",
+      "Cuando todo esté en el punto deseado, pasarlos a la licuadora o procesador.",
+      "Adicionar los demás ingredientes, licuar, rectificar sabores y disfrutar."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "tahini",
+    "title": "Tahini",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "Ajonjolí",
+      "Sal",
+      "Aceite de oliva o de ajonjolí"
+    ],
+    "steps": [
+      "Agregar a una sartén grande las semillas de manera que queden bien esparcidas para poder tostarlas uniformemente. La cantidad es a preferencia, según el tamaño de la sartén o procesador.",
+      "Tostarlas a fuego muy bajo y mezclar constantemente.",
+      "Cuando estén ligeramente doradas, procesarlas hasta que suelten su propia grasa y comiencen a formar una 'mantequilla'. Al estar caliente el proceso es mucho más fácil.",
+      "Ayudar al procesador raspando sus paredes.",
+      "Adicionar un poco de sal y, solo si es necesario, adicionar un poco de aceite de oliva o de ajonjolí para ayudarle a soltar la grasa."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "bechamel",
+    "title": "Bechamel",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "½ cda de aceite de coco",
+      "Media cebolla picada en cubos",
+      "2 tazas de arbolitos de coliflor",
+      "1 cda de aceite de oliva",
+      "½ de yogurt de coco o crema de coco",
+      "1 cda de levadura nutricional",
+      "2 cditas de ajo en polvo o 2 dientes de ajo",
+      "1 cdita de sal marina"
+    ],
+    "steps": [
+      "Precalentar el sartén; cuando esté caliente adicionar el aceite de coco y cuando este se derrita agregar la cebolla.",
+      "Darle vueltas constantemente hasta que estén cristalinas o doradas (punto de preferencia personal).",
+      "En un bowl o recipiente esparcir un poco de aceite de oliva sobre los arbolitos de coliflor y mezclarlos de manera que todos logren untarse.",
+      "Adicionar sobre estos sal y ajo en polvo y llevarlos al horno o airfryer a 160 grados C durante 8-10 minutos (dando la vuelta en ese tiempo); también se puede cocinar 3 minutos en agua hirviendo y luego escurrirlos muy bien.",
+      "Procesar en yogur de coco, el aceite de oliva y las cebollas.",
+      "Cuando se integre, adicionar los demás ingredientes y procesar nuevamente hasta lograr una textura homogénea. Se recomienda raspar las paredes del procesador para ayudarlo un poco.",
+      "Rectificar sabores."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "vinagreta-de-cilantro",
+    "title": "Vinagreta de cilantro",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "¼ de taza de yogurt de coco",
+      "1/2 taza de cilantro picado finamente",
+      "1 cda de mostaza",
+      "1 cdita de vinagre",
+      "1 cdita de sal marina",
+      "1 cdita de aceite de oliva"
+    ],
+    "steps": [
+      "Licuar todos los ingredientes."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "queso-de-coco",
+    "title": "Queso de coco",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "320g de yogurt de coco",
+      "2 tiras de piel de limón",
+      "2 cdas de vinagre de manzana",
+      "2 cdas de aceite de oliva extra virgen",
+      "1 cdita de sal marina",
+      "Media taza de bagazo de leche de coco"
+    ],
+    "steps": [
+      "Poner el yogurt en una olla a temperatura mínima durante 7 minutos mezclando constantemente con una espátula de silicona o madera.",
+      "Agregar el vinagre de manzana y mezclar bien, luego agregar la piel de limón, apagar y dejar reposar 20 minutos aproximadamente.",
+      "Agregar los demás ingredientes y mezclar hasta que estén muy bien integrados.",
+      "Poner sobre un recipiente un papel toalla absorbente y amarrarlo. El papel toalla no debe tocar el fondo del recipiente.",
+      "Vaciar la mezcla y ponerla en un lugar oscuro (dentro del horno puede ser) durante 12 horas para que escurra el exceso de humedad. Envasar en recipiente de vidrio."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "babaganoush-ahumado",
+    "title": "Babaganoush ahumado",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [],
+    "restrictions": [],
+    "portions": "3",
+    "instagramLink": "",
+    "ingredients": [
+      "2 berenjenas",
+      "Zumo de 1 limón",
+      "3 cdas de tahini",
+      "1 cdita de sal",
+      "2 dientes de ajo",
+      "Pimienta a gusto",
+      "1 Cda de yogurt de coco o aceite de oliva"
+    ],
+    "steps": [
+      "Lavar las berenjenas bien y ponerlas directamente en el fuego de la estufa.",
+      "Darles vuelta constantemente de tal manera que por todos los lados quede la cáscara negra y se sientan blanditas.",
+      "Llevarlas inmediatamente al agua fría y quitarles la cáscara.",
+      "Cortarlas a la mitad y quitar la mayor cantidad de semillas posible.",
+      "Pasarlas a un recipiente y adicionar el limón, el tahini y el yogurt de coco y mezclar con un tenedor de manera que quede uniforme.",
+      "Adicionar sal y pimienta al gusto.",
+      "Servir con aceite de oliva y cilantro (opcional). Mantener en la nevera en recipiente de vidrio, duración 1 semana."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "crema-de-galleta-de-almendras",
+    "title": "Crema de \"galleta de almendras\"",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "250 a 400 gramos de almendras crudas",
+      "Stevia liquida al gusto",
+      "Esencia de vainilla",
+      "Pizca de sal",
+      "Canela al gusto"
+    ],
+    "steps": [
+      "En una sartén o en el horno dorar las almendras.",
+      "Procesarlas aun estando calientes.",
+      "Ir raspando las paredes del procesador y seguir procesando.",
+      "Agregar stevia, sal y canela al gusto y terminar de procesar."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "mantequilla-de-coco",
+    "title": "Mantequilla de coco",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "Coco deshidratado sin azúcar"
+    ],
+    "steps": [
+      "En una sartén o en el horno dorar ligeramente el coco.",
+      "Procesarlo.",
+      "Ir raspando las paredes del procesador y seguir procesando."
+    ],
+    "notes": "Se endurece cuando se enfría. Para utilizarla se derrite al baño maría. Utilízala para glasear, en recetas o para comer sola."
+  },
+  {
+    "id": "crema-de-coco-y-maranones",
+    "title": "Crema de coco y marañones",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "1 taza y media de marañones crudos",
+      "1 taza y media de coco deshidratado sin azúcar",
+      "Pizca de sal",
+      "Estevia al gusto",
+      "Extracto de vainilla al gusto",
+      "Canela"
+    ],
+    "steps": [
+      "Tostar el coco en una sartén a fuego bajo e ir revolviendo constantemente con ayuda de una espátula. El coco debe quedar doradito y uniforme.",
+      "Tostar los marañones en el horno hasta que estén dorados.",
+      "Procesar el coco y los marañones aun estando calientes.",
+      "Con ayuda de una espátula raspar los bordes para ayudarle al procesador.",
+      "Adicionar pizca de sal y stevia para realzar sabores. Opcional, adicionar extracto de vainilla natural y canela. Guardar en un recipiente de vidrio y mantener a temperatura ambiente."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "batido-nutritivo-de-frutos-rojos",
+    "title": "Batido nutritivo de frutos rojos",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Desayuno"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "1 taza de arbolitos de coliflor",
+      "1 taza de fruta congelada (se recomienda frutos rojos, pero puedes hacerla con otras frutas)",
+      "1/3 de taza de leche de coco",
+      "Extracto de vainilla natural",
+      "Estevia al gusto",
+      "Zumo de limón o vinagre de manzana"
+    ],
+    "steps": [
+      "Cocinar la coliflor 3 minutos en agua hirviendo, hacerle choque térmico con agua fría y luego congelarla.",
+      "Agregar la leche de coco al procesador primero y luego los demás ingredientes. Dependiendo de la potencia del procesador o licuadora se agregan al mismo tiempo o de a poco.",
+      "Procesar hasta que quede la consistencia deseada. Se recomienda no procesar demasiado para que quede espeso."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "galletas-o-alfajores",
+    "title": "Galletas o alfajores",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Postre"
+    ],
+    "restrictions": [],
+    "portions": "3",
+    "instagramLink": "",
+    "ingredients": [
+      "100gr de harina de almendra",
+      "100 gr de harina de coco",
+      "1 cdita de polvo de hornear",
+      "1 cdita de ralladura de limón",
+      "2 huevos",
+      "80g de aceite de coco derretido",
+      "1 cdita de extracto de vainilla natural",
+      "Stevia al gusto"
+    ],
+    "steps": [
+      "Precalentar el horno a 180°C.",
+      "En un recipiente mezclar muy bien los ingredientes secos a excepción de la ralladura de limón. Se recomienda cernirlo todo para que no haya grumos y la textura quede ideal.",
+      "Licuar los ingredientes húmedos y la ralladura de limón.",
+      "Integrar ambas mezclas de manera que quede una masa uniforme.",
+      "Dejar reposar 15 minutos.",
+      "Poner la masa sobre papel parafinado o siliconas y con ayuda de un rodillo aplanarla de manera que quede 8mm de espesor aproximadamente.",
+      "Cortar con molde circular y llevar las galletas a una bandeja previamente engrasada.",
+      "Llevar al horno durante 15-18 minutos, dejar enfriar y disfrutar. Puedes cubrirlas de chocolate o usarlas para hacer alfajores."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "brownies-sin-horno",
+    "title": "Brownies sin horno",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Postre"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "2 cditas de aceite de coco",
+      "100g de cacao amargo en barra",
+      "2 cdas de mantequilla de nueces",
+      "Stevia al gusto",
+      "Extracto de vainilla al gusto",
+      "Taza y media de puré de batata"
+    ],
+    "steps": [
+      "Derretir el aceite de coco en una sartén.",
+      "Cuando esté derretido apagar el fogón. El resto del proceso se hace con el fogón apagado.",
+      "Agregar de a poquito el cacao en trozos y mezclar muy bien con ayuda de una espátula.",
+      "Cuando todo el cacao esté derretido adicionar la mantequilla de nueces, la estevia y la vainilla.",
+      "Verificar punto de dulzura.",
+      "Adicionar el puré de batata.",
+      "Mezclar muy bien hasta que esté homogéneo.",
+      "Agregar a un molde, esperar a que se enfríe a temperatura ambiente y meter a la nevera.",
+      "Para decorar puedes utilizar nueces, coco rallado o mantequilla de nueces."
+    ],
+    "notes": "Para el puré de batata: cocinar batata con cáscara en agua hirviendo hasta que el tenedor entre con facilidad. Luego pelarla y procesarla para que quede lo más suave posible."
+  },
+  {
+    "id": "nutella-saludable",
+    "title": "Nutella saludable",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Postre"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "1 cdita de aceite de coco, de almendra o marañón o macadamia",
+      "100 gr de chocolate oscuro (porcentaje de preferencia)",
+      "240g de mantequilla de nueces",
+      "Stevia liquida al gusto",
+      "Extracto de vainilla natural al gusto"
+    ],
+    "steps": [
+      "En una olla o sartén poner a derretir el aceite de coco.",
+      "Cuando esté derretido apagar el fogón.",
+      "Agregar el cacao en trozos pequeños de a poquito y mezclar muy bien con ayuda de una espátula.",
+      "Adicionar la mantequilla de nueces, la estevia y la vainilla.",
+      "Verificar punto de dulzura.",
+      "Listo, así de fácil."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "trufas-de-chocolate-aguacate-o-banano",
+    "title": "Trufas de chocolate (aguacate o banano)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Postre"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "1 aguacate hass o banano o plátano maduro (previamente cocido)",
+      "1 cdita de aceite de coco",
+      "100gr de cacao amargo en barra (porcentaje de más del 80%)",
+      "2 cdas generosas de mantequilla de nueces",
+      "1 Cda de cacao en polvo",
+      "Stevia al gusto",
+      "Extracto de vainilla al gusto"
+    ],
+    "steps": [
+      "Procesar el aguacate/banano/plátano con la mantequilla de nueces y el cacao de manera que quede su textura cremosa y uniforme.",
+      "En una sartén poner a derretir aceite de coco.",
+      "Cuando esté derretido apagar el fogón.",
+      "Agregar el cacao en trozos pequeños y mezclar muy bien con ayuda de una espátula.",
+      "Cuando todo el cacao esté derretido pasarlo a un bowl junto con la otra mezcla.",
+      "Integrar muy bien hasta lograr una masa homogénea.",
+      "Esperar a que se enfríe a temperatura ambiente y luego meterla a la nevera durante 15 minutos (no dejar pasar más de ese tiempo porque se vuelve muy sólida y la masa es más difícil de manejar).",
+      "Sacarla de la nevera y hacer las bolitas del tamaño deseado (15 a 20 gramos). Cubrirlas con cacao, canela, jengibre en polvo o coco y disfrutar. Guardar en la nevera."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "paletas-de-banano-cubiertas-con-chocolate",
+    "title": "Paletas de banano cubiertas con chocolate",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Postre"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "100gr de banano",
+      "100g de yogurt de coco o vegano o crema de coco",
+      "1 cdita de extracto de vainilla natural",
+      "200 g de cacao en barra (porcentaje de preferencia)",
+      "1/2 taza de almendras trituradas"
+    ],
+    "steps": [
+      "Cortar el banano en trozos pequeños y licuarlo con el yogurt y el extracto de vainilla natural.",
+      "Pasar a moldes de paleta y llevar al congelador durante 3 horas.",
+      "Derretir el cacao al baño maría en un recipiente que idealmente sea un poco alto y no muy ancho pero que quepa la paleta, para no derretir más cacao del necesario (esto dependerá también del molde y tamaño de la paleta).",
+      "Agregar las almendras al cacao y mezclar muy bien.",
+      "Sumergir cada paleta en cacao y dejar que se endurezca el chocolate."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "muffins-de-arandanos-sin-huevo",
+    "title": "Muffins de arándanos (sin huevo, con harina de coco y yuca)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Desayuno"
+    ],
+    "restrictions": [],
+    "portions": "3",
+    "instagramLink": "",
+    "ingredients": [
+      "1/4 taza de arándanos frescos o congelados",
+      "90 gramos de plátano maduro cocinado",
+      "1/3 de taza de yogurt de coco o crema de coco",
+      "1 cditas vinagre de manzana",
+      "1/2 Cda de aceite de coco",
+      "1/4 taza de harina de coco",
+      "1/4 taza de harina de yuca",
+      "1 cditas de psyllium husk",
+      "1 Pizca de bicarbonato",
+      "Canela al gusto",
+      "Extracto de vainilla natural al gusto",
+      "Estevia al gusto (opcional)"
+    ],
+    "steps": [
+      "Licuar o procesar todos los ingredientes húmedos menos los arándanos.",
+      "Mezclar muy bien todos los ingredientes secos.",
+      "Integrar ambas mezclas de manera que quede una masa uniforme.",
+      "Agregar los arándanos y mezclar de manera manual (los arándanos deben sentirse, no deben quedar integrados en la masa).",
+      "Engrasar levemente los moldes con aceite de coco y pasar la masa a ellos.",
+      "Opcional, esparcir encima un poco de aceite de coco y canela.",
+      "Llevar 10 minutos al Air Fryer, luego subir a 160°C, luego subir a 180°C y dejarlos durante 8 minutos más. Si se hace en horno es más tiempo (5 minutos aproximadamente y el horno debe estar precalentado antes de ingresarlo)."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "muffins-de-arandanos-con-platano-y-nueces",
+    "title": "Muffins de arándanos (con plátano y nueces)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Postre"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "3/4 de taza de harina de almendra",
+      "1 Cdita de canela en polvo",
+      "1/4 de Cdita de nuez moscada",
+      "1/4 de Cdita de jengibre en polvo",
+      "1/2 Cdita de bicarbonato de soda",
+      "1 Cdita de polvo de hornear",
+      "1/2 Taza de nueces trituradas",
+      "Pizca de sal",
+      "1 Plátano maduro grande",
+      "2 huevos",
+      "1 Cda de aceite de coco derretida",
+      "1 Cda de extracto de vainilla natural",
+      "3/4 de taza de arándanos frescos",
+      "Stevia liquida al gusto"
+    ],
+    "steps": [
+      "Cocinar el plátano.",
+      "Mezclar todos los ingredientes secos y aparte todos los húmedos menos las nueces y los arándanos.",
+      "Juntar ambas mezclas y cuando esté homogénea agregar los arándanos y las nueces e integrarlos con la masa manualmente.",
+      "Pasar a moldes de muffins y llevarlos al horno previamente precalentado a 180°C durante 20 minutos aproximadamente.",
+      "Dejar enfriar para desmoldar, guardar en la nevera."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "panna-cotta-de-coco",
+    "title": "Panna cotta de coco",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Postre"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "400 g de leche de coco cremosa",
+      "2 cdas gelatina sin sabor",
+      "Stevia liquida al gusto",
+      "Extracto de vainilla a gusto"
+    ],
+    "steps": [
+      "Licuar todos los ingredientes.",
+      "Calentar a fuego bajo en una olla pequeña y revolver constantemente hasta que esté a punto de ebullir.",
+      "Apagar y dejar reposar unos 5 minutos.",
+      "Verter la mezcla en un molde ojalá de silicona.",
+      "Esperar a que se enfríe completamente.",
+      "Cubrir con papel aluminio y llevar a la nevera de 3 a 4 horas."
+    ],
+    "notes": "Disfrutar con Nutella saludable o mermelada de mora."
+  },
+  {
+    "id": "galletas-de-coco-y-banano",
+    "title": "Galletas de coco y banano",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Postre"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "2 bananos no muy maduros",
+      "2 cdas de mantequilla de nueces",
+      "1 Cda de yogurt de coco",
+      "1 Cda de aceite de coco",
+      "Extracto de vainilla a gusto",
+      "1/2 taza de harina de coco"
+    ],
+    "steps": [
+      "Precalentar el horno a 180°C.",
+      "Licuar o mezclar a mano los bananos con los demás ingredientes menos la harina.",
+      "Agregar la harina y mezclarla bien. No licuarlo mucho porque queda muy líquida la masa y así es más difícil darle forma.",
+      "Con ayuda de una brocha de silicona engrasar el papel aluminio con aceite de coco.",
+      "Con una cuchara tomar parte de la mezcla y ponerla en el papel aluminio formando cada galleta. No debe quedar uniforme, se ven más lindas artesanales.",
+      "Hornear durante 25-30 minutos aproximadamente, puedes cubrir de chocolate oscuro."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "waffles-de-chocolate-2-porciones",
+    "title": "Waffles de chocolate (2 porciones)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Desayuno"
+    ],
+    "restrictions": [],
+    "portions": "2",
+    "instagramLink": "",
+    "ingredients": [
+      "2 huevos o 1 huevo y 2 claras",
+      "Stevia liquida al gusto",
+      "1/4 taza de leche de almendras",
+      "1 cucharadita de esencia de vainilla",
+      "1/2 taza de harina de almendras",
+      "1/8 taza de cacao en polvo",
+      "1 cucharada de harina de coco",
+      "1 cucharadita de bicarbonato de soda",
+      "½ cucharadita de sal"
+    ],
+    "steps": [
+      "En un bowl, mezclar los huevos, la leche, la stevia y la esencia de vainilla.",
+      "Agregar los otros ingredientes al bowl y revolver hasta que estén integrados.",
+      "Precalentar y engrasar la wafflera. Cuando esté lista, agregar 1/3 o ½ de taza de mezcla en la wafflera y dejar 5 minutos o hasta que la wafflera avise que está listo."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "pancakes-o-waffles-de-brocoli-almidon-de-yuca",
+    "title": "Pancakes o waffles de brocoli (con almidón de yuca)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Desayuno"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "3 huevos o 1 huevo y 2 claras",
+      "1 taza de brócoli previamente cocido 3 minutos en agua hirviendo",
+      "1/2 taza de harina de almendras",
+      "1/4 de almidón de yuca",
+      "1 y ½ cucharadita de polvo de hornear",
+      "1 cucharadita de sal"
+    ],
+    "steps": [
+      "Licuar o procesar todos los ingredientes.",
+      "En un sartén o wafflera con ghee, poner la mezcla y dorar por lado y lado."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "hamburguesas-de-pollo-o-pescado-y-platano-maduro",
+    "title": "Hamburguesas de pollo o pescado y plátano maduro",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Almuerzo"
+    ],
+    "restrictions": [],
+    "portions": "2",
+    "instagramLink": "",
+    "ingredients": [
+      "1 plátano maduro",
+      "200 gramos de pollo o pescado cocidos (también puede hacerse con atún)",
+      "1 cucharada de hogao",
+      "1 cucharada de mostaza Dijon",
+      "1 clara de huevo",
+      "Sal"
+    ],
+    "steps": [
+      "Cortar el plátano maduro a la mitad y hacerle unos cortes a lo largo en dos lados (esto es para que más adelante sea más fácil quitar la cáscara).",
+      "Ponerlo en la freidora de aire por 15 minutos a 180 grados centígrados.",
+      "Cuando esté listo el plátano, quitarle la cáscara con cuidado y ponerlo en un bowl. Triturarlo muy bien y agregarle sal al gusto.",
+      "En otro bowl, poner el pollo o el pescado, el hogao y la mostaza y revolver bien.",
+      "En otro bowl poner el huevo y sal al gusto y batir muy bien hasta que se integren.",
+      "Agregar la mezcla del huevo al pollo/pescado y revolver bien.",
+      "Después agregar la mezcla de pollo/pescado al plátano y revolver bien.",
+      "Con las manos, hacer hamburguesitas y ponerlas en un sartén con aceite de oliva para que se doren por lado y lado."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "ensalada-de-manzana-y-nueces-caramelizadas-con-pollo",
+    "title": "Ensalada de manzana y nueces (con nueces caramelizadas y pollo)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Almuerzo",
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "1",
+    "instagramLink": "",
+    "ingredients": [
+      "30 gramos de nueces de tu preferencia",
+      "1 cucharadita de aceite de coco derretido",
+      "Stevia liquida",
+      "Canela al gusto",
+      "Pizca de sal",
+      "Hojas verdes (puede ser un mix de lechuga, espinaca y rúgula)",
+      "Media manzana verde grande o una pequeña",
+      "Pollo en la preparación de tu preferencia y en los gramos de tu porción",
+      "¼ taza de vinagre balsámico (aderezo)",
+      "2 dientes de ajo machacados (aderezo)",
+      "1 cucharadita de mostaza (aderezo)",
+      "¾ taza de aceite de oliva (aderezo)",
+      "Sal (aderezo)",
+      "Pimienta (aderezo)"
+    ],
+    "steps": [
+      "Poner las nueces en un bowl con stevia, aceite de coco derretido, canela y sal. Revolver muy bien hasta que las nueces estén impregnadas de la mezcla.",
+      "Poner las nueces en papel parafinado sobre una bandeja para el horno.",
+      "Llevar al horno ya precalentado a 160 grados centígrados por 12 a 14 minutos. Cuando esté listo, dejar enfriar completamente.",
+      "Poner las hojas verdes en un bowl grande, después agregar las nueces y por último la manzana cortada delgadita.",
+      "Agregar la vinagreta: mezclar todos los ingredientes del aderezo en un vaso o recipiente con tapa y agitar muy bien hasta integrar."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "salsa-pesto-vegano-aguacate-cilantro",
+    "title": "Salsa pesto (vegano, con aguacate y cilantro)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "160g de albahaca",
+      "1 nudo de cilantro",
+      "1 aguacate Hass",
+      "Zumo de 1 limón",
+      "1/2 taza de aceite de oliva",
+      "1 taza de nueces de nogal",
+      "1/2 taza de semillas de calabaza",
+      "2 cdas de levadura nutricional",
+      "1 cdita de ajo en polvo o 1 diente de ajo",
+      "Sal al gusto"
+    ],
+    "steps": [
+      "Procesar la albahaca para reducir su tamaño y de esta manera adicionar más fácilmente los demás ingredientes.",
+      "Agregar el zumo de limón y aceite de oliva y procesar nuevamente.",
+      "Con ayuda de una espátula de silicona ir raspando las paredes del procesador para permitir que todos los ingredientes queden bien mezclados.",
+      "Agregar los demás ingredientes excepto las nueces y semillas.",
+      "Cuando esté bien integrado agregar las nueces y semillas y procesar un poco más. Lo ideal es que se sientan pedacitos de las nueces y semillas, pero se deja al punto de preferencia. Se pueden cambiar las nueces de nogal y semillas de calabaza por otras nueces y semillas como pecanas, pistachos, marañones, almendras, etc. También pueden tostarse un poco para realzar su sabor.",
+      "Ajustar con aceite de oliva si se quiere una consistencia menos cremosa.",
+      "Envasar en recipiente de vidrio y cubrirlo con aceite de oliva para extender su duración."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "ensalada-keto-con-pollo",
+    "title": "Ensalada keto con pollo",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Almuerzo",
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "80 gramos de aguacate",
+      "Espárragos",
+      "Tomate",
+      "30 gramos de nueces de nogal",
+      "Mix de hojas verdes o lechuga",
+      "Zucchini rayado o en la forma que desees",
+      "Aceite de oliva",
+      "Sal y pimienta",
+      "Pesto cremoso",
+      "Pollo",
+      "Levadura nutricional para espolvorear por encima (opcional)"
+    ],
+    "steps": [
+      "Cortar la base de los espárragos (aproximadamente 3 cms); esta parte no se usa.",
+      "Cortar el resto del espárrago también en partes de 3 cms.",
+      "Precalentar la sartén y cuando esté caliente agregar el aceite de oliva o ghee.",
+      "Agregar los espárragos y darles vuelta constantemente. La idea es que se sellen; sacarlos y posteriormente cocinar el pollo en la forma que desees.",
+      "Mezclar 1 Cda de pesto con 2 Cdas de aceite de oliva. Puede variarse según la consistencia deseada.",
+      "Cortar el aguacate en cubos y los tomates en mitades.",
+      "Agregar los demás ingredientes y mezclar todo muy bien."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "tortas-de-pollo-y-batata",
+    "title": "Tortas de pollo y batata",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Almuerzo",
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "2",
+    "instagramLink": "",
+    "ingredients": [
+      "1 taza de puré de batata",
+      "400 gramos de filetes de pechuga de pollo cruda",
+      "1/4 de cebolla morada picada en cubos",
+      "3-4 ramitas de cilantro y perejil finamente picados",
+      "1 cdita de ajo en polvo",
+      "3 dientes de ajo",
+      "Sal y especias al gusto",
+      "Aceite de oliva"
+    ],
+    "steps": [
+      "Picar el pollo en cubos pequeños.",
+      "Sofreír la cebolla hasta que esté dorada.",
+      "Poner todos los ingredientes en el procesador o licuadora ubicándolos de manera uniforme.",
+      "Procesar hasta que esté todo bien integrado, pero sin dejarlo demasiado blando.",
+      "Precalentar la sartén y engrasarla levemente.",
+      "Hacer las tortas del tamaño deseado y llevarlas a la sartén.",
+      "Cuando esté dorado voltear y dejar unos minutos más. Verificar que el pollo esté bien cocinado; para mayor seguridad se puede utilizar pollo desmechado."
+    ],
+    "notes": "Para el puré de batata: cocinar la batata con cáscara en agua hirviendo hasta que el tenedor entre con facilidad. Luego quitarle la cáscara y hacer el puré con el tenedor."
+  },
+  {
+    "id": "brocomole",
+    "title": "Brocomole",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "3 aguacates hass",
+      "1 taza de arbolitos de brócoli",
+      "Zumo de 1 o 2 limones",
+      "1 cdita de vinagre de manzana",
+      "Media cebolla cortada en cuadros pequeños",
+      "Sal y ajo en polvo",
+      "Cilantro y paprika ahumada"
+    ],
+    "steps": [
+      "Cocinar el brócoli 8 minutos a 170°C en el Air Fryer o en el horno. Otra opción es cocinar 3 minutos en agua hirviendo, hacer choque térmico con agua fría y escurrirlo bien con ayuda de un papel toalla absorbente.",
+      "Picar la cebolla en cuadros pequeños y sofreírla hasta que esté dorada.",
+      "Hacer un puré con 2 aguacates, se recomienda de manera manual con un tenedor.",
+      "Licuar el aguacate restante con el brócoli, limón, el vinagre de manzana, sal y ajo.",
+      "Integrar las dos mezclas.",
+      "Rectificar sabores. La sal y el limón son a gusto personal y siempre se recomienda ir de menos a más.",
+      "Como un toque extra puedes adicionar cilantro picado finamente y/o paprika ahumada. Si te gusta el picante adiciona un poco de pimienta cayena."
+    ],
+    "notes": "Porción 80 a 100 gramos."
+  },
+  {
+    "id": "waffles-de-platano-y-tilapia-pollo",
+    "title": "Waffles de plátano y tilapia/pollo",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Almuerzo",
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "200g de filete de tilapia o pechuga de pollo",
+      "1 plátano maduro grande (idealmente que la cáscara no esté muy negra)",
+      "1 cdita de paprika ahumada",
+      "1 Cda de aceite de coco, aceite de oliva o ghee",
+      "Sal marina a gusto"
+    ],
+    "steps": [
+      "Secar la tilapia bien y agregar sobre ella sal marina.",
+      "Precalentar la sartén y cuando esté caliente agregar un poquito de aceite de coco.",
+      "Cuando el aceite se derrita poner la tilapia a temperatura media y luego darle la vuelta hasta que esté completamente cocinada (si vas a usar pollo, usa pechuga desmechada).",
+      "Cocinar el plátano en agua.",
+      "Procesar el plátano, la tilapia, la paprika y el aceite de coco hasta que quede una masa homogénea. Tener cuidado de que no quede muy blanda o líquida.",
+      "Precalentar la wafflera y cuando esté lo suficientemente caliente poner la masa, cerrarla, esperar 7 minutos aproximadamente. También puedes hacerlo en forma de hamburguesa.",
+      "Dejar enfriar antes de sacarlo de la wafflera."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "curry-de-pollo-y-verduras",
+    "title": "Curry de pollo y verduras",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Almuerzo",
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "2",
+    "instagramLink": "",
+    "ingredients": [
+      "500 gramos de pechuga de pollo crudo",
+      "2 dientes de ajo",
+      "1 trozo de jengibre de 2 cm",
+      "1 cebolla mediana",
+      "1 tomate grande",
+      "1/2 taza de leche de coco o yogurt de coco",
+      "1 cucharada de curry en polvo",
+      "½ cucharada de comino",
+      "½ cucharada de cúrcuma",
+      "Pimienta de cayena (opcional)",
+      "Sal al gusto",
+      "Pimienta al gusto",
+      "Verduras cocidas a tu elección: coliflor, habichuela, pimentón, brócoli, zanahoria"
+    ],
+    "steps": [
+      "Pica el pollo en cubos medianos.",
+      "Corta la cebolla y el ajo en cubos pequeños.",
+      "Ralla el jengibre y tritura el tomate.",
+      "En una sartén profunda, agrega un poco de aceite de oliva y cocina la cebolla, el ajo, el jengibre y el tomate.",
+      "Echa todas las especias: el curry, el comino, la cúrcuma, la pimienta de cayena, pimienta negra y una pizca de sal. Revuelve bien por un par de minutos y baja el fuego a la mitad.",
+      "Ahora agrega el pollo picado y cocina hasta que se haya sellado por todos lados.",
+      "Pon ½ vaso de agua y mezcla.",
+      "Deja que se cocine a fuego suave por 15 minutos, removiendo de vez en cuando.",
+      "Si ves que la salsa está muy seca, ponle un poco más de agua; si está demasiado líquida, sube un poco la temperatura para que se evapore algo de líquido.",
+      "Transcurridos los 15 minutos revisa como está de sal y agrega más si es necesario. En este momento agrega los vegetales a tu elección, previamente cocidos.",
+      "Ahora agrega la ½ taza de leche de coco. Mezcla bien y deja cocinar por 5 minutos más.",
+      "Si quieres, puedes suavizar el sabor poniéndole más leche de coco.",
+      "Apaga el fuego y deja reposar un par de minutos.",
+      "Al servir, pon unas hojas de cilantro fresco picado por encima."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "pan-paleo-con-bicarbonato",
+    "title": "Pan paleo (con bicarbonato)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Postre"
+    ],
+    "restrictions": [],
+    "portions": "12",
+    "instagramLink": "",
+    "ingredients": [
+      "2 tazas de harina de almendras",
+      "1/3 taza de harina de coco o yuca",
+      "4 huevos o 2 huevos y 3 claras",
+      "½ cucharadita de sal",
+      "1 cucharadita de bicarbonato",
+      "1 cucharada de vinagre de manzana",
+      "3 cucharadas de ghee o aceite de coco",
+      "1/3 taza de linaza molida o fibra Psyllium",
+      "1 cucharada de semillas de linaza",
+      "1/3 taza de leche vegetal"
+    ],
+    "steps": [
+      "Precalentar el horno a 200 grados centígrados.",
+      "Mezclar en un bowl todos los ingredientes secos: harina de almendras, harina de coco o de yuca, sal, polvo de hornear, linaza.",
+      "En otro bowl mezclar los ingredientes húmedos: huevos, crema de coco o leche vegetal, ghee o aceite de coco, vinagre de manzana.",
+      "Mezclar los ingredientes húmedos con los secos.",
+      "Poner la mezcla en un molde para pan engrasado y si quieren con papel parafinado.",
+      "Por encima, le pueden poner semillas de girasol.",
+      "Hornear a 180 grados centígrados por 30 a 40 minutos o hasta que al insertar un palillo y sacarlo, salga limpio.",
+      "Dejar enfriar completamente para comer."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "huevos-shakshuka-con-stevia",
+    "title": "Huevos shakshuka (con stevia)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Desayuno"
+    ],
+    "restrictions": [],
+    "portions": "1",
+    "instagramLink": "",
+    "ingredients": [
+      "1/4 cebolla cabezona",
+      "1 diente de ajo",
+      "1/4 pimentón rojo o verde",
+      "200 gr de tomate pelado y picado fino, o tomate triturado, o salsa napolitana",
+      "1/4 cucharadita de comino",
+      "1/4 cucharadita de paprika",
+      "1 gota de stevia liquida",
+      "Sal y pimienta negra",
+      "Aceite de oliva",
+      "2 huevos y 2 claras o 3 huevos",
+      "Perejil fresco picado para decorar"
+    ],
+    "steps": [
+      "Pelar la cebolla y picarla en dados o en tiras, según tu preferencia. Picar de igual forma el pimentón. Pelar y laminar el ajo.",
+      "Si vas a usar tomate fresco, hay que pelarlo y trocearlo fino. Si quieres ahorrar tiempo, puedes usar una salsa napolitana.",
+      "Poner un fondo de aceite en una sartén antiadherente amplia o una cazuela baja, que nos tiene que servir luego para llevar a la mesa y servir.",
+      "Incorpora la cebolla, los ajos y los pimentones picados, y deja que se cocinen muy bien a fuego medio-bajo. Agrega sal y pimienta para que la verdura suelte más agua.",
+      "Cuando este sofrito esté bien cocinado, añadir el pimentón, darle unas vueltas, e incorpora el tomate, el comino, la stevia, y sal - pimienta al gusto. Si el tomate es natural o triturado, tienes que dejar reducir la salsa a fuego lento hasta que espese y tome color. Si usas salsa napolitana, lo tendrás listo en un par de minutos. Ve removiendo bien para que se integren todos los sabores.",
+      "Por último, cuando la salsa de tomate esté lista y espesa, haz unos huecos en el tomate y pon dentro los huevos, para que se escalfen en la misma sartén. Sube un poco el fuego y tapa la sartén o cazuela hasta que la clara cuaje y la yema quede fluida."
+    ],
+    "notes": "Para servir el shakshuka: estos huevos con tomate se sirven al momento, recién hechos. Antes de llevar a la mesa, espolvorea con perejil picado. Acompaña con salsa de tomate y pan paleo o pan mogolla."
+  },
+  {
+    "id": "crepes-paleo-con-stevia",
+    "title": "Crepes paleo (con stevia)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Desayuno"
+    ],
+    "restrictions": [],
+    "portions": "2",
+    "instagramLink": "",
+    "ingredients": [
+      "4 huevos",
+      "¼ taza de harina de almendras",
+      "1 cucharadita de esencia de vainilla",
+      "¼ cucharadita de canela",
+      "Stevia liquida al gusto"
+    ],
+    "steps": [
+      "Mezclar todos los ingredientes hasta que estén incorporados.",
+      "Precalentar y engrasar un sartén plano de aproximadamente 23cm.",
+      "Poner la masa para crepes en el sartén e inclinar la sartén con un movimiento circular para asegurarse de que la masa cubra la superficie de manera uniforme. El grosor de los crepes dependerá de la cantidad de masa que usen para cada una. Por lo general, 1/4 de taza es lo que se necesita para hacer un crepe de 23cm.",
+      "Cocinar el crepe hasta que los lados comiencen a crujir y se despeguen fácilmente de la sartén. Debe tomar alrededor de 2 minutos cada uno, a fuego medio.",
+      "Aflojar con una espátula y voltear para cocinar el otro lado. Ambos lados deben estar ligeramente dorados y los crepes deben estar crujientes por los lados y más suaves en el centro."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "mermelada-de-frutos-rojos",
+    "title": "Mermelada de frutos rojos",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Desayuno"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "1 y 1/2 tazas de frutos rojos congelados o frescos",
+      "¼ taza de agua",
+      "Stevia líquida al gusto",
+      "1 cucharadita de esencia de vainilla",
+      "Zumo de 1/8 de limón",
+      "1 cucharadita de semillas de chía"
+    ],
+    "steps": [
+      "Poner en un sartén los frutos rojos, el endulzante y el agua. Ir cocinando a fuego medio-bajo.",
+      "Mientras se va cocinando, pueden ir machacando para que no queden trozos grandes.",
+      "Cuando la textura ya sea de mermelada, agregar la esencia de vainilla, el limón y, por último, la chía.",
+      "Retirar del fuego y dejar enfriar."
+    ],
+    "notes": "Porción: 15 gramos."
+  },
+  {
+    "id": "papas-a-la-francesa-saludables-sin-tajin",
+    "title": "Papas a la francesa saludables (sin tajín)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "Papa pastusa o R12 o papa criolla",
+      "Sal",
+      "Pimienta",
+      "Paprika (opcional)",
+      "Aceite de oliva"
+    ],
+    "steps": [
+      "Lavar muy bien las papas.",
+      "Preferiblemente dejar la cascara, pero si prefieren pueden pelarlas. Cortarlas en tubitos o cuadritos.",
+      "Dejarlas remojar en agua con hielo por 20 minutos (este paso es opcional, pero ayuda a que queden más crocantes). Después de los 20 minutos secarlas muy bien con un papel de cocina y ponerlas en un bowl.",
+      "Agregar aceite de oliva, no mucho, solo lo necesario para que se humecten las papitas y agregar la sal, la pimienta y la paprika y revolver muy bien.",
+      "Ponerlas en el air fryer a 180 grados centígrados por 20 a 30 minutos. Cada 10 minutos pueden ir revisando y con una cuchara de palo, irlas moviendo para que se cocinen bien. El tiempo varía mucho dependiendo como de crujientes las quieren, por eso es importante irlas revisando."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "papas-asadas-con-hierbas-y-mostaza-con-aceite-de-oliva",
+    "title": "Papas asadas con hierbas y mostaza (con aceite de oliva)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Almuerzo",
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "Papa Pastusa",
+      "2 cucharadas de ghee o aceite de oliva",
+      "2 cucharadas de mostaza Dijon",
+      "2 cucharaditas de ajo picado",
+      "1 y ½ cucharadas de romero",
+      "¾ cucharadita de sal",
+      "½ cucharadita de pimienta",
+      "1/8 taza de perejil"
+    ],
+    "steps": [
+      "Precalienta el horno a 200° C / 400° F y engrasa una bandeja o usa un papel parafinado.",
+      "Mezcla en un tazón la ghee, la mostaza, el ajo, el romero, la sal y la pimienta.",
+      "Agrega las papas al tazón y revuelve bien hasta que todas las papas estén impregnadas de la salsa.",
+      "Pon las papas en la bandeja y hornea durante 15 minutos.",
+      "Sácalas, las volteas y llévalas otros 15 minutos al horno hasta que las papas estén doradas y crujientes."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "platanos-rellenos-de-carne-molida-oregano-paprika-laurel",
+    "title": "Platanos rellenos de carne molida (con orégano, paprika y laurel)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Almuerzo",
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "Plátano maduros (según tu porción)",
+      "1 cucharadita de ghee derretida",
+      "Cilantro fresco",
+      "1/2 kilo de carne molida (relleno)",
+      "1 cucharada de aceite de oliva (relleno)",
+      "1/2 taza de cebolla finamente picada (relleno)",
+      "3 dientes de ajo finamente picados (relleno)",
+      "1 cucharada de comino, orégano, paprika y laurel (relleno)",
+      "1 taza de salsa napolitana (relleno)",
+      "1/2 taza de caldo de carne / pollo / verduras (relleno)",
+      "Sal y pimienta al gusto (relleno)"
+    ],
+    "steps": [
+      "Precalienta el horno a 180° C / 350° F.",
+      "Pela los plátanos y ponlos en una bandeja apta para hornear. Frótalos con ghee, esto evitará que se peguen.",
+      "Lleva los plátanos al horno y deja que se cocinen por 15 minutos; luego, los volteas y los vuelves a introducir en el horno por otros 10 minutos o hasta que estén dorados por ambos lados.",
+      "Mientras tanto, haces el relleno. En una olla mediana, calienta el aceite de oliva a fuego medio. Luego añade la cebolla picada y cocina hasta que esté blanda. Posteriormente, agrega el ajo picado y cocina hasta que estén dorados.",
+      "En un tazón pon la carne junto con el comino, orégano, paprika, laurel, la sal y la pimienta, y mezcla con las manos; de esa forma se integrarán los sabores de cada especia. Luego, echa en la olla la carne molida con el caldo y la salsa napolitana. Deja cocinar por 20 minutos.",
+      "Retira los plátanos del horno, con mucho cuidado porque estarán calientes, y ábrelos a lo largo, como si estuvieras abriendo un pan, y rellénalos con la carne ya lista."
+    ],
+    "notes": "Acompañar con 40 gramos de guacamole."
+  },
+  {
+    "id": "crema-de-zanahoria-con-pollo",
+    "title": "Crema de zanahoria (con pollo de acompañamiento)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Almuerzo",
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "2",
+    "instagramLink": "",
+    "ingredients": [
+      "3 cucharadas de aceite de oliva",
+      "1 taza de zanahoria cortada en rodajas",
+      "½ taza de cebolla cortada en julianas",
+      "1 cucharada de ajo cortado en pedazos pequeños (aproximadamente dos ajos pequeños)",
+      "½ cucharadita de jengibre rallado",
+      "1 cucharadita de cúrcuma en polvo",
+      "½ cucharadita de comino",
+      "1 cucharadita de sal",
+      "2 tazas de caldo de pollo o vegetales",
+      "Cilantro (para servir)",
+      "Pollo (para servir)"
+    ],
+    "steps": [
+      "Pon a calentar el aceite a fuego medio en la sartén.",
+      "Lleva al sartén la zanahoria, la cebolla, el ajo, el jengibre, cúrcuma, comino y sal.",
+      "Deja en el fuego entre 10 y 12 minutos, mezclando cada tanto hasta que la zanahoria y la cebolla se doren.",
+      "Apaga el fuego.",
+      "Lleva la mezcla que tienes en la sartén al procesador de alimentos o licuadora.",
+      "Adiciona el caldo de pollo o vegetales al procesador de alimentos o licuadora.",
+      "Licúa hasta que quede una mezcla cremosa. Si es necesario, para la licuadora cada 30 segundos, mezcla con la espátula y licúa nuevamente.",
+      "Si la crema está fría, la calientas en la sartén.",
+      "Prueba y verifica si necesita un poco más de sal."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "pudin-de-chia-y-arandanos-con-stevia",
+    "title": "Pudín de chía y arándanos (con stevia)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Desayuno"
+    ],
+    "restrictions": [],
+    "portions": "3",
+    "instagramLink": "",
+    "ingredients": [
+      "6 cucharadas de chía",
+      "2 tazas de leche de almendras",
+      "Stevia liquida al gusto"
+    ],
+    "steps": [
+      "En un recipiente con tapa, poner la chía y la leche de almendras y revolver bien.",
+      "Tapar y dejar en la nevera mínimo por 4 horas.",
+      "Cuando esté listo, en un vaso de vidrio, poner pudín de chía y 50 gramos de arándanos o fresas."
     ],
     "notes": ""
   }
