@@ -172,11 +172,13 @@
         color: var(--accent-dark);
         font-weight: 600;
       }
-      .token-row {
+      .token-row,
+      .link-row {
         display: flex;
         gap: 8px;
       }
-      .token-row input {
+      .token-row input,
+      .link-row input {
         flex: 1;
       }
       .modal-overlay {
@@ -214,6 +216,39 @@
         justify-content: flex-end;
         gap: 8px;
         margin-top: 18px;
+      }
+      .tabs {
+        display: flex;
+        gap: 6px;
+        margin-bottom: 14px;
+      }
+      .tab-btn {
+        background: #eef0f3;
+        color: var(--text);
+        border-radius: 6px 6px 0 0;
+        padding: 9px 18px;
+      }
+      .tab-btn.active {
+        background: var(--accent);
+        color: #fff;
+      }
+      .tab-panel[hidden] {
+        display: none;
+      }
+      .edu-row {
+        position: relative;
+      }
+      .edu-row-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 12px;
+      }
+      .edu-row-header strong {
+        font-size: 0.8rem;
+        color: var(--muted);
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
       }
     </style>
   </head>
@@ -295,14 +330,44 @@
           </p>
         </div>
 
-        <form id="editorForm">
-          <div class="card" id="emptyState">
-            <p class="hint" style="margin: 0">
-              Aún no se ha cargado ningún contenido. Usa "Cargar contenido
-              actual" o "Cargar desde archivo…" arriba antes de editar.
+        <div class="tabs">
+          <button type="button" class="tab-btn active" data-tab="general">
+            Contenido general
+          </button>
+          <button type="button" class="tab-btn" data-tab="education">
+            Educación
+          </button>
+        </div>
+
+        <div id="tab-general" class="tab-panel">
+          <form id="editorForm">
+            <div class="card" id="emptyState">
+              <p class="hint" style="margin: 0">
+                Aún no se ha cargado ningún contenido. Usa "Cargar contenido
+                actual" o "Cargar desde archivo…" arriba antes de editar.
+              </p>
+            </div>
+          </form>
+        </div>
+
+        <div id="tab-education" class="tab-panel" hidden>
+          <div class="card">
+            <h2>Educación</h2>
+            <p class="hint">
+              Agrega, edita o elimina cursos, títulos o certificaciones.
+              Corresponden a la columna "Education" del sitio.
             </p>
+            <div id="educationList"></div>
+            <button
+              type="button"
+              class="btn-secondary"
+              id="btnAddEducation"
+              disabled
+            >
+              + Agregar curso
+            </button>
           </div>
-        </form>
+        </div>
 
         <div class="card">
           <h2>3. Guardar cambios</h2>
@@ -371,6 +436,12 @@
               label: "Frase debajo del nombre (una línea por renglón)",
               type: "textarea",
             },
+            { key: "hero-cv-text", label: "Texto del botón \"Download Cv\"", type: "text" },
+            {
+              key: "hero-cv-href",
+              label: "Enlace del botón \"Download Cv\" (URL del CV o página)",
+              type: "link",
+            },
           ],
         },
         {
@@ -379,12 +450,22 @@
             { key: "about-role-bold", label: "Rol — primera palabra (resaltada)", type: "text" },
             { key: "about-role-rest", label: "Rol — resto del texto", type: "text" },
             { key: "about-website", label: "Sitio web (texto mostrado)", type: "text" },
+            {
+              key: "about-website-href",
+              label: "Sitio web (enlace real)",
+              type: "link",
+            },
             { key: "about-email", label: "Correo (Sobre mí)", type: "text" },
             { key: "about-city", label: "Ciudad", type: "text" },
             { key: "about-degree", label: "Título académico", type: "text" },
             { key: "about-specialization", label: "Especialización", type: "text" },
             { key: "about-freelance", label: "Disponibilidad freelance", type: "text" },
-            { key: "about-linkedin-href", label: "Enlace de LinkedIn (botón CV)", type: "text" },
+            { key: "about-cv-text", label: "Texto del botón \"Download Cv\"", type: "text" },
+            {
+              key: "about-linkedin-href",
+              label: "Enlace del botón \"Download Cv\"",
+              type: "link",
+            },
             { key: "about-hire-email", label: "Correo del botón \"Hire Me\"", type: "text" },
           ],
         },
@@ -491,6 +572,7 @@
       function setActionsEnabled(enabled) {
         document.getElementById("btnApply").disabled = !enabled;
         document.getElementById("btnDownload").disabled = !enabled;
+        document.getElementById("btnAddEducation").disabled = !enabled;
       }
 
       function buildForm() {
@@ -545,6 +627,33 @@
         labelEl.setAttribute("for", "f_" + key);
         wrap.appendChild(labelEl);
 
+        if (type === "link") {
+          const row = document.createElement("div");
+          row.className = "link-row";
+          const input = document.createElement("input");
+          input.type = "text";
+          input.id = "f_" + key;
+          input.dataset.key = key;
+          input.value = value;
+          input.placeholder = "https://... o una ruta como assets/cv/mi-cv.pdf";
+          const openBtn = document.createElement("button");
+          openBtn.type = "button";
+          openBtn.className = "btn-secondary";
+          openBtn.textContent = "Probar ↗";
+          openBtn.addEventListener("click", () => {
+            const url = input.value.trim();
+            if (!url || url === "javascript:void(0);") {
+              setStatus("Este campo todavía no tiene un enlace para probar.", "warn");
+              return;
+            }
+            window.open(url, "_blank", "noopener");
+          });
+          row.appendChild(input);
+          row.appendChild(openBtn);
+          wrap.appendChild(row);
+          return wrap;
+        }
+
         const input =
           type === "textarea"
             ? document.createElement("textarea")
@@ -577,9 +686,10 @@
       function saveDraft(silent) {
         if (!parsedDoc) return;
         const values = collectFormValues();
+        const education = collectEducationRows();
         localStorage.setItem(
           DRAFT_KEY,
-          JSON.stringify({ values, savedAt: Date.now() })
+          JSON.stringify({ values, education, savedAt: Date.now() })
         );
         if (!silent) {
           setStatus("Borrador guardado automáticamente en este navegador.", "ok");
@@ -599,11 +709,12 @@
           );
           return;
         }
-        const { values, savedAt } = JSON.parse(raw);
+        const { values, education, savedAt } = JSON.parse(raw);
         Object.entries(values).forEach(([key, val]) => {
           const inp = form.querySelector(`[data-key="${CSS.escape(key)}"]`);
           if (inp) inp.value = val;
         });
+        if (education) buildEducationForm(education);
         setStatus(
           "Borrador cargado (guardado " +
             new Date(savedAt).toLocaleString() +
@@ -616,8 +727,167 @@
         const doc = new DOMParser().parseFromString(htmlText, "text/html");
         parsedDoc = doc;
         buildForm();
+        buildEducationForm(parseEducationFromDoc());
         updatePreview();
       }
+
+      // --- Education tab: repeatable list of courses/degrees ---
+      const EDU_COLORS = [
+        "#bd1550",
+        "#84ba40",
+        "#630e53",
+        "#ff5380",
+        "#0bceaf",
+        "#fbdd62",
+        "#3caac1ff",
+      ];
+      const educationListEl = document.getElementById("educationList");
+
+      function getEducationContainer() {
+        return parsedDoc
+          ? parsedDoc.querySelector('[data-edu-list="education"]')
+          : null;
+      }
+
+      function parseEducationFromDoc() {
+        const container = getEducationContainer();
+        if (!container) return [];
+        return [...container.querySelectorAll(":scope > .timeline-item")].map(
+          (item) => {
+            const title =
+              item
+                .querySelector(".timeline-title")
+                ?.textContent.replace(/\s+/g, " ")
+                .trim() || "";
+            const header = item.querySelector(".time-line-header");
+            const institutionP = header
+              ? [...header.querySelectorAll("p")].find(
+                  (p) => !p.classList.contains("timeline-year")
+                )
+              : null;
+            const institution = institutionP
+              ? institutionP.textContent.replace(/\s+/g, " ").trim()
+              : "";
+            const year =
+              item
+                .querySelector(".timeline-year")
+                ?.textContent.replace(/\s+/g, " ").trim() || "";
+            const descEl = item.querySelector(".timeline-content");
+            const description = descEl
+              ? descEl.textContent.replace(/\s+/g, " ").trim()
+              : "";
+            return { title, institution, year, description };
+          }
+        );
+      }
+
+      function scheduleEducationAutosave() {
+        clearTimeout(autosaveTimer);
+        autosaveTimer = setTimeout(() => saveDraft(true), 500);
+      }
+
+      function renderEducationRow(data) {
+        data = data || { title: "", institution: "", year: "", description: "" };
+        const row = document.createElement("div");
+        row.className = "edu-row card";
+        row.innerHTML =
+          '<div class="edu-row-header"><strong>Curso / título</strong>' +
+          '<button type="button" class="btn-secondary btn-remove-edu">Eliminar</button></div>' +
+          '<div class="field"><label>Nombre del curso o título</label>' +
+          '<input type="text" class="edu-title" /></div>' +
+          '<div class="field"><label>Institución</label>' +
+          '<input type="text" class="edu-institution" /></div>' +
+          '<div class="field"><label>Año (ej. 2024 o 2021 - 2023)</label>' +
+          '<input type="text" class="edu-year" /></div>' +
+          '<div class="field"><label>Descripción (opcional)</label>' +
+          '<textarea class="edu-description"></textarea></div>';
+        row.querySelector(".edu-title").value = data.title;
+        row.querySelector(".edu-institution").value = data.institution;
+        row.querySelector(".edu-year").value = data.year;
+        row.querySelector(".edu-description").value = data.description;
+        row.querySelector(".btn-remove-edu").addEventListener("click", () => {
+          row.remove();
+          scheduleEducationAutosave();
+        });
+        row
+          .querySelectorAll("input, textarea")
+          .forEach((inp) => inp.addEventListener("input", scheduleEducationAutosave));
+        return row;
+      }
+
+      function buildEducationForm(items) {
+        educationListEl.innerHTML = "";
+        items.forEach((item) =>
+          educationListEl.appendChild(renderEducationRow(item))
+        );
+      }
+
+      function collectEducationRows() {
+        return [...educationListEl.querySelectorAll(".edu-row")]
+          .map((row) => ({
+            title: row.querySelector(".edu-title").value.trim(),
+            institution: row.querySelector(".edu-institution").value.trim(),
+            year: row.querySelector(".edu-year").value.trim(),
+            description: row.querySelector(".edu-description").value.trim(),
+          }))
+          .filter((item) => item.title || item.institution || item.year || item.description);
+      }
+
+      function writeEducationToDoc() {
+        const container = getEducationContainer();
+        if (!container) return;
+        const rows = collectEducationRows();
+        container.innerHTML = "";
+        rows.forEach((item, idx) => {
+          const color = EDU_COLORS[idx % EDU_COLORS.length];
+          const div = parsedDoc.createElement("div");
+          div.className = "timeline-item timeline-border";
+          div.setAttribute("data-color", color);
+          const institutionHtml = item.institution
+            ? "<p>" + escapeHtml(item.institution) + "</p>"
+            : "";
+          const descriptionHtml = item.description
+            ? '<div class="timeline-content"><p>' +
+              escapeHtml(item.description) +
+              "</p></div>"
+            : "";
+          div.innerHTML =
+            '<div class="timeline-icon data-background" data-color="' +
+            color +
+            '"></div>' +
+            '<div class="timeline-contents">' +
+            '<div class="time-line-header">' +
+            '<h6 class="timeline-title">' +
+            escapeHtml(item.title) +
+            "</h6>" +
+            institutionHtml +
+            '<p class="timeline-year">' +
+            escapeHtml(item.year) +
+            "</p>" +
+            "</div>" +
+            descriptionHtml +
+            "</div>";
+          container.appendChild(div);
+        });
+      }
+
+      document.getElementById("btnAddEducation").addEventListener("click", () => {
+        educationListEl.appendChild(renderEducationRow());
+        scheduleEducationAutosave();
+      });
+
+      document.querySelectorAll(".tab-btn").forEach((btn) => {
+        btn.addEventListener("click", () => {
+          document
+            .querySelectorAll(".tab-btn")
+            .forEach((b) => b.classList.remove("active"));
+          btn.classList.add("active");
+          document
+            .querySelectorAll(".tab-panel")
+            .forEach((p) => (p.hidden = true));
+          document.getElementById("tab-" + btn.dataset.tab).hidden = false;
+        });
+      });
 
       async function loadFromServer() {
         setStatus("Cargando index.html…", "warn");
@@ -644,6 +914,7 @@
           const el = getFieldEl(key);
           if (el) writeValue(el, val);
         });
+        writeEducationToDoc();
         return true;
       }
 
@@ -731,7 +1002,11 @@
             /* response wasn't JSON */
           }
           throw new Error(
-            "GitHub API " + res.status + (detail ? ": " + detail : "")
+            "GitHub API " +
+              res.status +
+              " en " +
+              path.split("?")[0] +
+              (detail ? ": " + detail : "")
           );
         }
         return res.status === 204 ? null : res.json();
@@ -834,7 +1109,12 @@
               pr.html_url +
               "</a>";
           } catch (err) {
-            setStatus("No se pudo crear el Pull Request: " + err.message, "err");
+            let msg = "No se pudo crear el Pull Request: " + err.message;
+            if (/403/.test(err.message)) {
+              msg +=
+                ' — revisa que tu token tenga permisos "Contents: Read and write" y "Pull requests: Read and write" para este repositorio (github.com/settings/tokens).';
+            }
+            setStatus(msg, "err");
           } finally {
             applyBtn.disabled = false;
           }
