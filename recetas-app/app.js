@@ -129,7 +129,7 @@ function headerHtml() {
       </a>
       <nav class="flex items-center gap-2 sm:gap-3">
         <a href="#/" class="hidden sm:inline text-sm font-medium text-neutral-600 hover:text-orange-600 px-2 py-1.5">Inicio</a>
-        <a href="#/agregar" class="inline-flex items-center gap-1.5 bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold px-3.5 py-2 rounded-full shadow-sm transition">
+        <a href="#/agregar" class="hidden inline-flex items-center gap-1.5 bg-orange-500 hover:bg-orange-600 text-white text-sm font-semibold px-3.5 py-2 rounded-full shadow-sm transition">
           <span class="text-base leading-none">+</span> Agregar receta
         </a>
       </nav>
