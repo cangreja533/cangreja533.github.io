@@ -277,6 +277,13 @@
         text-transform: uppercase;
         letter-spacing: 0.03em;
       }
+      .list-row-actions {
+        display: flex;
+        gap: 6px;
+      }
+      .list-row-actions button {
+        padding: 6px 11px;
+      }
     </style>
   </head>
   <body>
@@ -369,7 +376,7 @@
         </div>
 
         <form id="editorForm">
-          <div id="tab-hero" class="tab-panel">
+          <div id="tab-hero" class="tab-panel" data-tab-panel="hero">
             <div class="card" id="emptyState">
               <p class="hint" style="margin: 0">
                 Aún no se ha cargado ningún contenido. Usa "Cargar contenido
@@ -377,20 +384,20 @@
               </p>
             </div>
           </div>
-          <div id="tab-about" class="tab-panel" hidden></div>
-          <div id="tab-services" class="tab-panel" hidden></div>
-          <div id="tab-contact" class="tab-panel" hidden></div>
-          <div id="tab-menu" class="tab-panel" hidden></div>
-          <div id="tab-titulos" class="tab-panel" hidden></div>
-          <div id="tab-imagenes" class="tab-panel" hidden></div>
+          <div id="tab-about" class="tab-panel" data-tab-panel="about" hidden></div>
+          <div id="tab-contact" class="tab-panel" data-tab-panel="contact" hidden></div>
+          <div id="tab-menu" class="tab-panel" data-tab-panel="menu" hidden></div>
+          <div id="tab-titulos" class="tab-panel" data-tab-panel="titulos" hidden></div>
+          <div id="tab-imagenes" class="tab-panel" data-tab-panel="imagenes" hidden></div>
         </form>
 
-        <div id="tab-experience" class="tab-panel" hidden>
+        <div id="tab-experience" class="tab-panel" data-tab-panel="experience" hidden>
           <div class="card">
             <h2>Experience</h2>
             <p class="hint">
-              Agrega, edita o elimina puestos de trabajo. Corresponden a la
-              columna "Experience" del sitio (dentro de Resume).
+              Agrega, edita, elimina o reordena (↑/↓) puestos de trabajo.
+              Corresponden a la columna "Experience" del sitio (dentro de
+              Resume).
             </p>
             <div id="experienceList"></div>
             <button type="button" class="btn-secondary" id="btnAddExperience" disabled>
@@ -399,13 +406,13 @@
           </div>
         </div>
 
-        <div id="tab-estudios" class="tab-panel" hidden>
+        <div id="tab-estudios" class="tab-panel" data-tab-panel="estudios" hidden>
           <div class="card">
             <h2>Estudios</h2>
             <p class="hint">
-              Agrega, edita o elimina cursos, títulos o certificaciones.
-              Corresponden a la columna "Education" del sitio (dentro de
-              Resume).
+              Agrega, edita, elimina o reordena (↑/↓) cursos, títulos o
+              certificaciones. Corresponden a la columna "Education" del
+              sitio (dentro de Resume).
             </p>
             <div id="educationList"></div>
             <button type="button" class="btn-secondary" id="btnAddEducation" disabled>
@@ -414,14 +421,28 @@
           </div>
         </div>
 
-        <div id="tab-portfolio" class="tab-panel" hidden>
+        <div id="tab-services" class="tab-panel" data-tab-panel="services" hidden>
+          <div class="card">
+            <h2>Servicios</h2>
+            <p class="hint">
+              Agrega, edita, elimina o reordena (↑/↓) los servicios que se
+              muestran en la sección "My Services".
+            </p>
+            <div id="servicesList"></div>
+            <button type="button" class="btn-secondary" id="btnAddServices" disabled>
+              + Agregar servicio
+            </button>
+          </div>
+        </div>
+
+        <div id="tab-portfolio" class="tab-panel" data-tab-panel="portfolio" hidden>
           <div class="card">
             <h2>Portfolio</h2>
             <p class="hint">
-              Agrega, edita o elimina proyectos del portafolio. La categoría
-              controla los filtros del sitio: usa una o más de estas
-              palabras separadas por espacio — webdesign, mobiledesign, seo,
-              graphic.
+              Agrega, edita, elimina o reordena (↑/↓) proyectos del
+              portafolio. La categoría controla los filtros del sitio: usa
+              una o más de estas palabras separadas por espacio —
+              webdesign, mobiledesign, seo, graphic.
             </p>
             <div id="portfolioList"></div>
             <button type="button" class="btn-secondary" id="btnAddPortfolio" disabled>
@@ -430,10 +451,13 @@
           </div>
         </div>
 
-        <div id="tab-testimonial" class="tab-panel" hidden>
+        <div id="tab-testimonial" class="tab-panel" data-tab-panel="testimonial" hidden>
           <div class="card">
             <h2>Testimonios</h2>
-            <p class="hint">Agrega, edita o elimina testimonios de clientes.</p>
+            <p class="hint">
+              Agrega, edita, elimina o reordena (↑/↓) testimonios de
+              clientes.
+            </p>
             <div id="testimonialList"></div>
             <button type="button" class="btn-secondary" id="btnAddTestimonial" disabled>
               + Agregar testimonio
@@ -441,14 +465,29 @@
           </div>
         </div>
 
-        <div id="tab-blog" class="tab-panel" hidden>
+        <div id="tab-blog" class="tab-panel" data-tab-panel="blog" hidden>
           <div class="card">
             <h2>Blog</h2>
-            <p class="hint">Agrega, edita o elimina publicaciones del blog.</p>
+            <p class="hint">
+              Agrega, edita, elimina o reordena (↑/↓) publicaciones del
+              blog.
+            </p>
             <div id="blogList"></div>
             <button type="button" class="btn-secondary" id="btnAddBlog" disabled>
               + Agregar publicación
             </button>
+          </div>
+        </div>
+
+        <div id="tab-menu-list" class="tab-panel" data-tab-panel="menu" hidden>
+          <div class="card">
+            <h2>Menú — Orden de los enlaces</h2>
+            <p class="hint">
+              Reordena (↑/↓) o edita el texto de los enlaces del menú
+              desplegable. Cada uno sigue apuntando a su sección real del
+              sitio; no se pueden agregar ni quitar enlaces aquí.
+            </p>
+            <div id="menuNavList"></div>
           </div>
         </div>
 
@@ -557,23 +596,6 @@
           ],
         },
         {
-          tab: "services",
-          title: "Servicios",
-          fields: [
-            { key: "service1-title", label: "Servicio 1 — título", type: "text" },
-            { key: "service1-desc", label: "Servicio 1 — descripción", type: "textarea" },
-            { key: "service2-title", label: "Servicio 2 — título", type: "text" },
-            { key: "service2-desc", label: "Servicio 2 — descripción", type: "textarea" },
-            { key: "service3-title", label: "Servicio 3 — título", type: "text" },
-            { key: "service3-desc", label: "Servicio 3 — descripción", type: "textarea" },
-            {
-              key: "service3-tags",
-              label: "Servicio 3 — etiquetas (una por renglón)",
-              type: "textarea",
-            },
-          ],
-        },
-        {
           tab: "contact",
           title: "Contacto",
           fields: [
@@ -587,18 +609,6 @@
           title: "Pie de página",
           fields: [
             { key: "footer-copyright", label: "Texto de copyright", type: "text" },
-          ],
-        },
-        {
-          tab: "menu",
-          title: "Menú desplegable — Enlaces",
-          fields: [
-            { key: "menu-home", label: "Enlace \"Home\"", type: "text" },
-            { key: "menu-about", label: "Enlace \"About me\"", type: "text" },
-            { key: "menu-services", label: "Enlace \"Services\"", type: "text" },
-            { key: "menu-portfolio", label: "Enlace \"Portfolio\"", type: "text" },
-            { key: "menu-client", label: "Enlace \"Client\"", type: "text" },
-            { key: "menu-blog", label: "Enlace \"Blog\"", type: "text" },
           ],
         },
         {
@@ -757,6 +767,7 @@
           "btnDownload",
           "btnAddEducation",
           "btnAddExperience",
+          "btnAddServices",
           "btnAddPortfolio",
           "btnAddTestimonial",
           "btnAddBlog",
@@ -769,7 +780,6 @@
         const formTabs = [
           "hero",
           "about",
-          "services",
           "contact",
           "menu",
           "titulos",
@@ -918,26 +928,70 @@
 
       // ------------------------------------------------------------------
       // Generic repeatable-list UI: used by Resume (experience/education),
-      // Portfolio, Testimonial and Blog tabs. Each list has its own field
-      // spec (for rendering/collecting rows) and its own parse/write
-      // functions (since the underlying HTML shape differs per section).
+      // Servicios, Portfolio, Testimonial, Blog and the menu nav links.
+      // Each list has its own field spec (for rendering/collecting rows)
+      // and its own parse/write functions (since the underlying HTML
+      // shape differs per section). Rows can be reordered with ↑/↓; a
+      // list can also carry hidden per-item metadata (metaKeys) that
+      // isn't shown as a field but is preserved on write (e.g. a menu
+      // link's real href), and can disable add/remove (allowRemove).
       // ------------------------------------------------------------------
-      function renderListRow(fields, data) {
+      function renderListRow(fields, data, opts) {
         data = data || {};
+        opts = opts || {};
+        const metaKeys = opts.metaKeys || [];
+        const allowRemove = opts.allowRemove !== false;
         const row = document.createElement("div");
         row.className = "list-row card";
+        metaKeys.forEach((mk) => {
+          row.dataset[mk] = data[mk] || "";
+        });
+
         const header = document.createElement("div");
         header.className = "list-row-header";
         header.innerHTML = "<strong>Elemento</strong>";
-        const removeBtn = document.createElement("button");
-        removeBtn.type = "button";
-        removeBtn.className = "btn-secondary";
-        removeBtn.textContent = "Eliminar";
-        removeBtn.addEventListener("click", () => {
-          row.remove();
+
+        const actions = document.createElement("div");
+        actions.className = "list-row-actions";
+
+        const upBtn = document.createElement("button");
+        upBtn.type = "button";
+        upBtn.className = "btn-secondary";
+        upBtn.textContent = "↑";
+        upBtn.title = "Subir";
+        upBtn.addEventListener("click", () => {
+          const prev = row.previousElementSibling;
+          if (prev) row.parentElement.insertBefore(row, prev);
           scheduleAutosave();
         });
-        header.appendChild(removeBtn);
+
+        const downBtn = document.createElement("button");
+        downBtn.type = "button";
+        downBtn.className = "btn-secondary";
+        downBtn.textContent = "↓";
+        downBtn.title = "Bajar";
+        downBtn.addEventListener("click", () => {
+          const next = row.nextElementSibling;
+          if (next) row.parentElement.insertBefore(next, row);
+          scheduleAutosave();
+        });
+
+        actions.appendChild(upBtn);
+        actions.appendChild(downBtn);
+
+        if (allowRemove) {
+          const removeBtn = document.createElement("button");
+          removeBtn.type = "button";
+          removeBtn.className = "btn-secondary";
+          removeBtn.textContent = "Eliminar";
+          removeBtn.addEventListener("click", () => {
+            row.remove();
+            scheduleAutosave();
+          });
+          actions.appendChild(removeBtn);
+        }
+
+        header.appendChild(actions);
         row.appendChild(header);
 
         fields.forEach((f) => {
@@ -960,21 +1014,25 @@
         return row;
       }
 
-      function buildListForm(listEl, fields, items) {
+      function buildListForm(listEl, fields, items, opts) {
         listEl.innerHTML = "";
-        items.forEach((item) => listEl.appendChild(renderListRow(fields, item)));
+        items.forEach((item) => listEl.appendChild(renderListRow(fields, item, opts)));
       }
 
-      function collectListRows(listEl, fields) {
+      function collectListRows(listEl, fields, metaKeys) {
+        metaKeys = metaKeys || [];
         return [...listEl.querySelectorAll(":scope > .list-row")]
           .map((row) => {
             const obj = {};
             fields.forEach((f) => {
               obj[f.key] = row.querySelector(".lrow-" + f.key).value.trim();
             });
+            metaKeys.forEach((mk) => {
+              obj[mk] = row.dataset[mk] || "";
+            });
             return obj;
           })
-          .filter((obj) => Object.values(obj).some((v) => v));
+          .filter((obj) => fields.some((f) => obj[f.key]));
       }
 
       // --- Resume tab: Experiencia + Estudios (shared "timeline" shape) ---
@@ -1102,6 +1160,136 @@
         experienceListEl.appendChild(renderListRow(TIMELINE_FIELDS));
         scheduleAutosave();
       });
+
+      // --- Servicios tab ---
+      const SERVICES_FIELDS = [
+        { key: "icon", label: "Ícono (URL)" },
+        { key: "title", label: "Título" },
+        { key: "description", label: "Descripción", type: "textarea" },
+        {
+          key: "tags",
+          label: "Etiquetas (opcional, una por línea)",
+          type: "textarea",
+        },
+      ];
+      const servicesListEl = document.getElementById("servicesList");
+      const SERVICE_COLORS = TIMELINE_COLORS;
+
+      function getServicesContainer() {
+        return parsedDoc
+          ? parsedDoc.querySelector('[data-services-list="items"]')
+          : null;
+      }
+
+      function parseServicesFromDoc() {
+        const container = getServicesContainer();
+        if (!container) return [];
+        return [...container.querySelectorAll(":scope > .col-lg-4")]
+          .map((wrap) => {
+            const item = wrap.querySelector(".services-item");
+            if (!item) return null;
+            const img = item.querySelector("img");
+            const icon = img ? img.getAttribute("src") || "" : "";
+            const title =
+              item.querySelector("h5")?.textContent.replace(/\s+/g, " ").trim() ||
+              "";
+            const paragraphs = [...item.querySelectorAll("p")];
+            const description = paragraphs[0]
+              ? paragraphs[0].textContent.replace(/\s+/g, " ").trim()
+              : "";
+            const tags = paragraphs[1]
+              ? paragraphs[1].innerHTML
+                  .split(/<br\s*\/?>/i)
+                  .map((s) => s.replace(/&nbsp;/g, " ").replace(/\s+/g, " ").trim())
+                  .filter(Boolean)
+                  .join("\n")
+              : "";
+            return { icon, title, description, tags };
+          })
+          .filter(Boolean);
+      }
+
+      function writeServicesToDoc() {
+        const container = getServicesContainer();
+        if (!container) return;
+        const rows = collectListRows(servicesListEl, SERVICES_FIELDS);
+        container.innerHTML = "";
+        rows.forEach((item, idx) => {
+          const color = SERVICE_COLORS[idx % SERVICE_COLORS.length];
+          const wrap = parsedDoc.createElement("div");
+          wrap.className = "col-lg-4 text-center text-md-left";
+          const tagsHtml = item.tags
+            ? '<p class="text-white mb-0">' +
+              item.tags
+                .split("\n")
+                .map((l) => l.trim())
+                .filter(Boolean)
+                .map(escapeHtml)
+                .join("<br />") +
+              "</p>"
+            : "";
+          wrap.innerHTML =
+            '<div class="image-border"><div class="services-item box-hover-border data-background" data-color="' +
+            color +
+            '"><div class="text-center p-4">' +
+            '<img src="' +
+            escapeHtml(item.icon) +
+            '" alt="/">' +
+            '<h5 class="text-white">' +
+            escapeHtml(item.title) +
+            "</h5>" +
+            '<p class="text-white mb-0">' +
+            escapeHtml(item.description) +
+            "</p>" +
+            tagsHtml +
+            "</div></div></div>";
+          container.appendChild(wrap);
+        });
+      }
+
+      document.getElementById("btnAddServices").addEventListener("click", () => {
+        servicesListEl.appendChild(renderListRow(SERVICES_FIELDS));
+        scheduleAutosave();
+      });
+
+      // --- Menú — orden de enlaces ---
+      const MENU_NAV_FIELDS = [{ key: "label", label: "Texto del enlace" }];
+      const MENU_NAV_META = ["href", "menuanchor"];
+      const menuNavListEl = document.getElementById("menuNavList");
+
+      function getMenuNavContainer() {
+        return parsedDoc ? parsedDoc.querySelector("#myMenu") : null;
+      }
+
+      function parseMenuNavFromDoc() {
+        const container = getMenuNavContainer();
+        if (!container) return [];
+        return [...container.querySelectorAll(":scope > li")].map((li) => {
+          const a = li.querySelector("a");
+          return {
+            label: a ? a.textContent.replace(/\s+/g, " ").trim() : "",
+            href: a ? a.getAttribute("href") || "" : "",
+            menuanchor: li.getAttribute("data-menuanchor") || "",
+          };
+        });
+      }
+
+      function writeMenuNavToDoc() {
+        const container = getMenuNavContainer();
+        if (!container) return;
+        const rows = collectListRows(menuNavListEl, MENU_NAV_FIELDS, MENU_NAV_META);
+        container.innerHTML = "";
+        rows.forEach((item) => {
+          const li = parsedDoc.createElement("li");
+          li.className = "list-group-item";
+          if (item.menuanchor) li.setAttribute("data-menuanchor", item.menuanchor);
+          const a = parsedDoc.createElement("a");
+          a.setAttribute("href", item.href || "#");
+          a.textContent = item.label;
+          li.appendChild(a);
+          container.appendChild(li);
+        });
+      }
 
       // --- Portfolio tab ---
       const PORTFOLIO_FIELDS = [
@@ -1338,7 +1526,9 @@
           document.querySelectorAll(".tab-btn").forEach((b) => b.classList.remove("active"));
           btn.classList.add("active");
           document.querySelectorAll(".tab-panel").forEach((p) => (p.hidden = true));
-          document.getElementById("tab-" + btn.dataset.tab).hidden = false;
+          document
+            .querySelectorAll(`[data-tab-panel="${btn.dataset.tab}"]`)
+            .forEach((p) => (p.hidden = false));
         });
       });
 
@@ -1348,18 +1538,22 @@
         const values = collectFormValues();
         const education = collectListRows(educationListEl, TIMELINE_FIELDS);
         const experience = collectListRows(experienceListEl, TIMELINE_FIELDS);
+        const services = collectListRows(servicesListEl, SERVICES_FIELDS);
         const portfolio = collectListRows(portfolioListEl, PORTFOLIO_FIELDS);
         const testimonial = collectListRows(testimonialListEl, TESTIMONIAL_FIELDS);
         const blog = collectListRows(blogListEl, BLOG_FIELDS);
+        const menuNav = collectListRows(menuNavListEl, MENU_NAV_FIELDS, MENU_NAV_META);
         localStorage.setItem(
           DRAFT_KEY,
           JSON.stringify({
             values,
             education,
             experience,
+            services,
             portfolio,
             testimonial,
             blog,
+            menuNav,
             savedAt: Date.now(),
           })
         );
@@ -1381,17 +1575,32 @@
           );
           return;
         }
-        const { values, education, experience, portfolio, testimonial, blog, savedAt } =
-          JSON.parse(raw);
+        const {
+          values,
+          education,
+          experience,
+          services,
+          portfolio,
+          testimonial,
+          blog,
+          menuNav,
+          savedAt,
+        } = JSON.parse(raw);
         Object.entries(values || {}).forEach(([key, val]) => {
           const inp = form.querySelector(`[data-key="${CSS.escape(key)}"]`);
           if (inp) inp.value = val;
         });
         if (education) buildListForm(educationListEl, TIMELINE_FIELDS, education);
         if (experience) buildListForm(experienceListEl, TIMELINE_FIELDS, experience);
+        if (services) buildListForm(servicesListEl, SERVICES_FIELDS, services);
         if (portfolio) buildListForm(portfolioListEl, PORTFOLIO_FIELDS, portfolio);
         if (testimonial) buildListForm(testimonialListEl, TESTIMONIAL_FIELDS, testimonial);
         if (blog) buildListForm(blogListEl, BLOG_FIELDS, blog);
+        if (menuNav)
+          buildListForm(menuNavListEl, MENU_NAV_FIELDS, menuNav, {
+            metaKeys: MENU_NAV_META,
+            allowRemove: false,
+          });
         setStatus(
           "Borrador cargado (guardado " + new Date(savedAt).toLocaleString() + ").",
           "ok"
@@ -1404,9 +1613,14 @@
         buildForm();
         buildListForm(educationListEl, TIMELINE_FIELDS, parseTimelineFromDoc("education"));
         buildListForm(experienceListEl, TIMELINE_FIELDS, parseTimelineFromDoc("experience"));
+        buildListForm(servicesListEl, SERVICES_FIELDS, parseServicesFromDoc());
         buildListForm(portfolioListEl, PORTFOLIO_FIELDS, parsePortfolioFromDoc());
         buildListForm(testimonialListEl, TESTIMONIAL_FIELDS, parseTestimonialFromDoc());
         buildListForm(blogListEl, BLOG_FIELDS, parseBlogFromDoc());
+        buildListForm(menuNavListEl, MENU_NAV_FIELDS, parseMenuNavFromDoc(), {
+          metaKeys: MENU_NAV_META,
+          allowRemove: false,
+        });
         updatePreview();
       }
 
@@ -1436,9 +1650,11 @@
         });
         writeTimelineToDoc("education", educationListEl);
         writeTimelineToDoc("experience", experienceListEl);
+        writeServicesToDoc();
         writePortfolioToDoc();
         writeTestimonialToDoc();
         writeBlogToDoc();
+        writeMenuNavToDoc();
         return true;
       }
 
