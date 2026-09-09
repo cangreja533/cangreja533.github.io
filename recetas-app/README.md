@@ -3,12 +3,12 @@
 Sitio estático (HTML + JS + Tailwind CSS) para explorar, filtrar y agregar recetas.
 
 ## Archivos
-- `index.html` — página única (home, categorías, filtros, ficha de receta y formulario, todo por rutas con `#/...`)
+- `recetas.html` — página única (home, categorías, filtros, ficha de receta y formulario, todo por rutas con `#/...`)
 - `app.js` — toda la lógica (routing, filtros, render, formulario)
 - `recipes.json` — base de datos de recetas (207 recetas extraídas del proyecto)
 
 ## Cómo usarlo
-Puedes abrir `index.html` directamente con doble clic (el sitio detecta si el navegador
+Puedes abrir `recetas.html` directamente con doble clic (el sitio detecta si el navegador
 bloquea la carga de `recipes.json` por el protocolo `file://` y usa una copia de respaldo
 embebida). Para la mejor experiencia (recomendado), sírvelo con un servidor local, por ejemplo:
 
