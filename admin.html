@@ -343,6 +343,7 @@
           <button type="button" class="tab-btn" data-tab="testimonial">Testimonios</button>
           <button type="button" class="tab-btn" data-tab="blog">Blog</button>
           <button type="button" class="tab-btn" data-tab="contact">Contacto</button>
+          <button type="button" class="tab-btn" data-tab="menu">Menú</button>
         </div>
 
         <form id="editorForm">
@@ -357,6 +358,7 @@
           <div id="tab-about" class="tab-panel" hidden></div>
           <div id="tab-services" class="tab-panel" hidden></div>
           <div id="tab-contact" class="tab-panel" hidden></div>
+          <div id="tab-menu" class="tab-panel" hidden></div>
         </form>
 
         <div id="tab-experience" class="tab-panel" hidden>
@@ -563,6 +565,37 @@
             { key: "footer-copyright", label: "Texto de copyright", type: "text" },
           ],
         },
+        {
+          tab: "menu",
+          title: "Menú desplegable — Enlaces",
+          fields: [
+            { key: "menu-home", label: "Enlace \"Home\"", type: "text" },
+            { key: "menu-about", label: "Enlace \"About me\"", type: "text" },
+            { key: "menu-services", label: "Enlace \"Services\"", type: "text" },
+            { key: "menu-portfolio", label: "Enlace \"Portfolio\"", type: "text" },
+            { key: "menu-client", label: "Enlace \"Client\"", type: "text" },
+            { key: "menu-blog", label: "Enlace \"Blog\"", type: "text" },
+          ],
+        },
+        {
+          tab: "menu",
+          title: "Menú desplegable — Contact Info",
+          fields: [
+            { key: "menu-address", label: "Dirección", type: "text" },
+            { key: "menu-phone", label: "Teléfono", type: "text" },
+            { key: "menu-email", label: "Correo", type: "text" },
+          ],
+        },
+        {
+          tab: "menu",
+          title: "Menú desplegable — Redes sociales",
+          fields: [
+            { key: "menu-social-facebook", label: "Facebook", type: "link" },
+            { key: "menu-social-twitter", label: "Twitter", type: "link" },
+            { key: "menu-social-github", label: "GitHub", type: "link" },
+            { key: "menu-social-linkedin", label: "LinkedIn", type: "link" },
+          ],
+        },
       ];
 
       let parsedDoc = null; // live DOM we mutate and re-serialize
@@ -653,7 +686,7 @@
       }
 
       function buildForm() {
-        const formTabs = ["hero", "about", "services", "contact"];
+        const formTabs = ["hero", "about", "services", "contact", "menu"];
         formTabs.forEach((tab) => {
           document.getElementById("tab-" + tab).innerHTML = "";
         });
