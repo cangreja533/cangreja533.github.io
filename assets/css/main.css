@@ -2982,7 +2982,8 @@ canvas.particles-js-canvas-el {
   align-items: center;
   justify-content: center;
   gap: 10px 20px;
-  padding: 25px 15px;
+  padding: 20px;
+  text-align: center;
 }
 
 .skill-tag {
