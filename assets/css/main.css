@@ -2972,3 +2972,58 @@ canvas.particles-js-canvas-el {
   }
 
 }
+
+/*-------------------------
+    Skills Word Cloud
+-------------------------*/
+.skill-cloud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 10px 20px;
+  padding: 25px 15px;
+}
+
+.skill-tag {
+  display: inline-block;
+  font-weight: 700;
+  line-height: 1.3;
+  cursor: default;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.skill-tag:hover {
+  transform: scale(1.1);
+}
+
+.skill-tag.size-xl {
+  font-size: 2.2rem;
+}
+
+.skill-tag.size-lg {
+  font-size: 1.65rem;
+}
+
+.skill-tag.size-md {
+  font-size: 1.25rem;
+}
+
+.skill-tag.size-sm {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+@media (max-width: 576px) {
+  .skill-tag.size-xl {
+    font-size: 1.6rem;
+  }
+
+  .skill-tag.size-lg {
+    font-size: 1.3rem;
+  }
+
+  .skill-tag.size-md {
+    font-size: 1.05rem;
+  }
+}
