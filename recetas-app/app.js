@@ -142,7 +142,6 @@ function footerHtml() {
   <footer class="mt-16 border-t border-neutral-200 bg-white">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 text-sm text-neutral-500 flex flex-col sm:flex-row items-center justify-between gap-2">
       <p>Recetario — ${allRecipes().length} recetas</p>
-      <p>Datos almacenados en <code class="bg-neutral-100 px-1.5 py-0.5 rounded">recipes.json</code></p>
     </div>
   </footer>`;
 }
