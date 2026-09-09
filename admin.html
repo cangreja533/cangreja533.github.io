@@ -186,6 +186,26 @@
       .link-row input {
         flex: 1;
       }
+      .image-row {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+      .image-row input {
+        flex: 1;
+      }
+      .image-preview {
+        width: 48px;
+        height: 48px;
+        object-fit: contain;
+        border: 1px solid var(--border);
+        border-radius: 6px;
+        background: #fff;
+        flex-shrink: 0;
+      }
+      .image-preview-broken {
+        opacity: 0.25;
+      }
       .modal-overlay {
         position: fixed;
         inset: 0;
@@ -344,6 +364,8 @@
           <button type="button" class="tab-btn" data-tab="blog">Blog</button>
           <button type="button" class="tab-btn" data-tab="contact">Contacto</button>
           <button type="button" class="tab-btn" data-tab="menu">Menú</button>
+          <button type="button" class="tab-btn" data-tab="titulos">Títulos</button>
+          <button type="button" class="tab-btn" data-tab="imagenes">Imágenes</button>
         </div>
 
         <form id="editorForm">
@@ -359,6 +381,8 @@
           <div id="tab-services" class="tab-panel" hidden></div>
           <div id="tab-contact" class="tab-panel" hidden></div>
           <div id="tab-menu" class="tab-panel" hidden></div>
+          <div id="tab-titulos" class="tab-panel" hidden></div>
+          <div id="tab-imagenes" class="tab-panel" hidden></div>
         </form>
 
         <div id="tab-experience" class="tab-panel" hidden>
@@ -596,6 +620,54 @@
             { key: "menu-social-linkedin", label: "LinkedIn", type: "link" },
           ],
         },
+        {
+          tab: "titulos",
+          title: "Títulos de sección",
+          fields: [
+            { key: "section-about", label: "Sección \"About Me\"", type: "text" },
+            { key: "section-resume", label: "Sección \"My Resume\" (Experience + Estudios)", type: "text" },
+            { key: "section-services", label: "Sección \"My Services\"", type: "text" },
+            { key: "section-portfolio", label: "Sección \"My Work\" (Portfolio)", type: "text" },
+            { key: "section-testimonial", label: "Sección \"Client Says\" (Testimonios)", type: "text" },
+            { key: "section-blog", label: "Sección \"News Post\" (Blog)", type: "text" },
+            { key: "section-contact", label: "Sección \"Get In Touch\" (Contacto)", type: "text" },
+          ],
+        },
+        {
+          tab: "imagenes",
+          title: "Marca y foto de perfil",
+          fields: [
+            { key: "site-logo", label: "Logo del encabezado", type: "image" },
+            {
+              key: "profile-photo",
+              label: "Foto de perfil (Hero y Sobre mí, misma imagen)",
+              type: "image",
+            },
+            {
+              key: "hero-decoration-image",
+              label: "Imagen decorativa junto a la foto (Hero)",
+              type: "image",
+            },
+          ],
+        },
+        {
+          tab: "imagenes",
+          title: "Íconos de servicios",
+          fields: [
+            { key: "service1-icon", label: "Ícono — Servicio 1", type: "image" },
+            { key: "service2-icon", label: "Ícono — Servicio 2", type: "image" },
+            { key: "service3-icon", label: "Ícono — Servicio 3", type: "image" },
+          ],
+        },
+        {
+          tab: "imagenes",
+          title: "Íconos de contacto",
+          fields: [
+            { key: "contact-icon-phone", label: "Ícono — Teléfono", type: "image" },
+            { key: "contact-icon-location", label: "Ícono — Ubicación", type: "image" },
+            { key: "contact-icon-email", label: "Ícono — Correo", type: "image" },
+          ],
+        },
       ];
 
       let parsedDoc = null; // live DOM we mutate and re-serialize
@@ -626,6 +698,14 @@
         return parsedDoc
           ? parsedDoc.querySelector(`[data-edit="${CSS.escape(key)}"]`)
           : null;
+      }
+
+      // Some keys (e.g. section titles) tag more than one element that
+      // should always show the same text — used when writing values back.
+      function getFieldEls(key) {
+        return parsedDoc
+          ? [...parsedDoc.querySelectorAll(`[data-edit="${CSS.escape(key)}"]`)]
+          : [];
       }
 
       function readValue(el) {
@@ -686,7 +766,15 @@
       }
 
       function buildForm() {
-        const formTabs = ["hero", "about", "services", "contact", "menu"];
+        const formTabs = [
+          "hero",
+          "about",
+          "services",
+          "contact",
+          "menu",
+          "titulos",
+          "imagenes",
+        ];
         formTabs.forEach((tab) => {
           document.getElementById("tab-" + tab).innerHTML = "";
         });
@@ -772,6 +860,32 @@
           });
           row.appendChild(input);
           row.appendChild(openBtn);
+          wrap.appendChild(row);
+          return wrap;
+        }
+
+        if (type === "image") {
+          const row = document.createElement("div");
+          row.className = "image-row";
+          const preview = document.createElement("img");
+          preview.className = "image-preview";
+          preview.alt = "";
+          preview.src = value;
+          preview.onerror = () => {
+            preview.classList.add("image-preview-broken");
+          };
+          const input = document.createElement("input");
+          input.type = "text";
+          input.id = "f_" + key;
+          input.dataset.key = key;
+          input.value = value;
+          input.placeholder = "assets/img/... o https://...";
+          input.addEventListener("input", () => {
+            preview.classList.remove("image-preview-broken");
+            preview.src = input.value.trim();
+          });
+          row.appendChild(preview);
+          row.appendChild(input);
           wrap.appendChild(row);
           return wrap;
         }
@@ -1318,8 +1432,7 @@
         if (!parsedDoc) return false;
         const values = collectFormValues();
         Object.entries(values).forEach(([key, val]) => {
-          const el = getFieldEl(key);
-          if (el) writeValue(el, val);
+          getFieldEls(key).forEach((el) => writeValue(el, val));
         });
         writeTimelineToDoc("education", educationListEl);
         writeTimelineToDoc("experience", experienceListEl);
