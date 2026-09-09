@@ -172,21 +172,102 @@
         color: var(--accent-dark);
         font-weight: 600;
       }
+      .token-row {
+        display: flex;
+        gap: 8px;
+      }
+      .token-row input {
+        flex: 1;
+      }
+      .modal-overlay {
+        position: fixed;
+        inset: 0;
+        background: rgba(20, 20, 25, 0.55);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 100;
+        padding: 16px;
+      }
+      .modal-overlay.show {
+        display: flex;
+      }
+      .modal-box {
+        background: var(--panel);
+        border-radius: 10px;
+        max-width: 440px;
+        width: 100%;
+        padding: 22px 24px;
+      }
+      .modal-box h3 {
+        margin: 0 0 10px;
+        font-size: 1.05rem;
+        color: var(--accent-dark);
+      }
+      .modal-box p {
+        font-size: 0.88rem;
+        color: var(--text);
+        line-height: 1.4;
+      }
+      .modal-actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 8px;
+        margin-top: 18px;
+      }
     </style>
   </head>
   <body>
     <header>
       <h1>Panel de contenido del sitio</h1>
       <p>
-        Edita los textos principales de index.html sin tocar código. Los
-        cambios se aplican solo a la copia local hasta que descargues y
-        publiques el archivo.
+        Edita los textos principales de index.html sin tocar código. Al
+        aplicar los cambios se crea automáticamente un Pull Request en el
+        repositorio para publicarlos.
       </p>
     </header>
 
     <div class="wrap">
       <div>
         <div id="status"></div>
+
+        <div class="card">
+          <h2>0. Conexión con GitHub</h2>
+          <div class="field">
+            <label for="ghToken">Token de acceso personal (GitHub)</label>
+            <div class="token-row">
+              <input type="password" id="ghToken" autocomplete="off" />
+              <button class="btn-secondary" id="btnToggleToken" type="button">
+                Mostrar
+              </button>
+            </div>
+          </div>
+          <div class="field">
+            <label for="ghOwner">Owner</label>
+            <input type="text" id="ghOwner" value="cangreja533" />
+          </div>
+          <div class="field">
+            <label for="ghRepo">Repositorio</label>
+            <input type="text" id="ghRepo" value="cangreja533.github.io" />
+          </div>
+          <div class="field">
+            <label for="ghBase">Rama base</label>
+            <input type="text" id="ghBase" value="main" />
+          </div>
+          <p class="hint" style="margin-bottom: 0">
+            Crea un token de acceso personal (fine-grained) en
+            <a
+              href="https://github.com/settings/tokens?type=beta"
+              target="_blank"
+              rel="noopener"
+              >github.com/settings/tokens</a
+            >, con acceso limitado a este repositorio y permisos de
+            "Contents: Read and write" y "Pull requests: Read and write". El
+            token se guarda solo en este navegador (localStorage) y se envía
+            únicamente a api.github.com; no lo compartas ni lo uses en un
+            equipo público.
+          </p>
+        </div>
 
         <div class="card">
           <div class="toolbar">
@@ -227,17 +308,18 @@
           <h2>3. Guardar cambios</h2>
           <div class="toolbar">
             <button class="btn-primary" id="btnApply" disabled>
-              Aplicar y previsualizar
+              Aplicar y crear Pull Request
             </button>
             <button class="btn-secondary" id="btnDownload" disabled>
               Descargar index.html actualizado
             </button>
           </div>
           <p class="hint">
-            Después de descargar, reemplaza el archivo
-            <code>index.html</code> en el repositorio y súbelo (commit +
-            push) para publicar los cambios en el sitio real. Este panel no
-            se conecta a GitHub: solo genera el archivo actualizado.
+            "Aplicar y crear Pull Request" actualiza la vista previa y, tras
+            confirmar, crea una rama nueva en GitHub con estos cambios y
+            abre un Pull Request contra la rama base para revisarlos antes
+            de publicarlos. "Descargar" sigue disponible como respaldo
+            manual si prefieres subir el archivo tú misma.
           </p>
         </div>
       </div>
@@ -250,8 +332,26 @@
       </div>
     </div>
 
+    <div class="modal-overlay" id="confirmModal">
+      <div class="modal-box">
+        <h3>Confirmar guardado</h3>
+        <p>
+          Se guardará esta información y se creará un Pull Request en el
+          repositorio de GitHub para actualizar <code>index.html</code> con
+          los cambios que hiciste. ¿Confirmas que deseas continuar?
+        </p>
+        <div class="modal-actions">
+          <button class="btn-secondary" id="btnModalCancel">Cancelar</button>
+          <button class="btn-primary" id="btnModalConfirm">
+            Sí, guardar y crear PR
+          </button>
+        </div>
+      </div>
+    </div>
+
     <script>
       const DRAFT_KEY = "site-admin-draft-v1";
+      const GH_SETTINGS_KEY = "site-admin-gh-settings-v1";
 
       // Human-friendly grouping/labels for known fields. Any [data-edit]
       // found in the loaded HTML that isn't listed here still gets a
@@ -461,7 +561,7 @@
         form.querySelectorAll("input, textarea").forEach((inp) => {
           inp.addEventListener("input", () => {
             clearTimeout(autosaveTimer);
-            autosaveTimer = setTimeout(saveDraft, 500);
+            autosaveTimer = setTimeout(() => saveDraft(true), 500);
           });
         });
       }
@@ -474,14 +574,16 @@
         return values;
       }
 
-      function saveDraft() {
+      function saveDraft(silent) {
         if (!parsedDoc) return;
         const values = collectFormValues();
         localStorage.setItem(
           DRAFT_KEY,
           JSON.stringify({ values, savedAt: Date.now() })
         );
-        setStatus("Borrador guardado automáticamente en este navegador.", "ok");
+        if (!silent) {
+          setStatus("Borrador guardado automáticamente en este navegador.", "ok");
+        }
       }
 
       function loadDraftIntoForm() {
@@ -554,6 +656,190 @@
         preview.srcdoc = serializeDoc();
       }
 
+      // --- GitHub settings persistence (token stays local to this browser) ---
+      const ghTokenInput = document.getElementById("ghToken");
+      const ghOwnerInput = document.getElementById("ghOwner");
+      const ghRepoInput = document.getElementById("ghRepo");
+      const ghBaseInput = document.getElementById("ghBase");
+
+      function loadGhSettings() {
+        try {
+          const raw = localStorage.getItem(GH_SETTINGS_KEY);
+          if (!raw) return;
+          const { token, owner, repo, base } = JSON.parse(raw);
+          if (token) ghTokenInput.value = token;
+          if (owner) ghOwnerInput.value = owner;
+          if (repo) ghRepoInput.value = repo;
+          if (base) ghBaseInput.value = base;
+        } catch (e) {
+          /* ignore malformed local settings */
+        }
+      }
+
+      function saveGhSettings() {
+        localStorage.setItem(
+          GH_SETTINGS_KEY,
+          JSON.stringify({
+            token: ghTokenInput.value.trim(),
+            owner: ghOwnerInput.value.trim(),
+            repo: ghRepoInput.value.trim(),
+            base: ghBaseInput.value.trim(),
+          })
+        );
+      }
+
+      [ghTokenInput, ghOwnerInput, ghRepoInput, ghBaseInput].forEach((inp) =>
+        inp.addEventListener("change", saveGhSettings)
+      );
+
+      document.getElementById("btnToggleToken").addEventListener("click", (e) => {
+        const showing = ghTokenInput.type === "text";
+        ghTokenInput.type = showing ? "password" : "text";
+        e.target.textContent = showing ? "Mostrar" : "Ocultar";
+      });
+
+      loadGhSettings();
+
+      // --- GitHub API: create branch + commit + Pull Request ---
+      function b64EncodeUnicode(str) {
+        return btoa(unescape(encodeURIComponent(str)));
+      }
+
+      async function ghRequest(path, opts) {
+        opts = opts || {};
+        const token = ghTokenInput.value.trim();
+        if (!token) {
+          throw new Error(
+            "Falta el token de acceso de GitHub (sección 0 arriba)."
+          );
+        }
+        const res = await fetch("https://api.github.com/" + path, {
+          ...opts,
+          headers: {
+            Authorization: "Bearer " + token,
+            Accept: "application/vnd.github+json",
+            "X-GitHub-Api-Version": "2022-11-28",
+            ...(opts.headers || {}),
+          },
+        });
+        if (!res.ok) {
+          let detail = "";
+          try {
+            const body = await res.json();
+            detail = body && body.message ? body.message : "";
+          } catch (e) {
+            /* response wasn't JSON */
+          }
+          throw new Error(
+            "GitHub API " + res.status + (detail ? ": " + detail : "")
+          );
+        }
+        return res.status === 204 ? null : res.json();
+      }
+
+      async function createContentPullRequest() {
+        const owner = ghOwnerInput.value.trim();
+        const repo = ghRepoInput.value.trim();
+        const base = ghBaseInput.value.trim() || "main";
+        if (!owner || !repo) {
+          throw new Error("Falta el owner/repositorio de GitHub (sección 0).");
+        }
+
+        const html = serializeDoc();
+        const branch = "content-update-" + Date.now();
+
+        setStatus("Obteniendo la rama base (" + base + ")…", "warn");
+        const baseRef = await ghRequest(
+          "repos/" + owner + "/" + repo + "/git/ref/heads/" + base
+        );
+
+        setStatus("Creando la rama " + branch + "…", "warn");
+        await ghRequest("repos/" + owner + "/" + repo + "/git/refs", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            ref: "refs/heads/" + branch,
+            sha: baseRef.object.sha,
+          }),
+        });
+
+        setStatus("Leyendo la versión actual de index.html…", "warn");
+        const currentFile = await ghRequest(
+          "repos/" +
+            owner +
+            "/" +
+            repo +
+            "/contents/index.html?ref=" +
+            encodeURIComponent(branch)
+        );
+
+        setStatus("Subiendo el contenido actualizado…", "warn");
+        await ghRequest("repos/" + owner + "/" + repo + "/contents/index.html", {
+          method: "PUT",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            message: "Actualizar contenido del sitio desde el panel de edición",
+            content: b64EncodeUnicode(html),
+            sha: currentFile.sha,
+            branch: branch,
+          }),
+        });
+
+        setStatus("Creando el Pull Request…", "warn");
+        const pr = await ghRequest("repos/" + owner + "/" + repo + "/pulls", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            title: "Actualización de contenido del sitio",
+            head: branch,
+            base: base,
+            body: "Cambios de contenido generados desde el panel admin.html.",
+          }),
+        });
+
+        return pr;
+      }
+
+      // --- Confirmation modal ---
+      const confirmModal = document.getElementById("confirmModal");
+
+      function showConfirmModal() {
+        confirmModal.classList.add("show");
+      }
+
+      function hideConfirmModal() {
+        confirmModal.classList.remove("show");
+      }
+
+      document
+        .getElementById("btnModalCancel")
+        .addEventListener("click", hideConfirmModal);
+
+      document
+        .getElementById("btnModalConfirm")
+        .addEventListener("click", async () => {
+          hideConfirmModal();
+          const applyBtn = document.getElementById("btnApply");
+          applyBtn.disabled = true;
+          try {
+            const pr = await createContentPullRequest();
+            setStatus(
+              "Pull Request creado: " + pr.html_url,
+              "ok"
+            );
+            statusEl.innerHTML =
+              'Pull Request creado: <a href="' +
+              pr.html_url +
+              '" target="_blank" rel="noopener">' +
+              pr.html_url +
+              "</a>";
+          } catch (err) {
+            setStatus("No se pudo crear el Pull Request: " + err.message, "err");
+          } finally {
+            applyBtn.disabled = false;
+          }
+        });
+
       document.getElementById("btnLoad").addEventListener("click", loadFromServer);
 
       document.getElementById("btnPickFile").addEventListener("click", () => {
@@ -579,8 +865,8 @@
           return;
         }
         updatePreview();
-        saveDraft();
-        setStatus("Cambios aplicados a la vista previa.", "ok");
+        saveDraft(true);
+        showConfirmModal();
       });
 
       document.getElementById("btnDownload").addEventListener("click", () => {
