@@ -7690,5 +7690,282 @@
       "Al servir, pon unas hojas de cilantro fresco picado por encima."
     ],
     "notes": ""
+  },
+  {
+    "id": "pan-paleo-con-bicarbonato",
+    "title": "Pan paleo (con bicarbonato)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Postre"
+    ],
+    "restrictions": [],
+    "portions": "12",
+    "instagramLink": "",
+    "ingredients": [
+      "2 tazas de harina de almendras",
+      "1/3 taza de harina de coco o yuca",
+      "4 huevos o 2 huevos y 3 claras",
+      "½ cucharadita de sal",
+      "1 cucharadita de bicarbonato",
+      "1 cucharada de vinagre de manzana",
+      "3 cucharadas de ghee o aceite de coco",
+      "1/3 taza de linaza molida o fibra Psyllium",
+      "1 cucharada de semillas de linaza",
+      "1/3 taza de leche vegetal"
+    ],
+    "steps": [
+      "Precalentar el horno a 200 grados centígrados.",
+      "Mezclar en un bowl todos los ingredientes secos: harina de almendras, harina de coco o de yuca, sal, polvo de hornear, linaza.",
+      "En otro bowl mezclar los ingredientes húmedos: huevos, crema de coco o leche vegetal, ghee o aceite de coco, vinagre de manzana.",
+      "Mezclar los ingredientes húmedos con los secos.",
+      "Poner la mezcla en un molde para pan engrasado y si quieren con papel parafinado.",
+      "Por encima, le pueden poner semillas de girasol.",
+      "Hornear a 180 grados centígrados por 30 a 40 minutos o hasta que al insertar un palillo y sacarlo, salga limpio.",
+      "Dejar enfriar completamente para comer."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "huevos-shakshuka-con-stevia",
+    "title": "Huevos shakshuka (con stevia)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Desayuno"
+    ],
+    "restrictions": [],
+    "portions": "1",
+    "instagramLink": "",
+    "ingredients": [
+      "1/4 cebolla cabezona",
+      "1 diente de ajo",
+      "1/4 pimentón rojo o verde",
+      "200 gr de tomate pelado y picado fino, o tomate triturado, o salsa napolitana",
+      "1/4 cucharadita de comino",
+      "1/4 cucharadita de paprika",
+      "1 gota de stevia liquida",
+      "Sal y pimienta negra",
+      "Aceite de oliva",
+      "2 huevos y 2 claras o 3 huevos",
+      "Perejil fresco picado para decorar"
+    ],
+    "steps": [
+      "Pelar la cebolla y picarla en dados o en tiras, según tu preferencia. Picar de igual forma el pimentón. Pelar y laminar el ajo.",
+      "Si vas a usar tomate fresco, hay que pelarlo y trocearlo fino. Si quieres ahorrar tiempo, puedes usar una salsa napolitana.",
+      "Poner un fondo de aceite en una sartén antiadherente amplia o una cazuela baja, que nos tiene que servir luego para llevar a la mesa y servir.",
+      "Incorpora la cebolla, los ajos y los pimentones picados, y deja que se cocinen muy bien a fuego medio-bajo. Agrega sal y pimienta para que la verdura suelte más agua.",
+      "Cuando este sofrito esté bien cocinado, añadir el pimentón, darle unas vueltas, e incorpora el tomate, el comino, la stevia, y sal - pimienta al gusto. Si el tomate es natural o triturado, tienes que dejar reducir la salsa a fuego lento hasta que espese y tome color. Si usas salsa napolitana, lo tendrás listo en un par de minutos. Ve removiendo bien para que se integren todos los sabores.",
+      "Por último, cuando la salsa de tomate esté lista y espesa, haz unos huecos en el tomate y pon dentro los huevos, para que se escalfen en la misma sartén. Sube un poco el fuego y tapa la sartén o cazuela hasta que la clara cuaje y la yema quede fluida."
+    ],
+    "notes": "Para servir el shakshuka: estos huevos con tomate se sirven al momento, recién hechos. Antes de llevar a la mesa, espolvorea con perejil picado. Acompaña con salsa de tomate y pan paleo o pan mogolla."
+  },
+  {
+    "id": "crepes-paleo-con-stevia",
+    "title": "Crepes paleo (con stevia)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Desayuno"
+    ],
+    "restrictions": [],
+    "portions": "2",
+    "instagramLink": "",
+    "ingredients": [
+      "4 huevos",
+      "¼ taza de harina de almendras",
+      "1 cucharadita de esencia de vainilla",
+      "¼ cucharadita de canela",
+      "Stevia liquida al gusto"
+    ],
+    "steps": [
+      "Mezclar todos los ingredientes hasta que estén incorporados.",
+      "Precalentar y engrasar un sartén plano de aproximadamente 23cm.",
+      "Poner la masa para crepes en el sartén e inclinar la sartén con un movimiento circular para asegurarse de que la masa cubra la superficie de manera uniforme. El grosor de los crepes dependerá de la cantidad de masa que usen para cada una. Por lo general, 1/4 de taza es lo que se necesita para hacer un crepe de 23cm.",
+      "Cocinar el crepe hasta que los lados comiencen a crujir y se despeguen fácilmente de la sartén. Debe tomar alrededor de 2 minutos cada uno, a fuego medio.",
+      "Aflojar con una espátula y voltear para cocinar el otro lado. Ambos lados deben estar ligeramente dorados y los crepes deben estar crujientes por los lados y más suaves en el centro."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "mermelada-de-frutos-rojos",
+    "title": "Mermelada de frutos rojos",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Desayuno"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "1 y 1/2 tazas de frutos rojos congelados o frescos",
+      "¼ taza de agua",
+      "Stevia líquida al gusto",
+      "1 cucharadita de esencia de vainilla",
+      "Zumo de 1/8 de limón",
+      "1 cucharadita de semillas de chía"
+    ],
+    "steps": [
+      "Poner en un sartén los frutos rojos, el endulzante y el agua. Ir cocinando a fuego medio-bajo.",
+      "Mientras se va cocinando, pueden ir machacando para que no queden trozos grandes.",
+      "Cuando la textura ya sea de mermelada, agregar la esencia de vainilla, el limón y, por último, la chía.",
+      "Retirar del fuego y dejar enfriar."
+    ],
+    "notes": "Porción: 15 gramos."
+  },
+  {
+    "id": "papas-a-la-francesa-saludables-sin-tajin",
+    "title": "Papas a la francesa saludables (sin tajín)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "Papa pastusa o R12 o papa criolla",
+      "Sal",
+      "Pimienta",
+      "Paprika (opcional)",
+      "Aceite de oliva"
+    ],
+    "steps": [
+      "Lavar muy bien las papas.",
+      "Preferiblemente dejar la cascara, pero si prefieren pueden pelarlas. Cortarlas en tubitos o cuadritos.",
+      "Dejarlas remojar en agua con hielo por 20 minutos (este paso es opcional, pero ayuda a que queden más crocantes). Después de los 20 minutos secarlas muy bien con un papel de cocina y ponerlas en un bowl.",
+      "Agregar aceite de oliva, no mucho, solo lo necesario para que se humecten las papitas y agregar la sal, la pimienta y la paprika y revolver muy bien.",
+      "Ponerlas en el air fryer a 180 grados centígrados por 20 a 30 minutos. Cada 10 minutos pueden ir revisando y con una cuchara de palo, irlas moviendo para que se cocinen bien. El tiempo varía mucho dependiendo como de crujientes las quieren, por eso es importante irlas revisando."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "papas-asadas-con-hierbas-y-mostaza-con-aceite-de-oliva",
+    "title": "Papas asadas con hierbas y mostaza (con aceite de oliva)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Almuerzo",
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "Papa Pastusa",
+      "2 cucharadas de ghee o aceite de oliva",
+      "2 cucharadas de mostaza Dijon",
+      "2 cucharaditas de ajo picado",
+      "1 y ½ cucharadas de romero",
+      "¾ cucharadita de sal",
+      "½ cucharadita de pimienta",
+      "1/8 taza de perejil"
+    ],
+    "steps": [
+      "Precalienta el horno a 200° C / 400° F y engrasa una bandeja o usa un papel parafinado.",
+      "Mezcla en un tazón la ghee, la mostaza, el ajo, el romero, la sal y la pimienta.",
+      "Agrega las papas al tazón y revuelve bien hasta que todas las papas estén impregnadas de la salsa.",
+      "Pon las papas en la bandeja y hornea durante 15 minutos.",
+      "Sácalas, las volteas y llévalas otros 15 minutos al horno hasta que las papas estén doradas y crujientes."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "platanos-rellenos-de-carne-molida-oregano-paprika-laurel",
+    "title": "Platanos rellenos de carne molida (con orégano, paprika y laurel)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Almuerzo",
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "",
+    "instagramLink": "",
+    "ingredients": [
+      "Plátano maduros (según tu porción)",
+      "1 cucharadita de ghee derretida",
+      "Cilantro fresco",
+      "1/2 kilo de carne molida (relleno)",
+      "1 cucharada de aceite de oliva (relleno)",
+      "1/2 taza de cebolla finamente picada (relleno)",
+      "3 dientes de ajo finamente picados (relleno)",
+      "1 cucharada de comino, orégano, paprika y laurel (relleno)",
+      "1 taza de salsa napolitana (relleno)",
+      "1/2 taza de caldo de carne / pollo / verduras (relleno)",
+      "Sal y pimienta al gusto (relleno)"
+    ],
+    "steps": [
+      "Precalienta el horno a 180° C / 350° F.",
+      "Pela los plátanos y ponlos en una bandeja apta para hornear. Frótalos con ghee, esto evitará que se peguen.",
+      "Lleva los plátanos al horno y deja que se cocinen por 15 minutos; luego, los volteas y los vuelves a introducir en el horno por otros 10 minutos o hasta que estén dorados por ambos lados.",
+      "Mientras tanto, haces el relleno. En una olla mediana, calienta el aceite de oliva a fuego medio. Luego añade la cebolla picada y cocina hasta que esté blanda. Posteriormente, agrega el ajo picado y cocina hasta que estén dorados.",
+      "En un tazón pon la carne junto con el comino, orégano, paprika, laurel, la sal y la pimienta, y mezcla con las manos; de esa forma se integrarán los sabores de cada especia. Luego, echa en la olla la carne molida con el caldo y la salsa napolitana. Deja cocinar por 20 minutos.",
+      "Retira los plátanos del horno, con mucho cuidado porque estarán calientes, y ábrelos a lo largo, como si estuvieras abriendo un pan, y rellénalos con la carne ya lista."
+    ],
+    "notes": "Acompañar con 40 gramos de guacamole."
+  },
+  {
+    "id": "crema-de-zanahoria-con-pollo",
+    "title": "Crema de zanahoria (con pollo de acompañamiento)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Almuerzo",
+      "Cena"
+    ],
+    "restrictions": [],
+    "portions": "2",
+    "instagramLink": "",
+    "ingredients": [
+      "3 cucharadas de aceite de oliva",
+      "1 taza de zanahoria cortada en rodajas",
+      "½ taza de cebolla cortada en julianas",
+      "1 cucharada de ajo cortado en pedazos pequeños (aproximadamente dos ajos pequeños)",
+      "½ cucharadita de jengibre rallado",
+      "1 cucharadita de cúrcuma en polvo",
+      "½ cucharadita de comino",
+      "1 cucharadita de sal",
+      "2 tazas de caldo de pollo o vegetales",
+      "Cilantro (para servir)",
+      "Pollo (para servir)"
+    ],
+    "steps": [
+      "Pon a calentar el aceite a fuego medio en la sartén.",
+      "Lleva al sartén la zanahoria, la cebolla, el ajo, el jengibre, cúrcuma, comino y sal.",
+      "Deja en el fuego entre 10 y 12 minutos, mezclando cada tanto hasta que la zanahoria y la cebolla se doren.",
+      "Apaga el fuego.",
+      "Lleva la mezcla que tienes en la sartén al procesador de alimentos o licuadora.",
+      "Adiciona el caldo de pollo o vegetales al procesador de alimentos o licuadora.",
+      "Licúa hasta que quede una mezcla cremosa. Si es necesario, para la licuadora cada 30 segundos, mezcla con la espátula y licúa nuevamente.",
+      "Si la crema está fría, la calientas en la sartén.",
+      "Prueba y verifica si necesita un poco más de sal."
+    ],
+    "notes": ""
+  },
+  {
+    "id": "pudin-de-chia-y-arandanos-con-stevia",
+    "title": "Pudín de chía y arándanos (con stevia)",
+    "icon": "",
+    "diet": [],
+    "mealTypes": [
+      "Desayuno"
+    ],
+    "restrictions": [],
+    "portions": "3",
+    "instagramLink": "",
+    "ingredients": [
+      "6 cucharadas de chía",
+      "2 tazas de leche de almendras",
+      "Stevia liquida al gusto"
+    ],
+    "steps": [
+      "En un recipiente con tapa, poner la chía y la leche de almendras y revolver bien.",
+      "Tapar y dejar en la nevera mínimo por 4 horas.",
+      "Cuando esté listo, en un vaso de vidrio, poner pudín de chía y 50 gramos de arándanos o fresas."
+    ],
+    "notes": ""
   }
 ]
