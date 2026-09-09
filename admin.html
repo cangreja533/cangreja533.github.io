@@ -336,7 +336,8 @@
         <div class="tabs">
           <button type="button" class="tab-btn active" data-tab="hero">Hero</button>
           <button type="button" class="tab-btn" data-tab="about">Sobre mí</button>
-          <button type="button" class="tab-btn" data-tab="resume">Resume</button>
+          <button type="button" class="tab-btn" data-tab="experience">Experience</button>
+          <button type="button" class="tab-btn" data-tab="estudios">Estudios</button>
           <button type="button" class="tab-btn" data-tab="services">Servicios</button>
           <button type="button" class="tab-btn" data-tab="portfolio">Portfolio</button>
           <button type="button" class="tab-btn" data-tab="testimonial">Testimonios</button>
@@ -358,23 +359,27 @@
           <div id="tab-contact" class="tab-panel" hidden></div>
         </form>
 
-        <div id="tab-resume" class="tab-panel" hidden>
+        <div id="tab-experience" class="tab-panel" hidden>
           <div class="card">
-            <h2>Resume — Experiencia</h2>
+            <h2>Experience</h2>
             <p class="hint">
               Agrega, edita o elimina puestos de trabajo. Corresponden a la
-              columna "Experience" del sitio.
+              columna "Experience" del sitio (dentro de Resume).
             </p>
             <div id="experienceList"></div>
             <button type="button" class="btn-secondary" id="btnAddExperience" disabled>
               + Agregar experiencia
             </button>
           </div>
+        </div>
+
+        <div id="tab-estudios" class="tab-panel" hidden>
           <div class="card">
-            <h2>Resume — Estudios</h2>
+            <h2>Estudios</h2>
             <p class="hint">
               Agrega, edita o elimina cursos, títulos o certificaciones.
-              Corresponden a la columna "Education" del sitio.
+              Corresponden a la columna "Education" del sitio (dentro de
+              Resume).
             </p>
             <div id="educationList"></div>
             <button type="button" class="btn-secondary" id="btnAddEducation" disabled>
